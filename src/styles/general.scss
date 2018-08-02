@@ -1,0 +1,73 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
+body {
+  min-height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+  /* General link style */
+  a {
+    font-family: $font-text;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    opacity: 0.9;
+    color: grey;
+    cursor: pointer;
+  }
+
+  /* General text style */
+  p {
+    font-family: $font-text;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    opacity: 0.9;
+    color: grey;
+  }
+
+  /* General h1 style */
+  h1 {
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 68px;
+    color: $color-darkgray;
+    letter-spacing: -3.2px;
+    line-height: 74px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  /* General h2 style */
+  h2 {
+    font-family: $font-text;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    opacity: 0.9;
+    font-size: 20px;
+    color: $color-white;
+  }
+
+  /* General button style */
+  .btn {
+    font-family: $font-text;
+    font-weight: 400;
+    background-color: $color-lightblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 13px 20px;
+    font-size: 15px;
+    cursor: pointer;
+
+    /* General button hover style */
+    &:hover {
+      background-color: $color-lightblue-hover;
+    }
+
+    /* General button focus style */
+    &:focus {
+      outline: none;
+    }
+  }
+}

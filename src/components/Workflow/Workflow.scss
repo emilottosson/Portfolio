@@ -1,0 +1,10 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
+/* Workflow container */
+.workflow-container {
+  background-color: $color-white;
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+}

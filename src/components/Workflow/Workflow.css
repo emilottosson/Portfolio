@@ -1,0 +1,16 @@
+/**
+ * Declaring fonts
+ */
+/* Heading text */
+/* Regular text */
+/* Logo text */
+/**
+ * Colors used in entire application
+ */
+/* Base colors */
+/* Workflow container */
+.workflow-container {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100vh;
+  min-height: 800px; }

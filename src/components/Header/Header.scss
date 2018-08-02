@@ -1,0 +1,308 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
+/* Header section */
+.header-container {
+  position: relative;
+  display: flex;
+  background-color: $color-mainbackground;
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  align-items: center;
+  z-index: 1;
+
+  /* Background on header section */
+  .header-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../pngs/background.png");
+    background-size: 800px 700px;
+    background-position: calc(100% - 220px) 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: background-position .5s ease, opacity .5s ease;
+  }
+
+
+  /* Text on header section */
+  .header-content{
+    position: relative;
+    display: flex;
+    height: 100%;
+    max-width: 1170px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    align-content: center;
+    flex-flow: row wrap;
+    z-index: 1;
+    transition: padding .5s ease;
+
+    /* Content for all text */
+    .header-content-container {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+      height: 100%;
+      max-width: 500px;
+
+      /* Title container on header section */
+      .title-container {
+        width: 100%;
+        min-height: 0px;
+      }
+
+      /* Sub-heading container on header section */
+      .text-container {
+        width: 100%;
+        min-height: 0px;
+        padding-bottom: 8px;
+
+        /* Span some light gray text to dark text */
+        .spandarkgray {
+          color: $color-darkgray;
+          font-weight: 500;
+        }
+      }
+
+      /* Buttons container on header section */
+      .buttons-container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        min-height: 0px;
+      }
+
+      /* Button on header style */
+      .btn-header {
+        padding: 17px 20px;
+        margin-right: 8px;
+      }
+
+      /* Right button on header style */
+      .btn-header-right {
+        background-color: $color-white;
+        color: grey;
+        border: 1px solid $color-lightgray-border;
+        padding: 16px 20px;
+
+        /* Right button on header hover */
+        &:hover {
+          background-color: $color-white-hover;
+        }
+      }
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 1500px) {
+
+  /* Header section */
+  .header-container {
+
+    /* Background on header section */
+    .header-background {
+      background-position: 100% 100%;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 1210px) {
+
+  /* Header section */
+  .header-container {
+
+    /* Text on header section */
+    .header-content{
+      padding: 0 40px;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 1150px) {
+
+  /* Header section */
+  .header-container {
+
+    /* Background on header section */
+    .header-background {
+      opacity: 0.1;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 600px) {
+
+  /* Header section */
+  .header-container {
+
+    /* Background on header section */
+    .header-background {
+      background-position: 5% 100%;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 500px) {
+
+  /* Header section */
+  .header-container {
+    min-height: 560px;
+
+    /* Background on header section */
+    .header-background {
+      background-size: 550px 470px;
+    }
+
+    /* Text on header section */
+    .header-content{
+      justify-content: center;
+      text-align: center;
+
+      /* Content for all text */
+      .header-content-container {
+        max-width: 400px;
+
+        /* Title container on header section */
+        .title-container {
+
+          /* Title text */
+          .title-text {
+            font-size: 30px;
+            letter-spacing: -1.5px;
+            line-height: 40px;
+          }
+        }
+
+        /* Sub-heading container on header section */
+        .text-container {
+
+          /* Sub-heading text */
+          .sub-heading-text {
+            font-size: 16px;
+            letter-spacing: -.5px;
+            line-height: 26px;
+          }
+        }
+
+        /* Buttons container on header section */
+        .buttons-container {
+          max-width: 350px;
+        }
+
+        /* Button on header style */
+        .btn-header {
+          margin-right: 0px;
+          margin-bottom: 10px;
+          width: 100%;
+        }
+
+        /* Right button on header style */
+        .btn-header-right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 402px) {
+
+  /* Header section */
+  .header-container {
+
+    /* Text on header section */
+    .header-content{
+
+      /* Content for all text */
+      .header-content-container {
+
+        /* Title container on header section */
+        .title-container {
+
+          /* Title text */
+          .title-text {
+            font-size: 26px;
+          }
+        }
+
+        /* Sub-heading container on header section */
+        .text-container {
+
+          /* Sub-heading text */
+          .sub-heading-text {
+            font-size: 14px;
+          }
+        }
+
+        /* Button on header style */
+        .btn-header {
+          padding: 15px 20px;
+          font-size: 14px;
+        }
+
+        /* Right button on header style */
+        .btn-header-right {
+          padding: 14px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 321px) {
+
+  /* Header section */
+  .header-container {
+
+    /* Text on header section */
+    .header-content{
+
+      /* Content for all text */
+      .header-content-container {
+
+        /* Title container on header section */
+        .title-container {
+
+          /* Title text */
+          .title-text {
+            font-size: 22px;
+          }
+        }
+
+        /* Sub-heading container on header section */
+        .text-container {
+
+          /* Sub-heading text */
+          .sub-heading-text {
+            font-size: 12px;
+          }
+        }
+
+        /* Button on header style */
+        .btn-header {
+          padding: 13px 20px;
+          font-size: 12px;
+        }
+
+        /* Right button on header style */
+        .btn-header-right {
+          padding: 12px 20px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
