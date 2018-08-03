@@ -8,7 +8,7 @@
   background-color: $color-mainbackground;
   width: 100%;
   height: 100vh;
-  min-height: 800px;
+  min-height: 880px;
   align-items: center;
   z-index: 1;
 
@@ -18,7 +18,7 @@
     height: 100%;
     width: 100%;
     background-image: url("../../pngs/background.png");
-    background-size: 800px 700px;
+    background-size: 900px 800px;
     background-position: calc(100% - 220px) 100%;
     background-repeat: no-repeat;
     z-index: 0;
