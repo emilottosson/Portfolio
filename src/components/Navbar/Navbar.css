@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    transition: padding .5s ease;
     /* Navbar heading container */
     /* Menu container */ }
     .navbar-container .navbar .logo-container {
@@ -47,16 +48,42 @@
       align-items: center;
       height: 100%;
       min-width: 0px;
-      /* Menu text */
-      /* Button in menu style */ }
+      /* Menu text */ }
       .navbar-container .navbar .menu-container .menu-text {
         color: #FFFFFF;
-        margin-left: 25px;
+        margin-right: 25px;
         font-size: 15px;
         /* Menu text hover */ }
         .navbar-container .navbar .menu-container .menu-text:hover {
           color: #383838; }
-      .navbar-container .navbar .menu-container .btn-menu {
-        margin-left: 25px; }
+    .navbar-container .navbar .hamburger-icon {
+      display: none; }
 
 /* Set new styles depending on width */
+@media only screen and (max-width: 1210px) {
+  /* Navigation bar container */
+  .navbar-container {
+    /* Navigation bar */ }
+    .navbar-container .navbar {
+      padding: 0 40px; } }
+
+/* Set new styles depending on width */
+@media (max-width: 767px) {
+  /* Navigation bar container */
+  .navbar-container {
+    height: 55px;
+    /* Navigation bar */ }
+    .navbar-container .navbar {
+      padding: 0 20px;
+      background-color: #FFFFFF;
+      /* Navbar heading container */
+      /* Menu container */ }
+      .navbar-container .navbar .logo-container {
+        /* Navbar heading */ }
+        .navbar-container .navbar .logo-container .navbar-logo {
+          font-size: 14px;
+          color: #383838; }
+      .navbar-container .navbar .menu-container {
+        display: none; }
+      .navbar-container .navbar .hamburger-icon {
+        display: block; } }

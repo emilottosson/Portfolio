@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    transition: padding .5s ease;
 
     /* Navbar heading container */
     .logo-container {
@@ -50,7 +51,7 @@
       /* Menu text */
       .menu-text {
         color: $color-white;
-        margin-left: 25px;
+        margin-right: 25px;
         font-size: 15px;
 
         /* Menu text hover */
@@ -58,17 +59,57 @@
           color: $color-darkgray;
         }
       }
+    }
 
-      /* Button in menu style */
-      .btn-menu {
-        margin-left: 25px;
-      }
+    .hamburger-icon {
+      display: none;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 1210px) {
+
+  /* Navigation bar container */
+  .navbar-container {
+
+    /* Navigation bar */
+    .navbar {
+      padding: 0 40px;
     }
   }
 }
 
 /* Set new styles depending on width */
 @media(max-width: 767px) {
+  /* Navigation bar container */
+  .navbar-container {
+    height: 55px;
 
+    /* Navigation bar */
+    .navbar {
+      padding: 0 20px;
+      background-color: $color-white;
 
+      /* Navbar heading container */
+      .logo-container {
+
+        /* Navbar heading */
+        .navbar-logo {
+          font-size: 14px;
+          color: $color-darkgray;
+        }
+      }
+
+      /* Menu container */
+      .menu-container {
+        display: none;
+
+      }
+
+      .hamburger-icon {
+        display: block;
+      }
+    }
+  }
 }

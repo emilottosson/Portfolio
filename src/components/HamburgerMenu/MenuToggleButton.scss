@@ -1,0 +1,27 @@
+@import 'src/styles/_colors.scss';
+
+/* Hamburger menu */
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 22px;
+  width: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Hamburger menu focus */
+  &:focus {
+    outline: none;
+  }
+
+  /* Hamburger menu lines */
+  .toggle-button-line {
+    width: 25px;
+    height: 2px;
+    background: $color-darkgray;
+  }
+}
