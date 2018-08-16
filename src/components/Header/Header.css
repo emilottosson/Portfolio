@@ -65,7 +65,11 @@
         width: 100%;
         min-height: 0px;
         padding-bottom: 8px;
+        /* Span some light gray text to dark text */
         /* Span some light gray text to dark text */ }
+        .header-container .header-content .header-content-container .text-container .spandarkgray {
+          color: #383838;
+          font-weight: 500; }
         .header-container .header-content .header-content-container .text-container .spandarkgray {
           color: #383838;
           font-weight: 500; }

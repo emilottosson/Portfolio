@@ -69,6 +69,12 @@
           color: $color-darkgray;
           font-weight: 500;
         }
+
+        /* Span some light gray text to dark text */
+        .spandarkgray {
+          color: $color-darkgray;
+          font-weight: 500;
+        }
       }
 
       /* Buttons container on header section */
