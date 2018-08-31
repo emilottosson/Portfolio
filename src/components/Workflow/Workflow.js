@@ -5,7 +5,7 @@ class Workflow extends Component {
   render() {
     return (
       // Container for workflow content
-      <div className="workflow-container">
+      <div id="workflow-container">
 
       </div>
     );

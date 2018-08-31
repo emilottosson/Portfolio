@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 22px;
-  width: 25px;
+  height: 23px;
+  width: 23px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -18,10 +18,54 @@
     outline: none;
   }
 
+  /* Hamburger menu lines hover */
+  &:hover .toggle-button-line {
+    background: $color-darkgray;
+  }
+
   /* Hamburger menu lines */
   .toggle-button-line {
-    width: 25px;
+    width: 23px;
     height: 2px;
+    background: $color-lightgray;
+  }
+}
+
+.toggle-button-cross {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Cross button focus */
+  &:focus {
+    outline: none;
+  }
+
+  /* Cross button lines hover */
+  &:hover .toggle-cross-line {
     background: $color-darkgray;
+  }
+
+  /* Cross button lines */
+  .toggle-cross-line {
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background: $color-lightgray;
+
+    &.neg-rotation {
+      transform: rotate(-45deg);
+    }
+
+    &.pos-rotation {
+      transform: rotate(45deg);
+    }
   }
 }

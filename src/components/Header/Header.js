@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       // Container for header content
-      <div className="header-container">
+      <div id="header-container">
         {/* Header background */}
         <div className="header-background"></div>
           {/* Header content container */}

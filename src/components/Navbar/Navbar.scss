@@ -11,7 +11,7 @@
   background-color: $color-mainbackground;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 
   /* Navigation bar */
   .navbar {
@@ -38,6 +38,7 @@
         font-size: 22px;
         color: $color-white;
         margin-right: auto;
+        text-decoration: none;
       }
     }
 
@@ -53,11 +54,17 @@
         color: $color-white;
         margin-right: 25px;
         font-size: 15px;
+        text-decoration: none;
 
         /* Menu text hover */
         &:hover {
           color: $color-darkgray;
         }
+      }
+
+      /* Active link style */
+      .active {
+        color: red;
       }
     }
 

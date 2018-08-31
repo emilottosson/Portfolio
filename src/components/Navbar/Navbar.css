@@ -18,7 +18,7 @@
   background-color: #81C7BB;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
   /* Navigation bar */ }
   .navbar-container .navbar {
     display: flex;
@@ -42,20 +42,25 @@
         letter-spacing: 5px;
         font-size: 22px;
         color: #FFFFFF;
-        margin-right: auto; }
+        margin-right: auto;
+        text-decoration: none; }
     .navbar-container .navbar .menu-container {
       display: flex;
       align-items: center;
       height: 100%;
       min-width: 0px;
-      /* Menu text */ }
+      /* Menu text */
+      /* Active link style */ }
       .navbar-container .navbar .menu-container .menu-text {
         color: #FFFFFF;
         margin-right: 25px;
         font-size: 15px;
+        text-decoration: none;
         /* Menu text hover */ }
         .navbar-container .navbar .menu-container .menu-text:hover {
           color: #383838; }
+      .navbar-container .navbar .menu-container .active {
+        color: red; }
     .navbar-container .navbar .hamburger-icon {
       display: none; }
 

@@ -7,18 +7,49 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 22px;
-  width: 25px;
+  height: 23px;
+  width: 23px;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   box-sizing: border-box;
   /* Hamburger menu focus */
+  /* Hamburger menu lines hover */
   /* Hamburger menu lines */ }
   .toggle-button:focus {
     outline: none; }
-  .toggle-button .toggle-button-line {
-    width: 25px;
-    height: 2px;
+  .toggle-button:hover .toggle-button-line {
     background: #383838; }
+  .toggle-button .toggle-button-line {
+    width: 23px;
+    height: 2px;
+    background: #808080; }
+
+.toggle-button-cross {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  /* Cross button focus */
+  /* Cross button lines hover */
+  /* Cross button lines */ }
+  .toggle-button-cross:focus {
+    outline: none; }
+  .toggle-button-cross:hover .toggle-cross-line {
+    background: #383838; }
+  .toggle-button-cross .toggle-cross-line {
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background: #808080; }
+    .toggle-button-cross .toggle-cross-line.neg-rotation {
+      transform: rotate(-45deg); }
+    .toggle-button-cross .toggle-cross-line.pos-rotation {
+      transform: rotate(45deg); }

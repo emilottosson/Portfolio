@@ -2,11 +2,18 @@
 
 .navbar-small {
   position: fixed;
+  transform: translateY(-100%);
   height: calc(100% - 55px);
+  min-height: 250px;
   width: 100%;
   margin-top: 55px;
   background-color: $color-white;
   z-index: 2;
+  transition: transform 0.3s;
+
+  &.shown {
+    transform: translateY(0);
+  }
 
   .menu-container-small {
     display: flex;
@@ -17,12 +24,17 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    &.shown .menu-text-small {
+      opacity: 1
 
+    }
     .menu-text-small {
       margin: 10px 0px;
       font-size: 30px;
       width: 160px;
       text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.5s 0.1s;
 
       &:hover, &:active {
         color: $color-darkgray;

@@ -2,7 +2,7 @@
 @import 'src/styles/_colors.scss';
 
 /* Header section */
-.header-container {
+#header-container {
   position: relative;
   display: flex;
   background-color: $color-mainbackground;
@@ -111,7 +111,7 @@
 @media only screen and (max-width: 1500px) {
 
   /* Header section */
-  .header-container {
+  #header-container {
 
     /* Background on header section */
     .header-background {
@@ -124,7 +124,7 @@
 @media only screen and (max-width: 1210px) {
 
   /* Header section */
-  .header-container {
+  #header-container {
 
     /* Background on header section */
     .header-background {
@@ -142,7 +142,7 @@
 @media only screen and (max-width: 600px) {
 
   /* Header section */
-  .header-container {
+  #header-container {
 
     /* Background on header section */
     .header-background {
@@ -155,7 +155,7 @@
 @media only screen and (max-width: 500px) {
 
   /* Header section */
-  .header-container {
+  #header-container {
     min-height: 560px;
 
     /* Background on header section */
@@ -219,7 +219,7 @@
 @media only screen and (max-width: 402px) {
 
   /* Header section */
-  .header-container {
+  #header-container {
 
     /* Text on header section */
     .header-content{
@@ -265,7 +265,7 @@
 @media only screen and (max-width: 321px) {
 
   /* Header section */
-  .header-container {
+  #header-container {
 
     /* Text on header section */
     .header-content{

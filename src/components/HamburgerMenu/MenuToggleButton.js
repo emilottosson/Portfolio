@@ -4,13 +4,20 @@ import './MenuToggleButton.css';
 class MenuToggleButton extends Component {
   render() {
     return (
-      // Container for hamburger menu
-      <button className="toggle-button" onClick={this.props.click}>
-        {/* Lines that make the hamburger menu */}
-        <div className="toggle-button-line" />
-        <div className="toggle-button-line" />
-        <div className="toggle-button-line" />
-      </button>
+      <React.Fragment>
+        {/* Container for hamburger menu*/}
+        {!this.props.shown ? <button className="toggle-button" onClick={this.props.click}>
+
+          <div className="toggle-button-line" />
+          <div className="toggle-button-line" />
+          <div className="toggle-button-line" />
+        </button> :
+        <button className="toggle-button-cross" onClick={this.props.click}>
+
+        <div className="toggle-cross-line neg-rotation" />
+        <div className="toggle-cross-line pos-rotation" />
+        </button>}
+      </React.Fragment>
     );
   }
 }

@@ -4,11 +4,16 @@
 /* Base colors */
 .navbar-small {
   position: fixed;
+  transform: translateY(-100%);
   height: calc(100% - 55px);
+  min-height: 250px;
   width: 100%;
   margin-top: 55px;
   background-color: #FFFFFF;
-  z-index: 2; }
+  z-index: 2;
+  transition: transform 0.3s; }
+  .navbar-small.shown {
+    transform: translateY(0); }
   .navbar-small .menu-container-small {
     display: flex;
     height: 100%;
@@ -18,11 +23,15 @@
     justify-content: center;
     text-align: center;
     align-items: center; }
+    .navbar-small .menu-container-small.shown .menu-text-small {
+      opacity: 1; }
     .navbar-small .menu-container-small .menu-text-small {
       margin: 10px 0px;
       font-size: 30px;
       width: 160px;
-      text-decoration: none; }
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.5s 0.1s; }
       .navbar-small .menu-container-small .menu-text-small:hover, .navbar-small .menu-container-small .menu-text-small:active {
         color: #383838; }
 

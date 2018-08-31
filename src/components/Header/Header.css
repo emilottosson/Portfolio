@@ -9,7 +9,7 @@
  */
 /* Base colors */
 /* Header section */
-.header-container {
+#header-container {
   position: relative;
   display: flex;
   background-color: #81C7BB;
@@ -21,7 +21,7 @@
   z-index: 1;
   /* Background on header section */
   /* Text on header section */ }
-  .header-container .header-background {
+  #header-container .header-background {
     position: absolute;
     height: 100%;
     max-width: 1470px;
@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     z-index: 0;
     transition: background-position .5s ease, opacity .5s ease; }
-  .header-container .header-content {
+  #header-container .header-content {
     position: relative;
     display: flex;
     height: 100%;
@@ -46,7 +46,7 @@
     z-index: 1;
     transition: padding .5s ease;
     /* Content for all text */ }
-    .header-container .header-content .header-content-container {
+    #header-container .header-content .header-content-container {
       display: flex;
       flex-flow: row wrap;
       align-content: center;
@@ -58,156 +58,156 @@
       /* Buttons container on header section */
       /* Button on header style */
       /* Right button on header style */ }
-      .header-container .header-content .header-content-container .title-container {
+      #header-container .header-content .header-content-container .title-container {
         width: 100%;
         min-height: 0px; }
-      .header-container .header-content .header-content-container .text-container {
+      #header-container .header-content .header-content-container .text-container {
         width: 100%;
         min-height: 0px;
         padding-bottom: 8px;
         /* Span some light gray text to dark text */
         /* Span some light gray text to dark text */ }
-        .header-container .header-content .header-content-container .text-container .spandarkgray {
+        #header-container .header-content .header-content-container .text-container .spandarkgray {
           color: #383838;
           font-weight: 500; }
-        .header-container .header-content .header-content-container .text-container .spandarkgray {
+        #header-container .header-content .header-content-container .text-container .spandarkgray {
           color: #383838;
           font-weight: 500; }
-      .header-container .header-content .header-content-container .buttons-container {
+      #header-container .header-content .header-content-container .buttons-container {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
         min-height: 0px; }
-      .header-container .header-content .header-content-container .btn-header {
+      #header-container .header-content .header-content-container .btn-header {
         padding: 17px 20px;
         margin-right: 8px; }
-      .header-container .header-content .header-content-container .btn-header-right {
+      #header-container .header-content .header-content-container .btn-header-right {
         background-color: #FFFFFF;
         color: grey;
         border: 1px solid #cecece;
         padding: 16px 20px;
         /* Right button on header hover */ }
-        .header-container .header-content .header-content-container .btn-header-right:hover {
+        #header-container .header-content .header-content-container .btn-header-right:hover {
           background-color: #f7f7f7; }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 1500px) {
   /* Header section */
-  .header-container {
+  #header-container {
     /* Background on header section */ }
-    .header-container .header-background {
+    #header-container .header-background {
       background-position: 100% 100%; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 1210px) {
   /* Header section */
-  .header-container {
+  #header-container {
     /* Background on header section */
     /* Text on header section */ }
-    .header-container .header-background {
+    #header-container .header-background {
       opacity: 0.1; }
-    .header-container .header-content {
+    #header-container .header-content {
       padding: 0 40px; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 600px) {
   /* Header section */
-  .header-container {
+  #header-container {
     /* Background on header section */ }
-    .header-container .header-background {
+    #header-container .header-background {
       background-position: 5% 100%; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
   /* Header section */
-  .header-container {
+  #header-container {
     min-height: 560px;
     /* Background on header section */
     /* Text on header section */ }
-    .header-container .header-background {
+    #header-container .header-background {
       background-size: 550px 470px; }
-    .header-container .header-content {
+    #header-container .header-content {
       justify-content: center;
       text-align: center;
       /* Content for all text */ }
-      .header-container .header-content .header-content-container {
+      #header-container .header-content .header-content-container {
         max-width: 400px;
         /* Title container on header section */
         /* Sub-heading container on header section */
         /* Buttons container on header section */
         /* Button on header style */
         /* Right button on header style */ }
-        .header-container .header-content .header-content-container .title-container {
+        #header-container .header-content .header-content-container .title-container {
           /* Title text */ }
-          .header-container .header-content .header-content-container .title-container .title-text {
+          #header-container .header-content .header-content-container .title-container .title-text {
             font-size: 30px;
             letter-spacing: -1.5px;
             line-height: 40px; }
-        .header-container .header-content .header-content-container .text-container {
+        #header-container .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
-          .header-container .header-content .header-content-container .text-container .sub-heading-text {
+          #header-container .header-content .header-content-container .text-container .sub-heading-text {
             font-size: 16px;
             letter-spacing: -.5px;
             line-height: 26px; }
-        .header-container .header-content .header-content-container .buttons-container {
+        #header-container .header-content .header-content-container .buttons-container {
           max-width: 350px; }
-        .header-container .header-content .header-content-container .btn-header {
+        #header-container .header-content .header-content-container .btn-header {
           margin-right: 0px;
           margin-bottom: 10px;
           width: 100%; }
-        .header-container .header-content .header-content-container .btn-header-right {
+        #header-container .header-content .header-content-container .btn-header-right {
           width: 100%; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 402px) {
   /* Header section */
-  .header-container {
+  #header-container {
     /* Text on header section */ }
-    .header-container .header-content {
+    #header-container .header-content {
       /* Content for all text */ }
-      .header-container .header-content .header-content-container {
+      #header-container .header-content .header-content-container {
         /* Title container on header section */
         /* Sub-heading container on header section */
         /* Button on header style */
         /* Right button on header style */ }
-        .header-container .header-content .header-content-container .title-container {
+        #header-container .header-content .header-content-container .title-container {
           /* Title text */ }
-          .header-container .header-content .header-content-container .title-container .title-text {
+          #header-container .header-content .header-content-container .title-container .title-text {
             font-size: 26px; }
-        .header-container .header-content .header-content-container .text-container {
+        #header-container .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
-          .header-container .header-content .header-content-container .text-container .sub-heading-text {
+          #header-container .header-content .header-content-container .text-container .sub-heading-text {
             font-size: 14px; }
-        .header-container .header-content .header-content-container .btn-header {
+        #header-container .header-content .header-content-container .btn-header {
           padding: 15px 20px;
           font-size: 14px; }
-        .header-container .header-content .header-content-container .btn-header-right {
+        #header-container .header-content .header-content-container .btn-header-right {
           padding: 14px 20px;
           font-size: 14px; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 321px) {
   /* Header section */
-  .header-container {
+  #header-container {
     /* Text on header section */ }
-    .header-container .header-content {
+    #header-container .header-content {
       /* Content for all text */ }
-      .header-container .header-content .header-content-container {
+      #header-container .header-content .header-content-container {
         /* Title container on header section */
         /* Sub-heading container on header section */
         /* Button on header style */
         /* Right button on header style */ }
-        .header-container .header-content .header-content-container .title-container {
+        #header-container .header-content .header-content-container .title-container {
           /* Title text */ }
-          .header-container .header-content .header-content-container .title-container .title-text {
+          #header-container .header-content .header-content-container .title-container .title-text {
             font-size: 22px; }
-        .header-container .header-content .header-content-container .text-container {
+        #header-container .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
-          .header-container .header-content .header-content-container .text-container .sub-heading-text {
+          #header-container .header-content .header-content-container .text-container .sub-heading-text {
             font-size: 12px; }
-        .header-container .header-content .header-content-container .btn-header {
+        #header-container .header-content .header-content-container .btn-header {
           padding: 13px 20px;
           font-size: 12px; }
-        .header-container .header-content .header-content-container .btn-header-right {
+        #header-container .header-content .header-content-container .btn-header-right {
           padding: 12px 20px;
           font-size: 12px; } }
