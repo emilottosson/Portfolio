@@ -49,8 +49,7 @@
       align-items: center;
       height: 100%;
       min-width: 0px;
-      /* Menu text */
-      /* Active link style */ }
+      /* Menu text */ }
       .navbar-container .navbar .menu-container .menu-text {
         color: #FFFFFF;
         margin-right: 25px;
@@ -59,8 +58,6 @@
         /* Menu text hover */ }
         .navbar-container .navbar .menu-container .menu-text:hover {
           color: #383838; }
-      .navbar-container .navbar .menu-container .active {
-        color: red; }
     .navbar-container .navbar .hamburger-icon {
       display: none; }
 

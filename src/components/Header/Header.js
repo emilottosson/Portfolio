@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './Header.css';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 class Header extends Component {
   render() {
     return (
       // Container for header content
-      <div id="header-container">
+      <div id="header">
         {/* Header background */}
         <div className="header-background"></div>
           {/* Header content container */}
@@ -26,8 +27,8 @@ class Header extends Component {
               {/* Heading buttons container */}
               <div className="buttons-container">
                 {/* Heading Buttons */}
-                <button type="button" className="btn btn-header">See projects</button>
-                <button type="button" className="btn btn-header-right">More about me</button>
+                <NavLink smooth exact to="/#portfolio" className="navLinkButtonContainer"><button type="button" className="btn btn-header">See selected projects</button></NavLink>
+                <NavLink smooth exact to="/#workflow" className="navLinkButtonContainer"><button type="button" className="btn btn-header-right">More about my workflow</button></NavLink>
               </div>
             </div>
           </div>

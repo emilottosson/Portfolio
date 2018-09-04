@@ -30,14 +30,14 @@ class Navbar extends Component {
           {/* Navbar logo container */}
           <div className="logo-container">
             {/* The logo on left in the navbar */}
-            <NavLink smooth to="../Header/Header#header-container" className="navbar-logo">EMIL OTTOSSON</NavLink>
+            <NavLink smooth to="/#header" className="navbar-logo">EMIL OTTOSSON</NavLink>
           </div>
           {/* Menu container */}
           <div className="menu-container">
             {/* The menu text */}
-            <NavLink smooth to="../Workflow/Workflow#workflow-container" className="menu-text" activeClassName="active">Workflow</NavLink>
-            <NavLink smooth to="../Header/Header#header-container" className="menu-text" activeClassName="active">Portfolio</NavLink>
-            <NavLink smooth to="../Header/Header#header-container" className="menu-text" activeClassName="active">About</NavLink>
+            <NavLink smooth exact to="/#workflow" className="menu-text">Workflow</NavLink>
+            <NavLink smooth exact to="/#portfolio" className="menu-text">Portfolio</NavLink>
+            <NavLink smooth exact to="/#about" className="menu-text">About</NavLink>
             {/* Contact me button in menu */}
             <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact Me</button></a>
           </div>
@@ -46,7 +46,7 @@ class Navbar extends Component {
           </div>
         </div>
       </div>
-      <HamburgerMenu shown={this.state.hamburgerMenuOpen}/>
+      <HamburgerMenu shown={this.state.hamburgerMenuOpen} toggle={this.menuToggleClickHandler}/>
       </React.Fragment>
     );
   }
