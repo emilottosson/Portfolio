@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './HamburgerMenu.css';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 

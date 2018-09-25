@@ -45,6 +45,7 @@
 
     /* Content for all text */
     .header-content-container {
+      position: relative;
       display: flex;
       flex-flow: row wrap;
       align-content: center;
@@ -54,8 +55,57 @@
 
       /* Title container on header section */
       .title-container {
+        position: relative;
         width: 100%;
         min-height: 0px;
+
+        .u-detail {
+          position: absolute;
+          min-height: 0px;
+          min-width: 0px;
+          padding-left: 282px;
+          line-height: 300px;
+          top: -110px;
+          z-index: 1;
+
+
+          .u-detail-text {
+            font-family: $font-heading;
+            color: $color-mainred;
+            font-weight: 700;
+            font-size: 310px;
+            margin: 0 auto;
+            opacity: 1;
+            visibility: visible;
+            transition: visibility .5s ease, opacity .5s ease;
+          }
+        }
+        .x-detail {
+          position: absolute;
+          min-height: 0px;
+          min-width: 0px;
+          padding-left: 335px;
+          line-height: 300px;
+          top: 75px;
+          z-index: 1;
+
+          .x-detail-text {
+            font-family: $font-heading;
+            color: $color-mainred;
+            font-weight: 700;
+            font-size: 310px;
+            margin: 0 auto;
+            opacity: 1;
+            visibility: visible;
+            transition: visibility .5s ease, opacity .5s ease;
+          }
+        }
+
+        .title-text {
+          position: relative;
+          line-height: 70px;
+          z-index: 2;
+        }
       }
 
       /* Sub-heading container on header section */
@@ -63,6 +113,7 @@
         width: 100%;
         min-height: 0px;
         padding-bottom: 8px;
+        z-index: 2;
 
         /* Span some light gray text to dark text */
         .spandarkgray {
@@ -87,7 +138,7 @@
 
       /* Button on header style */
       .btn-header {
-        padding: 17px 20px;
+        padding: 17px 23px;
         margin-right: 8px;
       }
 
@@ -96,7 +147,7 @@
         background-color: $color-white;
         color: grey;
         border: 1px solid $color-lightgray-border;
-        padding: 16px 20px;
+        padding: 16px 23px;
 
         /* Right button on header hover */
         &:hover {
@@ -121,7 +172,7 @@
 }
 
 /* Set new styles depending on width */
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 1370px) {
 
   /* Header section */
   #header {
@@ -130,10 +181,53 @@
     .header-background {
       opacity: 0.1;
     }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 1210px) {
+
+  /* Header section */
+  #header {
 
     /* Text on header section */
     .header-content{
       padding: 0 40px;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 650px) {
+
+  /* Header section */
+  #header {
+
+    /* Text on header section */
+    .header-content{
+
+      /* Content for all text */
+      .header-content-container {
+
+        /* Title container on header section */
+        .title-container {
+
+          .u-detail {
+            display: none;
+          }
+
+          .x-detail {
+            display: none;
+          }
+
+          .title-text {
+
+            .ui-ux-red {
+              color: $color-mainred;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -160,7 +254,7 @@
 
     /* Background on header section */
     .header-background {
-      background-size: 550px 470px;
+      background-size: 690px 600px;
     }
 
     /* Text on header section */
@@ -179,7 +273,7 @@
           .title-text {
             font-size: 30px;
             letter-spacing: -1.5px;
-            line-height: 40px;
+            line-height: 35px;
           }
         }
 
@@ -190,13 +284,15 @@
           .sub-heading-text {
             font-size: 16px;
             letter-spacing: -.5px;
-            line-height: 26px;
+            line-height: 20px;
           }
         }
 
         /* Buttons container on header section */
         .buttons-container {
-          max-width: 350px;
+          max-width: calc(350px - 28px);
+          display: flex;
+          justify-content: center;
         }
 
         /* Buttons container on header section */
@@ -226,6 +322,11 @@
   /* Header section */
   #header {
 
+    /* Background on header section */
+    .header-background {
+      background-size: 660px 570px;
+    }
+
     /* Text on header section */
     .header-content{
 
@@ -250,6 +351,11 @@
           }
         }
 
+        /* Buttons container on header section */
+        .buttons-container {
+          max-width: calc(350px - 70px);
+        }
+
         /* Button on header style */
         .btn-header {
           padding: 15px 20px;
@@ -271,6 +377,11 @@
 
   /* Header section */
   #header {
+
+    /* Background on header section */
+    .header-background {
+      background-size: 560px 470px;
+    }
 
     /* Text on header section */
     .header-content{
@@ -310,4 +421,29 @@
       }
     }
   }
+}
+
+@-moz-document url-prefix() {
+
+    /* Header section */
+    #header {
+
+      /* Text on header section */
+      .header-content{
+
+        /* Content for all text */
+        .header-content-container {
+
+          /* Button on header style */
+          .btn-header {
+            padding: 17px 26px;
+          }
+
+          /* Right button on header style */
+          .btn-header-right {
+            padding: 16px 26px;
+          }
+        }
+      }
+    }
 }

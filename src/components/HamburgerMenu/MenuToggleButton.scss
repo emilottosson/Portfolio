@@ -69,3 +69,15 @@
     }
   }
 }
+
+
+@-moz-document url-prefix() {
+  .toggle-button {
+    margin-top: 5px;
+
+    /* Hamburger menu lines */
+    .toggle-button-line {
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -4,23 +4,20 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Workflow from './components/Workflow/Workflow';
+import { MemoryRouter } from 'react-router'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
 
     return (
-      <BrowserRouter>
+      <MemoryRouter>
         <div className="App" >
             <Navbar />
             <Header />
             <Workflow />
         </div>
-      </BrowserRouter>
+      </MemoryRouter>
     );
   }
 }

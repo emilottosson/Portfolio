@@ -38,6 +38,8 @@
       min-width: 0px;
       /* Navbar heading */ }
       .navbar-container .navbar .logo-container .navbar-logo {
+        display: flex;
+        align-items: center;
         font-family: "Mr Dafoe", sans-serif;
         letter-spacing: 5px;
         font-size: 22px;
@@ -83,7 +85,7 @@
       .navbar-container .navbar .logo-container {
         /* Navbar heading */ }
         .navbar-container .navbar .logo-container .navbar-logo {
-          font-size: 14px;
+          font-size: 18px;
           color: #383838; }
       .navbar-container .navbar .menu-container {
         display: none; }

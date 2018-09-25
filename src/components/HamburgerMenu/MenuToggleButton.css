@@ -53,3 +53,10 @@
       transform: rotate(-45deg); }
     .toggle-button-cross .toggle-cross-line.pos-rotation {
       transform: rotate(45deg); }
+
+@-moz-document url-prefix() {
+  .toggle-button {
+    margin-top: 5px;
+    /* Hamburger menu lines */ }
+    .toggle-button .toggle-button-line {
+      margin-bottom: 5px; } }

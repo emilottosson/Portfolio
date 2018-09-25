@@ -15,8 +15,10 @@ class Header extends Component {
             <div className="header-content-container">
               {/* Title text container */}
               <div className="title-container">
+              <div className="u-detail"><p className="u-detail-text">U</p></div>
+              <div className="x-detail"><p className="x-detail-text">X</p></div>
                 {/* Title text on heading section */}
-                <h1 className="title-text">I'm Emil Ottosson, an Swedish UI/UX designer currently based in Umeå, Sweden</h1>
+                <h1 className="title-text">I´m Emil Ottosson, an Swedish <span className="ui-ux-red">UI/UX</span> designer currently based in Umeå, Sweden</h1>
               </div>
               {/* Sub-heading text container */}
               <div className="text-container">

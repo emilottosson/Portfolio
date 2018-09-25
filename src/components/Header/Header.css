@@ -47,6 +47,7 @@
     transition: padding .5s ease;
     /* Content for all text */ }
     #header .header-content .header-content-container {
+      position: relative;
       display: flex;
       flex-flow: row wrap;
       align-content: center;
@@ -59,12 +60,52 @@
       /* Button on header style */
       /* Right button on header style */ }
       #header .header-content .header-content-container .title-container {
+        position: relative;
         width: 100%;
         min-height: 0px; }
+        #header .header-content .header-content-container .title-container .u-detail {
+          position: absolute;
+          min-height: 0px;
+          min-width: 0px;
+          padding-left: 282px;
+          line-height: 300px;
+          top: -110px;
+          z-index: 1; }
+          #header .header-content .header-content-container .title-container .u-detail .u-detail-text {
+            font-family: "EB Garamond", serif;
+            color: #EC5973;
+            font-weight: 700;
+            font-size: 310px;
+            margin: 0 auto;
+            opacity: 1;
+            visibility: visible;
+            transition: visibility .5s ease, opacity .5s ease; }
+        #header .header-content .header-content-container .title-container .x-detail {
+          position: absolute;
+          min-height: 0px;
+          min-width: 0px;
+          padding-left: 335px;
+          line-height: 300px;
+          top: 75px;
+          z-index: 1; }
+          #header .header-content .header-content-container .title-container .x-detail .x-detail-text {
+            font-family: "EB Garamond", serif;
+            color: #EC5973;
+            font-weight: 700;
+            font-size: 310px;
+            margin: 0 auto;
+            opacity: 1;
+            visibility: visible;
+            transition: visibility .5s ease, opacity .5s ease; }
+        #header .header-content .header-content-container .title-container .title-text {
+          position: relative;
+          line-height: 70px;
+          z-index: 2; }
       #header .header-content .header-content-container .text-container {
         width: 100%;
         min-height: 0px;
         padding-bottom: 8px;
+        z-index: 2;
         /* Span some light gray text to dark text */
         /* Span some light gray text to dark text */ }
         #header .header-content .header-content-container .text-container .spandarkgray {
@@ -79,13 +120,13 @@
         width: 100%;
         min-height: 0px; }
       #header .header-content .header-content-container .btn-header {
-        padding: 17px 20px;
+        padding: 17px 23px;
         margin-right: 8px; }
       #header .header-content .header-content-container .btn-header-right {
         background-color: #FFFFFF;
         color: grey;
         border: 1px solid #cecece;
-        padding: 16px 20px;
+        padding: 16px 23px;
         /* Right button on header hover */ }
         #header .header-content .header-content-container .btn-header-right:hover {
           background-color: #f7f7f7; }
@@ -99,15 +140,36 @@
       background-position: 100% 100%; } }
 
 /* Set new styles depending on width */
+@media only screen and (max-width: 1370px) {
+  /* Header section */
+  #header {
+    /* Background on header section */ }
+    #header .header-background {
+      opacity: 0.1; } }
+
+/* Set new styles depending on width */
 @media only screen and (max-width: 1210px) {
   /* Header section */
   #header {
-    /* Background on header section */
     /* Text on header section */ }
-    #header .header-background {
-      opacity: 0.1; }
     #header .header-content {
       padding: 0 40px; } }
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 650px) {
+  /* Header section */
+  #header {
+    /* Text on header section */ }
+    #header .header-content {
+      /* Content for all text */ }
+      #header .header-content .header-content-container {
+        /* Title container on header section */ }
+        #header .header-content .header-content-container .title-container .u-detail {
+          display: none; }
+        #header .header-content .header-content-container .title-container .x-detail {
+          display: none; }
+        #header .header-content .header-content-container .title-container .title-text .ui-ux-red {
+          color: #EC5973; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 600px) {
@@ -125,7 +187,7 @@
     /* Background on header section */
     /* Text on header section */ }
     #header .header-background {
-      background-size: 550px 470px; }
+      background-size: 690px 600px; }
     #header .header-content {
       justify-content: center;
       text-align: center;
@@ -143,15 +205,17 @@
           #header .header-content .header-content-container .title-container .title-text {
             font-size: 30px;
             letter-spacing: -1.5px;
-            line-height: 40px; }
+            line-height: 35px; }
         #header .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
           #header .header-content .header-content-container .text-container .sub-heading-text {
             font-size: 16px;
             letter-spacing: -.5px;
-            line-height: 26px; }
+            line-height: 20px; }
         #header .header-content .header-content-container .buttons-container {
-          max-width: 350px; }
+          max-width: calc(350px - 28px);
+          display: flex;
+          justify-content: center; }
         #header .header-content .header-content-container .navLinkButtonContainer {
           width: 100%; }
         #header .header-content .header-content-container .btn-header {
@@ -165,12 +229,16 @@
 @media only screen and (max-width: 402px) {
   /* Header section */
   #header {
+    /* Background on header section */
     /* Text on header section */ }
+    #header .header-background {
+      background-size: 660px 570px; }
     #header .header-content {
       /* Content for all text */ }
       #header .header-content .header-content-container {
         /* Title container on header section */
         /* Sub-heading container on header section */
+        /* Buttons container on header section */
         /* Button on header style */
         /* Right button on header style */ }
         #header .header-content .header-content-container .title-container {
@@ -181,6 +249,8 @@
           /* Sub-heading text */ }
           #header .header-content .header-content-container .text-container .sub-heading-text {
             font-size: 14px; }
+        #header .header-content .header-content-container .buttons-container {
+          max-width: calc(350px - 70px); }
         #header .header-content .header-content-container .btn-header {
           padding: 15px 20px;
           font-size: 14px; }
@@ -192,7 +262,10 @@
 @media only screen and (max-width: 321px) {
   /* Header section */
   #header {
+    /* Background on header section */
     /* Text on header section */ }
+    #header .header-background {
+      background-size: 560px 470px; }
     #header .header-content {
       /* Content for all text */ }
       #header .header-content .header-content-container {
@@ -214,3 +287,17 @@
         #header .header-content .header-content-container .btn-header-right {
           padding: 12px 20px;
           font-size: 12px; } }
+
+@-moz-document url-prefix() {
+  /* Header section */
+  #header {
+    /* Text on header section */ }
+    #header .header-content {
+      /* Content for all text */ }
+      #header .header-content .header-content-container {
+        /* Button on header style */
+        /* Right button on header style */ }
+        #header .header-content .header-content-container .btn-header {
+          padding: 17px 26px; }
+        #header .header-content .header-content-container .btn-header-right {
+          padding: 16px 26px; } }
