@@ -39,7 +39,7 @@ class Navbar extends Component {
             <NavLink smooth exact to="/#portfolio" className="menu-text">Portfolio</NavLink>
             <NavLink smooth exact to="/#about" className="menu-text">About</NavLink>
             {/* Contact me button in menu */}
-            <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact Me</button></a>
+            <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact me</button></a>
           </div>
           <div className="hamburger-icon">
             <MenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>

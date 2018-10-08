@@ -156,6 +156,15 @@
       padding: 0 40px; } }
 
 /* Set new styles depending on width */
+@media (max-width: 767px) {
+  /* Header section */
+  #header {
+    /* Text on header section */ }
+    #header .header-content {
+      padding: 0 20px;
+      margin-top: 55px; } }
+
+/* Set new styles depending on width */
 @media only screen and (max-width: 650px) {
   /* Header section */
   #header {
@@ -193,7 +202,7 @@
       text-align: center;
       /* Content for all text */ }
       #header .header-content .header-content-container {
-        max-width: 400px;
+        max-width: 355px;
         /* Title container on header section */
         /* Sub-heading container on header section */
         /* Buttons container on header section */
@@ -203,24 +212,24 @@
         #header .header-content .header-content-container .title-container {
           /* Title text */ }
           #header .header-content .header-content-container .title-container .title-text {
-            font-size: 30px;
+            font-size: 42px;
             letter-spacing: -1.5px;
-            line-height: 35px; }
+            line-height: 47px; }
         #header .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
           #header .header-content .header-content-container .text-container .sub-heading-text {
-            font-size: 16px;
+            font-size: 18px;
             letter-spacing: -.5px;
-            line-height: 20px; }
+            line-height: 25px; }
         #header .header-content .header-content-container .buttons-container {
-          max-width: calc(350px - 28px);
+          max-width: calc(365px - 28px);
           display: flex;
           justify-content: center; }
         #header .header-content .header-content-container .navLinkButtonContainer {
           width: 100%; }
         #header .header-content .header-content-container .btn-header {
           margin-right: 0px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
           width: 100%; }
         #header .header-content .header-content-container .btn-header-right {
           width: 100%; } }
@@ -229,64 +238,60 @@
 @media only screen and (max-width: 402px) {
   /* Header section */
   #header {
-    /* Background on header section */
-    /* Text on header section */ }
+    min-height: 560px;
+    /* Background on header section */ }
     #header .header-background {
-      background-size: 660px 570px; }
+      background-size: 660px 570px; } }
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 365px) {
+  /* Header section */
+  #header {
+    /* Text on header section */ }
     #header .header-content {
+      justify-content: center;
+      text-align: center;
       /* Content for all text */ }
       #header .header-content .header-content-container {
+        max-width: 295px;
         /* Title container on header section */
         /* Sub-heading container on header section */
+        /* Buttons container on header section */
         /* Buttons container on header section */
         /* Button on header style */
         /* Right button on header style */ }
         #header .header-content .header-content-container .title-container {
           /* Title text */ }
           #header .header-content .header-content-container .title-container .title-text {
-            font-size: 26px; }
+            font-size: 35px;
+            letter-spacing: -1.5px;
+            line-height: 37px; }
         #header .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
           #header .header-content .header-content-container .text-container .sub-heading-text {
-            font-size: 14px; }
+            font-size: 15px;
+            letter-spacing: -.5px;
+            line-height: 22px; }
         #header .header-content .header-content-container .buttons-container {
-          max-width: calc(350px - 70px); }
+          max-width: calc(365px - 28px);
+          display: flex;
+          justify-content: center; }
+        #header .header-content .header-content-container .navLinkButtonContainer {
+          width: 100%; }
         #header .header-content .header-content-container .btn-header {
-          padding: 15px 20px;
-          font-size: 14px; }
+          margin-right: 0px;
+          margin-bottom: 5px;
+          width: 100%; }
         #header .header-content .header-content-container .btn-header-right {
-          padding: 14px 20px;
-          font-size: 14px; } }
+          width: 100%; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 321px) {
   /* Header section */
   #header {
-    /* Background on header section */
-    /* Text on header section */ }
+    /* Background on header section */ }
     #header .header-background {
-      background-size: 560px 470px; }
-    #header .header-content {
-      /* Content for all text */ }
-      #header .header-content .header-content-container {
-        /* Title container on header section */
-        /* Sub-heading container on header section */
-        /* Button on header style */
-        /* Right button on header style */ }
-        #header .header-content .header-content-container .title-container {
-          /* Title text */ }
-          #header .header-content .header-content-container .title-container .title-text {
-            font-size: 22px; }
-        #header .header-content .header-content-container .text-container {
-          /* Sub-heading text */ }
-          #header .header-content .header-content-container .text-container .sub-heading-text {
-            font-size: 12px; }
-        #header .header-content .header-content-container .btn-header {
-          padding: 13px 20px;
-          font-size: 12px; }
-        #header .header-content .header-content-container .btn-header-right {
-          padding: 12px 20px;
-          font-size: 12px; } }
+      background-size: 560px 470px; } }
 
 @-moz-document url-prefix() {
   /* Header section */
