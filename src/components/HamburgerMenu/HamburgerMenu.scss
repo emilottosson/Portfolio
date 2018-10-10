@@ -3,10 +3,11 @@
 .navbar-small {
   position: fixed;
   transform: translateY(-100%);
-  height: calc(100% - 55px);
+  height: calc(100%);
   min-height: 250px;
   width: 100%;
-  margin-top: 55px;
+  margin-top: 80px;
+  top: -80px;
   background-color: $color-white;
   z-index: 2;
   transition: transform 0.3s;

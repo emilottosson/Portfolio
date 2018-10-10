@@ -31,7 +31,13 @@
     background-position: 100% 100%;
     background-repeat: no-repeat;
     z-index: 0;
-    transition: background-position .5s ease, opacity .5s ease; }
+    transition: background-position .5s ease, background-size .5s ease, opacity .5s ease; }
+  #header .header-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #81C7BB; }
   #header .header-content {
     position: relative;
     display: flex;
@@ -54,6 +60,8 @@
       justify-content: center;
       height: 100%;
       max-width: 500px;
+      box-sizing: border-box;
+      padding-bottom: 3px;
       /* Title container on header section */
       /* Sub-heading container on header section */
       /* Buttons container on header section */

@@ -9,7 +9,8 @@ class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      hamburgerMenuOpen: false
+      hamburgerMenuOpen: false,
+      mountedNavbar: false
     };
     this.menuToggleClickHandler = this.menuToggleClickHandler.bind(this);
   }
@@ -20,13 +21,30 @@ class Navbar extends Component {
     });
   };
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState ({
+        mountedNavbar: true,
+      });
+    }, 1800);
+  }
+
   render() {
+
+    var style1 = { 
+      opacity: '1', 
+      transition: 'opacity .5s ease-in-out, transform .5s ease-in-out', 
+      transform: 'translateY(80px)'
+    }
+    var style2 = { 
+      opacity: '0' 
+    }
 
     return (
       <React.Fragment>
       {/* Navigation bar */}
-      <div className="navbar-container">
-        <div className="navbar">
+      <div className="navbar-container" style={ this.state.mountedNavbar ? style1 : style2 }>
+        <div className="navbar" >
           {/* Navbar logo container */}
           <div className="logo-container">
             {/* The logo on left in the navbar */}
@@ -46,7 +64,7 @@ class Navbar extends Component {
           </div>
         </div>
       </div>
-      <HamburgerMenu shown={this.state.hamburgerMenuOpen} toggle={this.menuToggleClickHandler}/>
+      <HamburgerMenu shown={this.state.hamburgerMenuOpen} toggle={this.menuToggleClickHandler} style={ this.state.mountedNavbar ? style1 : style2 }/>
       </React.Fragment>
     );
   }
