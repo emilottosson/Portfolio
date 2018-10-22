@@ -53,7 +53,7 @@ class Navbar extends Component {
           {/* Menu container */}
           <div className="menu-container">
             {/* The menu text */}
-            <NavLink smooth exact to="/#workflow" className="menu-text">Workflow</NavLink>
+            <NavLink exact to="/#workflow" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest'})} className="menu-text">Workflow</NavLink>
             <NavLink smooth exact to="/#portfolio" className="menu-text">Portfolio</NavLink>
             <NavLink smooth exact to="/#about" className="menu-text">About</NavLink>
             {/* Contact me button in menu */}

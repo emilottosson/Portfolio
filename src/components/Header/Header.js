@@ -42,11 +42,11 @@ class Header extends Component {
     var style1 = { 
       opacity: '1', 
       transition: 'opacity .5s ease-in-out, transform .5s ease-in-out', 
-      transform: 'translateY(3px)' 
+      transform: 'translateY(5px)' 
     }
     var style2 = { 
       opacity: '0' ,
-      transition: 'opacity .5s ease-in-out'
+      transition: 'opacity .7s ease-in-out'
     }
     var style3 = { 
       opacity: '1', 
@@ -75,7 +75,7 @@ class Header extends Component {
               <div className="text-container" style={ this.state.mountedHeaderText ? style1 : style2 }>
                 {/* Sub-heading text */}
                 <h2 className="sub-heading-text">I focus on <span className="spandarkgray">creating</span> awesome stuff.<br />
-                Think, google, stack overflow, fail. <span className="spandarkgray">Repeat.</span></h2>
+                Define, build, launch, analyse. <span className="spandarkgray">Repeat.</span></h2>
               </div>
               {/* Heading buttons container */}
               <div className="buttons-container" style={ this.state.mountedHeaderButtons ? style1 : style2 }>

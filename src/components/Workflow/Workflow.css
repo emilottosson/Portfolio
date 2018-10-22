@@ -8,9 +8,153 @@
  * Colors used in entire application
  */
 /* Base colors */
-/* Workflow container */
+/* Workflow section */
 #workflow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFF;
   width: 100%;
   height: 100vh;
-  min-height: 800px; }
+  min-height: 860px;
+  /* Workflow container */ }
+  #workflow .workflow-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    padding: 90px 20px 0px 20px;
+    box-sizing: border-box;
+    transition: padding .5s ease; }
+    #workflow .workflow-container .title-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 0px; }
+    #workflow .workflow-container .subheading-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 0px; }
+      #workflow .workflow-container .subheading-container .subheading-text {
+        color: #808080;
+        /* Span some light gray text to dark text */ }
+        #workflow .workflow-container .subheading-container .subheading-text .spandarkgray {
+          color: #383838;
+          font-weight: 500; }
+    #workflow .workflow-container .workflow-graph-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      min-height: 0px;
+      max-width: 801px;
+      width: 100%;
+      box-sizing: border-box;
+      padding-top: 50px; }
+      #workflow .workflow-container .workflow-graph-container .picture-container {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        min-height: 187px;
+        width: 100%; }
+        #workflow .workflow-container .workflow-graph-container .picture-container .step {
+          height: 187px;
+          width: 135px; }
+          #workflow .workflow-container .workflow-graph-container .picture-container .step .step-title {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 32px;
+            width: 100%;
+            margin-bottom: 20px; }
+            #workflow .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
+              margin: 0 auto;
+              color: #383838;
+              font-size: 26px;
+              font-weight: 500; }
+          #workflow .workflow-container .workflow-graph-container .picture-container .step .step-circle {
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 131px;
+            width: 131px;
+            border-radius: 135px;
+            border: 2px dashed #383838; }
+            #workflow .workflow-container .workflow-graph-container .picture-container .step .step-circle .questionmark {
+              padding-left: 7px; }
+        #workflow .workflow-container .workflow-graph-container .picture-container .arrow {
+          height: 187px;
+          width: 87px;
+          padding-top: 109.5px;
+          box-sizing: border-box; }
+          #workflow .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 10px;
+            width: 100%; }
+          #workflow .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left {
+            position: relative;
+            display: none;
+            align-items: center;
+            height: 10px;
+            width: 100%;
+            background-color: black; }
+      #workflow .workflow-container .workflow-graph-container .repeat-container {
+        padding: 0px 60px 0px 60px;
+        width: 100%;
+        min-height: 0px; }
+      #workflow .workflow-container .workflow-graph-container .graphText-container {
+        min-height: 0px;
+        width: 100%; }
+        #workflow .workflow-container .workflow-graph-container .graphText-container .graph-text {
+          margin: 0 auto;
+          color: #808080;
+          font-weight: 500;
+          font-size: 15px;
+          padding-left: 61px; }
+    #workflow .workflow-container .secondGraphText-container {
+      text-align: center;
+      min-height: 0px;
+      width: 100%;
+      padding: 50px 0px 10px 0px; }
+      #workflow .workflow-container .secondGraphText-container .graph-second-text {
+        color: #808080;
+        font-size: 17px;
+        padding: 0px 264.5px 0px 264.5px;
+        /* Span some light gray text to dark text */ }
+        #workflow .workflow-container .secondGraphText-container .graph-second-text .spandarkgray {
+          color: #383838;
+          font-weight: 500; }
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 1210px) {
+  /* Workflow section */
+  #workflow {
+    /* Workflow container */ }
+    #workflow .workflow-container {
+      padding: 90px 40px 0px 40px; } }
+
+/* Set new styles depending on width */
+@media (max-width: 767px) {
+  /* Workflow section */
+  #workflow {
+    /* Workflow container */ }
+    #workflow .workflow-container {
+      padding: 90px 20px 0px 20px; } }
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 500px) {
+  /* Workflow section */
+  #workflow {
+    min-height: 560px; } }

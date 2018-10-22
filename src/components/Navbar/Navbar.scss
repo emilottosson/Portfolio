@@ -24,9 +24,6 @@
     padding: 0 20px;
     transition: padding .5s ease;
 
-    
-    
-
     /* Navbar heading container */
     .logo-container {
       display: flex;
@@ -60,6 +57,7 @@
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
+        font-weight: 500;
 
         /* Menu text hover */
         &:hover {

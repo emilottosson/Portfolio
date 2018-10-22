@@ -61,7 +61,7 @@
       height: 100%;
       max-width: 500px;
       box-sizing: border-box;
-      padding-bottom: 3px;
+      padding-bottom: 5px;
       /* Title container on header section */
       /* Sub-heading container on header section */
       /* Buttons container on header section */
@@ -230,7 +230,7 @@
             letter-spacing: -.5px;
             line-height: 25px; }
         #header .header-content .header-content-container .buttons-container {
-          max-width: calc(365px - 28px);
+          max-width: calc(365px - 65px);
           display: flex;
           justify-content: center; }
         #header .header-content .header-content-container .navLinkButtonContainer {
@@ -281,7 +281,7 @@
             letter-spacing: -.5px;
             line-height: 22px; }
         #header .header-content .header-content-container .buttons-container {
-          max-width: calc(365px - 28px);
+          max-width: calc(365px - 118px);
           display: flex;
           justify-content: center; }
         #header .header-content .header-content-container .navLinkButtonContainer {

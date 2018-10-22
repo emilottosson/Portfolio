@@ -57,6 +57,7 @@
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
+        font-weight: 500;
         /* Menu text hover */ }
         .navbar-container .navbar .menu-container .menu-text:hover {
           color: #383838; }
