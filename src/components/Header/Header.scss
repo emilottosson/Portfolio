@@ -214,8 +214,8 @@
 
     /* Text on header section */
     .header-content{
-      padding: 0 20px;
-      margin-top: 55px;
+      padding: 55px 20px 0px 20px;
+      box-sizing: border-box;
     }
   }
 }
@@ -273,7 +273,7 @@
 
   /* Header section */
   #header {
-    min-height: 560px;
+    min-height: 565px;
 
     /* Background on header section */
     .header-background {
@@ -344,7 +344,6 @@
 
   /* Header section */
   #header {
-    min-height: 560px;
 
     /* Background on header section */
     .header-background {
@@ -374,7 +373,6 @@
           /* Title text */
           .title-text {
             font-size: 35px;
-            letter-spacing: -1.5px;
             line-height: 37px;
           }
         }
@@ -385,7 +383,6 @@
           /* Sub-heading text */
           .sub-heading-text {
             font-size: 15px;
-            letter-spacing: -.5px;
             line-height: 22px;
           }
         }

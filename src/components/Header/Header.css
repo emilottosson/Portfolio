@@ -169,8 +169,8 @@
   #header {
     /* Text on header section */ }
     #header .header-content {
-      padding: 0 20px;
-      margin-top: 55px; } }
+      padding: 55px 20px 0px 20px;
+      box-sizing: border-box; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 650px) {
@@ -200,7 +200,7 @@
 @media only screen and (max-width: 500px) {
   /* Header section */
   #header {
-    min-height: 560px;
+    min-height: 565px;
     /* Background on header section */
     /* Text on header section */ }
     #header .header-background {
@@ -246,7 +246,6 @@
 @media only screen and (max-width: 402px) {
   /* Header section */
   #header {
-    min-height: 560px;
     /* Background on header section */ }
     #header .header-background {
       background-size: 660px 570px; } }
@@ -272,13 +271,11 @@
           /* Title text */ }
           #header .header-content .header-content-container .title-container .title-text {
             font-size: 35px;
-            letter-spacing: -1.5px;
             line-height: 37px; }
         #header .header-content .header-content-container .text-container {
           /* Sub-heading text */ }
           #header .header-content .header-content-container .text-container .sub-heading-text {
             font-size: 15px;
-            letter-spacing: -.5px;
             line-height: 22px; }
         #header .header-content .header-content-container .buttons-container {
           max-width: calc(365px - 118px);

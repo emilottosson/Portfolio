@@ -75,7 +75,7 @@ class Header extends Component {
               <div className="text-container" style={ this.state.mountedHeaderText ? style1 : style2 }>
                 {/* Sub-heading text */}
                 <h2 className="sub-heading-text">I focus on <span className="spandarkgray">creating</span> awesome stuff.<br />
-                Define, build, launch, analyse. <span className="spandarkgray">Repeat.</span></h2>
+                Define, build, launch, analyze. <span className="spandarkgray">Repeat.</span></h2>
               </div>
               {/* Heading buttons container */}
               <div className="buttons-container" style={ this.state.mountedHeaderButtons ? style1 : style2 }>

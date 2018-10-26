@@ -50,6 +50,7 @@ body {
     letter-spacing: -.3px;
     opacity: 0.9;
     font-size: 20px;
+    line-height: 25px;
     color: #FFFFFF; }
   body .btn {
     font-family: "Maven Pro", sans-serif;
