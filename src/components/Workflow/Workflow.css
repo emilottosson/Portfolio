@@ -194,6 +194,12 @@
           #workflow .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text .spandarkgray {
             color: #383838;
             font-weight: 500; }
+  #workflow #portfolio-scroll-anchor {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    visibility: hidden; }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 1210px) {
@@ -234,6 +240,12 @@
       padding: 50px 40px 10px 40px; }
     #workflow .workflow-container .repeat-container {
       display: none; } }
+
+/* Set new styles depending on width */
+@media (max-width: 767px) {
+  /* Header section */
+  #workflow #portfolio-scroll-anchor {
+    height: 55px; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 500px) {

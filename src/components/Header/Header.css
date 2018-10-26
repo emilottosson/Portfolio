@@ -138,6 +138,12 @@
         /* Right button on header hover */ }
         #header .header-content .header-content-container .btn-header-right:hover {
           background-color: #f7f7f7; }
+  #header #workflow-scroll-anchor {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    visibility: hidden; }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 1500px) {
@@ -170,7 +176,9 @@
     /* Text on header section */ }
     #header .header-content {
       padding: 55px 20px 0px 20px;
-      box-sizing: border-box; } }
+      box-sizing: border-box; }
+    #header #workflow-scroll-anchor {
+      height: 55px; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 650px) {

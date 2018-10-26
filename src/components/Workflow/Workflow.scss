@@ -249,6 +249,14 @@
       }
     }
   }
+
+  #portfolio-scroll-anchor {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    visibility: hidden;
+  }
 }
 
 /* Set new styles depending on width */
@@ -328,6 +336,18 @@
       .repeat-container {
         display: none;
       }    
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media(max-width: 767px) {
+
+  /* Header section */
+  #workflow {
+
+    #portfolio-scroll-anchor {
+      height: 55px;
     }
   }
 }

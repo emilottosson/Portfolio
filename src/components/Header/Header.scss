@@ -165,6 +165,14 @@
       }
     }
   }
+
+  #workflow-scroll-anchor {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    visibility: hidden;
+  }
 }
 
 /* Set new styles depending on width */
@@ -216,6 +224,10 @@
     .header-content{
       padding: 55px 20px 0px 20px;
       box-sizing: border-box;
+    }
+
+    #workflow-scroll-anchor {
+      height: 55px;
     }
   }
 }

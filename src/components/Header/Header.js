@@ -85,6 +85,7 @@ class Header extends Component {
               </div>
             </div>
           </div>
+        <div id="workflow-scroll-anchor"></div>
       </div>
     );
   }

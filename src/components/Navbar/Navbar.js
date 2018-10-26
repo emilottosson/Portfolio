@@ -53,9 +53,9 @@ class Navbar extends Component {
           {/* Menu container */}
           <div className="menu-container">
             {/* The menu text */}
-            <NavLink smooth exact to="/#workflow" className="menu-text">Workflow</NavLink>
-            <NavLink smooth exact to="/#portfolio" className="menu-text">Portfolio</NavLink>
-            <NavLink smooth exact to="/#about" className="menu-text">About</NavLink>
+            <NavLink exact to="/#workflow-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">Workflow</NavLink>
+            <NavLink exact to="/#portfolio-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">Portfolio</NavLink>
+            <NavLink exact to="/#about-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">About</NavLink>
             {/* Contact me button in menu */}
             <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact me</button></a>
           </div>
