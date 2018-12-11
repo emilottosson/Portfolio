@@ -16,8 +16,8 @@ class Navbar extends Component {
   }
 
   menuToggleClickHandler() {
-    this.setState((prevState) => {
-      return {hamburgerMenuOpen: !prevState.hamburgerMenuOpen};
+    this.setState( {
+      hamburgerMenuOpen: !this.state.hamburgerMenuOpen
     });
   };
 
@@ -45,10 +45,13 @@ class Navbar extends Component {
       {/* Navigation bar */}
       <div className="navbar-container" style={ this.state.mountedNavbar ? style1 : style2 }>
         <div className="navbar" >
+          <div className="hamburger-icon">
+            <MenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>
+          </div>
           {/* Navbar logo container */}
           <div className="logo-container">
             {/* The logo on left in the navbar */}
-            <NavLink smooth to="/#header" className="navbar-logo">EMIL OTTOSSON</NavLink>
+            <NavLink smooth to="/#header" className="navbar-logo" onClick={ () => this.setState({hamburgerMenuOpen: false})}>EMIL OTTOSSON</NavLink>
           </div>
           {/* Menu container */}
           <div className="menu-container">
@@ -58,9 +61,6 @@ class Navbar extends Component {
             <NavLink exact to="/#about-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">About</NavLink>
             {/* Contact me button in menu */}
             <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact me</button></a>
-          </div>
-          <div className="hamburger-icon">
-            <MenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>
           </div>
         </div>
       </div>

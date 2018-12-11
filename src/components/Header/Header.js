@@ -81,7 +81,7 @@ class Header extends Component {
               <div className="buttons-container" style={ this.state.mountedHeaderButtons ? style1 : style2 }>
                 {/* Heading Buttons */}
                 <NavLink smooth exact to="/#portfolio" className="navLinkButtonContainer"><button type="button" className="btn btn-header">See selected projects</button></NavLink>
-                <NavLink smooth exact to="/#workflow" className="navLinkButtonContainer"><button type="button" className="btn btn-header-right">More about my workflow</button></NavLink>
+                <NavLink exact to="/#workflow-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="navLinkButtonContainer"><button type="button" className="btn btn-header-right">More about my workflow</button></NavLink>
               </div>
             </div>
           </div>

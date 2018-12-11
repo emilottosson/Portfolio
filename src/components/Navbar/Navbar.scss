@@ -30,6 +30,7 @@
       align-items: center;
       height: 100%;
       min-width: 0px;
+      flex-grow: 2;
 
       /* Navbar heading */
       .navbar-logo {
@@ -39,7 +40,6 @@
         letter-spacing: 5px;
         font-size: 22px;
         color: $color-white;
-        margin-right: auto;
         text-decoration: none;
       }
     }
@@ -62,6 +62,10 @@
         /* Menu text hover */
         &:hover {
           color: $color-darkgray;
+        }
+
+        &:focus {
+          color: none;
         }
       }
     }
@@ -95,9 +99,11 @@
     .navbar {
       padding: 0 20px;
       background-color: $color-white;
+      justify-content: initial;
 
       /* Navbar heading container */
       .logo-container {
+        justify-content: center;
 
         /* Navbar heading */
         .navbar-logo {

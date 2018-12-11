@@ -1,0 +1,116 @@
+#about1-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: #B484B7;
+
+    .about1-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        text-align: center;
+        align-content: center;
+        height: 100%;
+        max-width: 1170px;
+        width: 100%;
+
+        .title-container {
+            max-width: 860px;
+
+            .title-text {
+                color: #fff;
+            }
+        }
+
+        .subheading-container {
+            max-width: 800px;
+
+            .subheading-text {
+                padding-bottom: 80px;
+                color: #e4cae5;
+
+                .spanwhite {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    #about1-container {
+    
+        .about1-content {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #about1-container {
+    
+        .about1-content {
+            padding: 55px 20px 0px 20px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 500px) {
+    #about1-container {
+
+        .about1-content {
+
+            .title-container {
+                max-width: 355px;
+
+                .title-text {
+                    font-size: 42px;
+                    letter-spacing: -1.5px;
+                    line-height: 47px;
+                }
+            }
+
+            .subheading-container {
+                max-width: 355px;
+
+                .subheading-text {
+                    font-size: 18px;
+                    letter-spacing: -.5px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 365px) {
+    #about1-container {
+
+        .about1-content {
+
+            .title-container {
+                max-width: 295px;
+
+                .title-text {
+                    font-size: 35px;
+                    line-height: 37px;
+                }
+            }
+
+            .subheading-container {
+                max-width: 295px;
+
+                .subheading-text {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

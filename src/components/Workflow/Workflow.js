@@ -13,6 +13,7 @@ import questionmark from '../../svgs/questionmark.svg';
 import repeat from '../../svgs/repeat.svg';
 
 class Workflow extends Component {
+
   render() {
     return (
       // Workflow section

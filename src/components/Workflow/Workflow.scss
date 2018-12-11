@@ -62,12 +62,13 @@
       max-width: 801px;
       width: 100%;
       box-sizing: border-box;
-      padding-top: 50px;
+      padding-top: 40px;
 
       .picture-container {
         position: relative;
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         min-height: 172px;
         width: 100%;
 
@@ -233,12 +234,12 @@
         text-align: center;
         min-height: 0px;
         width: 100%;
-        padding: 50px 100px 10px 100px;
+        padding: 40px 100px 10px 100px;
   
         .graph-second-text {
           color: $color-lightgray;
           font-size: 18px;
-          line-height: 25px;
+          line-height: 28px;
   
           /* Span some light gray text to dark text */
           .spandarkgray {
@@ -372,7 +373,7 @@
 
         .subheading-text {
           font-size: 18px;
-          line-height: 25px;
+          line-height: 28px;
           letter-spacing: -.5px;
         }
       }
@@ -405,7 +406,7 @@
 }
 
 /* Set new styles depending on width */
-@media only screen and (max-width: 358px) {
+@media only screen and (max-width: 365px) {
 
   /* Workflow section */
   #workflow {
@@ -483,6 +484,40 @@
           .graph-second-text {
             font-size: 15px;
             line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 319px) {
+
+  /* Workflow section */
+  #workflow {
+
+        /* Workflow container */
+    .workflow-container {
+
+      .workflow-graph-container {
+
+        .picture-container {
+
+          .arrow {
+            display: none;
+          }
+
+          .arrowup-smallscreen {
+            display: none;
+          }
+
+          .arrowdown-smallscreen {
+            display: none;
+          }
+
+          .filling-div {
+            display: none;
           }
         }
       }
