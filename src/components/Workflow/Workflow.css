@@ -93,7 +93,9 @@
             border-radius: 135px;
             border: 2px dashed #383838; }
             #workflow .workflow-container .workflow-graph-container .picture-container .step .step-circle .questionmark {
-              padding-left: 7px; }
+              padding-left: 3px; }
+            #workflow .workflow-container .workflow-graph-container .picture-container .step .step-circle .build {
+              padding-left: 5px; }
         #workflow .workflow-container .workflow-graph-container .picture-container .arrow {
           height: 172px;
           width: 87px;

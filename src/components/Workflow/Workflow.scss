@@ -104,7 +104,11 @@
             border: 2px dashed $color-darkgray;
 
             .questionmark {
-              padding-left: 7px;
+              padding-left: 3px;
+            }
+
+            .build {
+              padding-left: 5px;
             }
           }
         }

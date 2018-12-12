@@ -33,7 +33,7 @@ class Workflow extends Component {
                     <h2 className="title-text">Define</h2>
                   </div>
                   <div className="step-circle">
-                    <img src={questionmark} className="questionmark" height="100" width="100" alt='icon' />
+                    <img src={questionmark} className="questionmark" height="70" width="70" alt='icon' />
                   </div>
                 </div>
                 <div className="arrow">
@@ -49,7 +49,7 @@ class Workflow extends Component {
                     <h2 className="title-text">Build</h2>
                   </div>
                   <div className="step-circle">
-                    <img src={build} height="70" width="70" alt='icon' />
+                    <img src={build} className="build" height="70" width="70" alt='icon' />
                   </div>
                 </div>
                 <div className="arrowright-bigscreen">
