@@ -1,9 +1,11 @@
 #about1-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  padding: 90px 0;
+  box-sizing: border-box;
   background-color: #B484B7; }
   #about1-container .about1-content {
     display: flex;
@@ -16,16 +18,27 @@
     max-width: 1170px;
     width: 100%; }
     #about1-container .about1-content .title-container {
-      max-width: 860px; }
+      display: flex;
+      justify-content: center;
+      width: 100%; }
       #about1-container .about1-content .title-container .title-text {
+        max-width: 720px;
         color: #fff; }
     #about1-container .about1-content .subheading-container {
-      max-width: 800px; }
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0px 0px 8px 0px; }
       #about1-container .about1-content .subheading-container .subheading-text {
-        padding-bottom: 80px;
+        max-width: 712px;
         color: #e4cae5; }
         #about1-container .about1-content .subheading-container .subheading-text .spanwhite {
           color: #fff; }
+    #about1-container .about1-content .btn-about {
+      color: #B484B7;
+      background-color: #fff; }
+      #about1-container .about1-content .btn-about:hover {
+        color: #8c668e; }
 
 @media only screen and (max-width: 1210px) {
   #about1-container .about1-content {
@@ -33,7 +46,7 @@
 
 @media only screen and (max-width: 767px) {
   #about1-container .about1-content {
-    padding: 55px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
     box-sizing: border-box; } }
 
 /* Set new styles depending on width */
@@ -45,21 +58,17 @@
       letter-spacing: -1.5px;
       line-height: 47px; }
   #about1-container .about1-content .subheading-container {
-    max-width: 355px; }
+    max-width: 370px; }
     #about1-container .about1-content .subheading-container .subheading-text {
       font-size: 18px;
       letter-spacing: -.5px;
-      line-height: 25px; } }
+      line-height: 28px; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
-  #about1-container .about1-content .title-container {
-    max-width: 295px; }
-    #about1-container .about1-content .title-container .title-text {
-      font-size: 35px;
-      line-height: 37px; }
-  #about1-container .about1-content .subheading-container {
-    max-width: 295px; }
-    #about1-container .about1-content .subheading-container .subheading-text {
-      font-size: 15px;
-      line-height: 22px; } }
+  #about1-container .about1-content .title-container .title-text {
+    font-size: 35px;
+    line-height: 37px; }
+  #about1-container .about1-content .subheading-container .subheading-text {
+    font-size: 15px;
+    line-height: 22px; } }

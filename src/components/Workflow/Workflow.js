@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Workflow.css';
-import build from '../../svgs/build1.svg';
-import launch from '../../svgs/launch1.svg';
-import analyze from '../../svgs/analyze1.svg';
+import build from '../../svgs/build.svg';
+import launch from '../../svgs/launch.svg';
+import analyze from '../../svgs/analyze.svg';
 import arrowright from '../../svgs/arrow-right.svg';
 import arrowleft from '../../svgs/arrow-left.svg';
 import arrowleftsmall from '../../svgs/arrow-left-small.svg';
@@ -49,7 +49,7 @@ class Workflow extends Component {
                     <h2 className="title-text">Build</h2>
                   </div>
                   <div className="step-circle">
-                    <img src={build} className="build" height="70" width="70" alt='icon' />
+                    <img src={build} height="70" width="70" alt='icon' />
                   </div>
                 </div>
                 <div className="arrowright-bigscreen">
