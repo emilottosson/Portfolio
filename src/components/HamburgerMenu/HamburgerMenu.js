@@ -1,6 +1,6 @@
 import React from 'react';
 import './HamburgerMenu.css';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Link } from "react-scroll";
 
 export default function HamburgerMenu(props) {
     return (
@@ -9,9 +9,15 @@ export default function HamburgerMenu(props) {
         {/* Menu text container for small screens */}
         <div className={"menu-container-small " + (props.shown ? "shown" : "")}>
           {/* Menu text for small screens */}
-          <NavLink exact to="/#workflow-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={props.toggle} className="menu-text-small">Workflow</NavLink>
-          <NavLink exact to="/#portfolio-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={props.toggle} className="menu-text-small">Portfolio</NavLink>
-          <NavLink exact to="/#about-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} onClick={props.toggle} className="menu-text-small">About</NavLink>
+          <Link activeClass="active" className="menu-text-small" to="workflow" spy={true} smooth={true} offset= {-55} duration= {500} onClick={props.toggle}>
+              Workflow
+            </Link>
+            <Link activeClass="active" className="menu-text-small" to="portfolio" spy={true} smooth={true} offset= {-55} duration= {500} onClick={props.toggle}>
+              Portfolio
+            </Link>
+            <Link activeClass="active" className="menu-text-small" to="about1-container" spy={true} smooth={true} offset= {-55} duration= {500} onClick={props.toggle}>
+              About
+            </Link>
           <a className="menu-text-small" onClick={props.toggle} href="mailto:emil_ottosson@hotmail.com">Contact Me</a>
         </div>
       </div>

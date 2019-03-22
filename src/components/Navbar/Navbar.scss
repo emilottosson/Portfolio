@@ -67,6 +67,10 @@
         &:focus {
           color: none;
         }
+
+        &.active {
+          color: $color-darkgray;
+        }
       }
     }
 
@@ -85,6 +89,62 @@
     /* Navigation bar */
     .navbar {
       padding: 0 40px;
+    }
+  }
+}
+
+@media only screen and (width : 1024px) {
+
+  /* Navigation bar container */
+  .navbar-container {
+
+    /* Navigation bar */
+    .navbar {
+
+      /* Menu container */
+      .menu-container {
+
+        /* Menu text */
+        .menu-text {
+
+          /* Menu text hover */
+          &:hover {
+            color: $color-white;
+          }
+
+          &.active {
+            color: $color-darkgray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width : 768px) {
+
+  /* Navigation bar container */
+  .navbar-container {
+
+    /* Navigation bar */
+    .navbar {
+
+      /* Menu container */
+      .menu-container {
+
+        /* Menu text */
+        .menu-text {
+
+          /* Menu text hover */
+          &:hover {
+            color: $color-white;
+          }
+
+          &.active {
+            color: $color-darkgray;
+          }
+        }
+      }
     }
   }
 }

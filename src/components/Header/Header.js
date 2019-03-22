@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Link } from "react-scroll";
 
 class Header extends Component {
 
@@ -80,12 +80,15 @@ class Header extends Component {
               {/* Heading buttons container */}
               <div className="buttons-container" style={ this.state.mountedHeaderButtons ? style1 : style2 }>
                 {/* Heading Buttons */}
-                <NavLink smooth exact to="/#portfolio" className="navLinkButtonContainer"><button type="button" className="btn btn-header">See selected projects</button></NavLink>
-                <NavLink exact to="/#workflow-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="navLinkButtonContainer"><button type="button" className="btn btn-header-right">More about my workflow</button></NavLink>
+                <Link className="navLinkButtonContainer" to="portfolio" spy={true} smooth={true} offset= {-80} duration= {500}>
+                <button type="button" className="btn btn-header">See selected projects</button>
+                </Link>
+                <Link className="navLinkButtonContainer" to="workflow" spy={true} smooth={true} offset= {-80} duration= {500}>
+                  <button type="button" className="btn btn-header-right">More about my workflow</button>
+                </Link>
               </div>
             </div>
           </div>
-        <div id="workflow-scroll-anchor"></div>
       </div>
     );
   }

@@ -111,7 +111,6 @@ class Workflow extends Component {
               <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn">Let´s work together</button></a>
             </div>
           </div>
-          <div id="portfolio-scroll-anchor"></div>
         </div>
     )
   }

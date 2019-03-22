@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import MenuToggleButton from '../HamburgerMenu/MenuToggleButton';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { Link } from "react-scroll";
 
 
 class Navbar extends Component {
@@ -51,14 +51,22 @@ class Navbar extends Component {
           {/* Navbar logo container */}
           <div className="logo-container">
             {/* The logo on left in the navbar */}
-            <NavLink smooth to="/#header" className="navbar-logo" onClick={ () => this.setState({hamburgerMenuOpen: false})}>EMIL OTTOSSON</NavLink>
+            <Link activeClass="active" className="navbar-logo" to="header" spy={true} smooth={true} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+              EMIL OTTOSSON
+            </Link>
           </div>
           {/* Menu container */}
           <div className="menu-container">
             {/* The menu text */}
-            <NavLink exact to="/#workflow-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">Workflow</NavLink>
-            <NavLink exact to="/#portfolio-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">Portfolio</NavLink>
-            <NavLink exact to="/#about-scroll-anchor" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="menu-text">About</NavLink>
+            <Link activeClass="active" className="menu-text" to="workflow" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+              Workflow
+            </Link>
+            <Link activeClass="active" className="menu-text" to="portfolio" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+              Portfolio
+            </Link>
+            <Link activeClass="active" className="menu-text" to="about1-container" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+              About
+            </Link>
             {/* Contact me button in menu */}
             <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact me</button></a>
           </div>

@@ -63,6 +63,8 @@
           color: #383838; }
         .navbar-container .navbar .menu-container .menu-text:focus {
           color: none; }
+        .navbar-container .navbar .menu-container .menu-text.active {
+          color: #383838; }
     .navbar-container .navbar .hamburger-icon {
       display: none; }
 
@@ -73,6 +75,36 @@
     /* Navigation bar */ }
     .navbar-container .navbar {
       padding: 0 40px; } }
+
+@media only screen and (width: 1024px) {
+  /* Navigation bar container */
+  .navbar-container {
+    /* Navigation bar */ }
+    .navbar-container .navbar {
+      /* Menu container */ }
+      .navbar-container .navbar .menu-container {
+        /* Menu text */ }
+        .navbar-container .navbar .menu-container .menu-text {
+          /* Menu text hover */ }
+          .navbar-container .navbar .menu-container .menu-text:hover {
+            color: #FFFFFF; }
+          .navbar-container .navbar .menu-container .menu-text.active {
+            color: #383838; } }
+
+@media only screen and (width: 768px) {
+  /* Navigation bar container */
+  .navbar-container {
+    /* Navigation bar */ }
+    .navbar-container .navbar {
+      /* Menu container */ }
+      .navbar-container .navbar .menu-container {
+        /* Menu text */ }
+        .navbar-container .navbar .menu-container .menu-text {
+          /* Menu text hover */ }
+          .navbar-container .navbar .menu-container .menu-text:hover {
+            color: #FFFFFF; }
+          .navbar-container .navbar .menu-container .menu-text.active {
+            color: #383838; } }
 
 /* Set new styles depending on width */
 @media (max-width: 767px) {
