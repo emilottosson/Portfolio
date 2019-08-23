@@ -64,7 +64,7 @@ class Navbar extends Component {
             <Link activeClass="active" className="menu-text" to="portfolio" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Portfolio
             </Link>
-            <Link activeClass="active" className="menu-text" to="about1-container" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <Link activeClass="active" className="menu-text" to="about-container" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               About
             </Link>
             {/* Contact me button in menu */}

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './Workflow.css';
-import build from '../../svgs/build.svg';
-import launch from '../../svgs/launch.svg';
-import analyze from '../../svgs/analyze.svg';
+//import questionmark from '../../svgs/questionmark.svg';
+//import build from '../../svgs/build.svg';
+//import launch from '../../svgs/launch.svg';
+//import analyze from '../../svgs/analyze.svg';
 import arrowright from '../../svgs/arrow-right.svg';
 import arrowleft from '../../svgs/arrow-left.svg';
 import arrowleftsmall from '../../svgs/arrow-left-small.svg';
 import arrowrightsmall from '../../svgs/arrow-right-small.svg';
 import arrowup from '../../svgs/arrow-up.svg';
 import arrowdown from '../../svgs/arrow-down.svg';
-import questionmark from '../../svgs/questionmark.svg';
 import repeat from '../../svgs/repeat.svg';
 
 class Workflow extends Component {
@@ -24,7 +24,7 @@ class Workflow extends Component {
               <h1 className="title-text">Small sprints, big results</h1>
             </div>
             <div className="subheading-container">
-              <h2 className="subheading-text">When I work on a project I like the <span className="spandarkgray">lean</span> methodology using <span className="spandarkgray">sprints</span>.</h2>
+              <h2 className="subheading-text">When I work on a project I like the <span className="spanwhite">lean</span> methodology using <span className="spanwhite">sprints</span>.</h2>
             </div>
             <div className="workflow-graph-container">
               <div className="picture-container">
@@ -33,15 +33,16 @@ class Workflow extends Component {
                     <h2 className="title-text">Define</h2>
                   </div>
                   <div className="step-circle">
-                    <img src={questionmark} className="questionmark" height="70" width="70" alt='icon' />
+                    <div className="middle-circle"></div>
+                    {/*<img src={questionmark} className="questionmark" height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="arrow">
                   <div className="arrow-right">
-                    <img src={arrowright} height="10" width="87" alt='icon' />
+                    <img src={arrowright} height="10" width="154" alt='icon' />
                   </div>
                   <div className="arrow-right-smallest">
-                    <img src={arrowrightsmall} height="10" width="50" alt='icon' />
+                    <img src={arrowrightsmall} height="10" width="117" alt='icon' />
                   </div>
                 </div>
                 <div className="step">
@@ -49,12 +50,13 @@ class Workflow extends Component {
                     <h2 className="title-text">Build</h2>
                   </div>
                   <div className="step-circle">
-                    <img src={build} height="70" width="70" alt='icon' />
+                    <div className="middle-circle"></div>
+                    {/*<img src={build} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="arrowright-bigscreen">
                   <div className="arrow-right-bigscreen">
-                    <img src={arrowright} height="10" width="87" alt='icon' />
+                    <img src={arrowright} height="10" width="154" alt='icon' />
                   </div>
                 </div>
                 <div className="arrowup-smallscreen">
@@ -67,46 +69,68 @@ class Workflow extends Component {
                 </div>
                 <div className="arrowdown-smallscreen">
                   <div className="arrow-down">
-                    <img src={arrowdown} height="87" width="10" alt='icon' />
+                    <img src={arrowdown} height="154" width="10" alt='icon' />
                   </div>
                 </div>
-                <div className="step">
+                <div className="step-bigscreen">
                   <div className="step-title">
                     <h2 className="title-text">Launch</h2>
                   </div>
                   <div className="step-circle">
-                  <img src={launch} height="70" width="70" alt='icon' />
+                    <div className="middle-circle"></div>
+                    {/*<img src={launch} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
-                <div className="arrow">
-                  <div className="arrow-right-bigscreen">
-                    <img src={arrowright} height="10" width="87" alt='icon' />
-                  </div>
-                  <div className="arrow-left">
-                    <img src={arrowleft} height="10" width="87" alt='icon' />
-                  </div>
-                  <div className="arrow-left-smallest">
-                    <img src={arrowleftsmall} height="10" width="50" alt='icon' />
-                  </div>
-                </div>
-                <div className="step">
+                <div className="step-smallscreen">
                   <div className="step-title">
                     <h2 className="title-text">Analyze</h2>
                   </div>
                   <div className="step-circle">
-                  <img src={analyze} height="70" width="70" alt='icon' />
+                    <div className="middle-circle"></div>
+                    {/*<img src={analyze} height="70" width="70" alt='icon' />*/}
+                  </div>
+                </div>
+                <div className="arrow">
+                  <div className="arrow-right-bigscreen">
+                    <img src={arrowright} height="10" width="154" alt='icon' />
+                  </div>
+                  <div className="arrow-left">
+                    <img src={arrowleft} height="10" width="154" alt='icon' />
+                  </div>
+                  <div className="arrow-left-smallest">
+                    <img src={arrowleftsmall} height="10" width="117" alt='icon' />
+                  </div>
+                </div>
+                <div className="step-bigscreen">
+                  <div className="step-title">
+                    <h2 className="title-text">Analyze</h2>
+                  </div>
+                  <div className="step-circle">
+                    <div className="middle-circle"></div>
+                    {/*<img src={analyze} height="70" width="70" alt='icon' />*/}
+                  </div>
+                </div>
+                <div className="step-smallscreen">
+                  <div className="step-title">
+                    <h2 className="title-text">Launch</h2>
+                  </div>
+                  <div className="step-circle">
+                    <div className="middle-circle"></div>
+                    {/*<img src={launch} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
               </div>
               <div className="repeat-container">
-                <img src={repeat} alt='icon' />
+                <div className="repeat-picture">
+                  <img src={repeat} alt='icon' />
+                </div>
               </div>
               <div className="graphText-container">
                 <h2 className="graph-text">2 weeks sprint</h2>
                 <h2 className="graph-text">Repeat</h2>
               </div>
               <div className="secondGraphText-container">
-                <h2 className="graph-second-text">Everyday i want to learn something new that i can add to my knowledge, So that I can strive for perfection. I do this by mixing <span className="spandarkgray">different methodologies</span>. The method for a project is just the <span className="spandarkgray">starting point</span>.</h2>
+                <h2 className="graph-second-text">Everyday i want to learn something new that i can add to my knowledge, So that I can strive for perfection. I do this by mixing <span className="spanwhite">different methodologies</span>. The method for a project is just the <span className="spanwhite">starting point</span>.</h2>
               </div>
               <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn">Let´s work together</button></a>
             </div>

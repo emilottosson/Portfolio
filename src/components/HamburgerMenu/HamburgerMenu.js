@@ -15,7 +15,7 @@ export default function HamburgerMenu(props) {
             <Link activeClass="active" className="menu-text-small" to="portfolio" spy={true} smooth={true} offset= {-55} duration= {500} onClick={props.toggle}>
               Portfolio
             </Link>
-            <Link activeClass="active" className="menu-text-small" to="about1-container" spy={true} smooth={true} offset= {-55} duration= {500} onClick={props.toggle}>
+            <Link activeClass="active" className="menu-text-small" to="about-container" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={props.toggle}>
               About
             </Link>
           <a className="menu-text-small" onClick={props.toggle} href="mailto:emil_ottosson@hotmail.com">Contact Me</a>

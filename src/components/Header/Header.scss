@@ -11,11 +11,13 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
 
   /* Background on header section */
   .header-background {
     position: absolute;
     height: 100%;
+    top: 0;
     max-width: 1470px;
     width: 100%;
     background-image: url("../../pngs/background.png");
@@ -24,6 +26,19 @@
     background-repeat: no-repeat;
     z-index: 0;
     transition: background-position .5s ease, background-size .5s ease, opacity .5s ease;
+  }
+
+  .header-gradient {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: background-position .5s ease, background-size .5s ease, opacity .5s ease-in-out;
+    background-image: linear-gradient(hsla(0,0%,100%,.8),#fff);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(#fff));
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), #fff);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.8), #fff);
   }
 
   .header-overlay {
@@ -41,8 +56,7 @@
     height: 100%;
     max-width: 1170px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
     padding: 90px 40px 100px;
     align-content: center;
     flex-flow: row wrap;
@@ -67,48 +81,6 @@
         width: 100%;
         min-height: 0px;
 
-        .u-detail {
-          position: absolute;
-          min-height: 0px;
-          min-width: 0px;
-          padding-left: 282px;
-          line-height: 300px;
-          top: -110px;
-          z-index: 1;
-
-
-          .u-detail-text {
-            font-family: $font-heading;
-            color: $color-mainred;
-            font-weight: 700;
-            font-size: 310px;
-            margin: 0 auto;
-            opacity: 1;
-            visibility: visible;
-            transition: visibility .5s ease, opacity .5s ease;
-          }
-        }
-        .x-detail {
-          position: absolute;
-          min-height: 0px;
-          min-width: 0px;
-          padding-left: 335px;
-          line-height: 300px;
-          top: 75px;
-          z-index: 1;
-
-          .x-detail-text {
-            font-family: $font-heading;
-            color: $color-mainred;
-            font-weight: 700;
-            font-size: 310px;
-            margin: 0 auto;
-            opacity: 1;
-            visibility: visible;
-            transition: visibility .5s ease, opacity .5s ease;
-          }
-        }
-
         .title-text {
           position: relative;
           line-height: 70px;
@@ -123,10 +95,8 @@
         padding-bottom: 8px;
         z-index: 2;
 
-        /* Span some light gray text to dark text */
-        .spandarkgray {
-          color: $color-darkgray;
-          font-weight: 500;
+        .sub-heading-text {
+          color: $color-lightgray;
         }
 
         /* Span some light gray text to dark text */
@@ -174,6 +144,12 @@
   }
 }
 
+#header:after {
+  content:'';
+  min-height:inherit;
+  font-size:0;
+}
+
 /* Set new styles depending on width */
 @media only screen and (max-width: 1500px) {
 
@@ -193,9 +169,8 @@
   /* Header section */
   #header {
 
-    /* Background on header section */
-    .header-background {
-      opacity: 0.1;
+    .header-gradient {
+      opacity: 1;
     }
   }
 }

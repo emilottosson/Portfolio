@@ -35,6 +35,8 @@
       transition: opacity 0.5s 0.1s; }
       .navbar-small .menu-container-small .menu-text-small.active {
         color: #383838; }
+    .navbar-small .menu-container-small .menu-text-small:hover {
+      color: #383838; }
 
 /* Set new styles depending on width */
 @media (min-width: 768px) {

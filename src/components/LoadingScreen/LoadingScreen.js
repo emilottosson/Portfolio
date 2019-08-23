@@ -9,7 +9,6 @@ class LoadingScreen extends Component {
       loop: true,
       autoplay: true,
       animationData: animationData,
-
     };
 
     return (

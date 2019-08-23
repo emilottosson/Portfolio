@@ -3,8 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Workflow from './components/Workflow/Workflow';
-import About1 from './components/About1/About1';
-import About2 from './components/About2/About2';
+import About from './components/About/About';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import LoadedSlide from './components/LoadedSlide/LoadedSlide';
 import { MemoryRouter } from 'react-router'
@@ -40,8 +39,7 @@ class App extends Component {
               <Navbar />
               <Header />
               <Workflow />
-              <About1 />
-              <About2 />
+              <About />
           </div>
         :
           <LoadingScreen />

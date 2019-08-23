@@ -6,7 +6,7 @@
 .toggle-button {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   height: 23px;
   width: 23px;
   background: transparent;
@@ -16,15 +16,21 @@
   box-sizing: border-box;
   /* Hamburger menu focus */
   /* Hamburger menu lines hover */
+  /* Hamburger menu lines */
   /* Hamburger menu lines */ }
   .toggle-button:focus {
     outline: none; }
-  .toggle-button:hover .toggle-button-line {
+  .toggle-button:hover .toggle-button-line, .toggle-button:hover .toggle-button-line-first {
     background: #383838; }
   .toggle-button .toggle-button-line {
     width: 23px;
     height: 2px;
     background: #9b9b9b; }
+  .toggle-button .toggle-button-line-first {
+    width: 23px;
+    height: 2px;
+    background: #9b9b9b;
+    margin-bottom: 5px; }
 
 .toggle-button-cross {
   position: relative;

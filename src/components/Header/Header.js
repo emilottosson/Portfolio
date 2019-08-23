@@ -57,6 +57,7 @@ class Header extends Component {
       <div id="header">
         {/* Header background */}
         <div className="header-background"></div>
+        <div className="header-gradient"></div>
         <div className="header-overlay" style={ this.state.mountedHeaderOverlay ? style2 : style3 }></div>
           {/* Header content container */}
           <div className="header-content">
@@ -64,10 +65,6 @@ class Header extends Component {
             <div className="header-content-container">
               {/* Title text container */}
               <div className="title-container" style={ this.state.mountedHeaderTitle ? style1 : style2 }>
-              {/*
-              <div className="u-detail"><p className="u-detail-text">U</p></div>
-              <div className="x-detail"><p className="x-detail-text">X</p></div>
-              */}
                 {/* Title text on heading section */}
                 <h1 className="title-text">I´m Emil Ottosson, an Swedish {/*<span className="ui-ux-red">*/}UI/UX{/*</span>*/} designer currently based in Umeå, Sweden</h1>
               </div>

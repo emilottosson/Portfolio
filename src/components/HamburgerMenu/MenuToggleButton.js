@@ -8,9 +8,11 @@ class MenuToggleButton extends Component {
         {/* Container for hamburger menu*/}
         {!this.props.shown ? <button className="toggle-button" onClick={this.props.click}>
 
+          {/* To make a 3 line hamburger menu, switch to three "toggle-button-line" 
+            and add justify-content: space-between to "toggle-button"*/}
+          <div className="toggle-button-line-first" />
           <div className="toggle-button-line" />
-          <div className="toggle-button-line" />
-          <div className="toggle-button-line" />
+          {/*<div className="toggle-button-line" />*/}
         </button> :
         <button className="toggle-button-cross" onClick={this.props.click}>
 

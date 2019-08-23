@@ -4,7 +4,8 @@
 .toggle-button {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  //justify-content: space-around; add for 3 line menu
+  justify-content: center;
   height: 23px;
   width: 23px;
   background: transparent;
@@ -19,7 +20,7 @@
   }
 
   /* Hamburger menu lines hover */
-  &:hover .toggle-button-line {
+  &:hover .toggle-button-line, &:hover .toggle-button-line-first {
     background: $color-darkgray;
   }
 
@@ -29,6 +30,14 @@
     height: 2px;
     background: $color-lightgray;
   }
+
+    /* Hamburger menu lines */
+    .toggle-button-line-first {
+      width: 23px;
+      height: 2px;
+      background: $color-lightgray;
+      margin-bottom: 5px;
+    }
 }
 
 .toggle-button-cross {
