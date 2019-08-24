@@ -295,6 +295,11 @@
           #workflow .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text .spanwhite {
             color: #FFFFFF;
             font-weight: 500; }
+      #workflow .workflow-container .workflow-graph-container .btn {
+        background-color: white;
+        color: #383838; }
+      #workflow .workflow-container .workflow-graph-container .btn:hover {
+        color: #000000; }
   #workflow #portfolio-scroll-anchor {
     position: absolute;
     bottom: 0;

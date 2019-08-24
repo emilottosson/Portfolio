@@ -107,6 +107,11 @@
         #about-container #about2-container .map .subheading2-container .subheading2-text .spandarkgrey {
           color: #383838;
           font-weight: 500; }
+    #about-container #about2-container .map .btn-about2 {
+      background-color: #595ca2;
+      color: white; }
+    #about-container #about2-container .map .btn-about2:hover {
+      background-color: #6164b1; }
 
 #about-container #about2-container:after {
   content: '';
