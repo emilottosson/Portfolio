@@ -35,7 +35,7 @@ class LoadedSlide extends Component {
           position: 'absolute',
           zIndex: '5',
           background: '#f4f4f4',
-          width: '100vw',
+          width: '100%',
           height: this.state.animate ? 0 : '100vh',
           transition: 'height .4s ease-out',
         } }

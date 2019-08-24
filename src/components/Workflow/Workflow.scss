@@ -415,7 +415,7 @@
 }
 
 /* Set new styles depending on width */
-@media(max-width: 881px) {
+@media(max-width: 910px) {
 
   /* Workflow section */
   #workflow {
@@ -532,8 +532,9 @@
       }
 
       .workflow-graph-container {
-    
+
         .picture-container {
+          width: 320px;
 
           .step {
     
@@ -543,6 +544,39 @@
                 font-size: 24px;
               }
             }
+          }
+
+          .arrow {
+            width: 50px;
+
+            .arrow-right {
+              display: none;
+            }
+
+            .arrow-right-smallest {
+              display: flex;
+            }
+
+            .arrow-left {
+              display: none;
+            }
+
+            .arrow-left-smallest {
+              display: flex;
+            }
+          }
+
+          .arrowup-smallscreen {
+            display: flex;
+          }
+
+          .arrowdown-smallscreen {
+            display: flex;
+          }
+
+          .filling-div {
+            width: 50px;
+            display: block;
           }
         }
   
@@ -586,7 +620,6 @@
       .workflow-graph-container {
 
         .picture-container {
-          width: 320px;
 
           .step {
     
@@ -596,39 +629,6 @@
                 font-size: 21px;
               }
             }
-          }
-
-          .arrow {
-            width: 50px;
-
-            .arrow-right {
-              display: none;
-            }
-
-            .arrow-right-smallest {
-              display: flex;
-            }
-
-            .arrow-left {
-              display: none;
-            }
-
-            .arrow-left-smallest {
-              display: flex;
-            }
-          }
-
-          .arrowup-smallscreen {
-            display: flex;
-          }
-
-          .arrowdown-smallscreen {
-            display: flex;
-          }
-
-          .filling-div {
-            width: 50px;
-            display: block;
           }
         }
 
@@ -645,7 +645,7 @@
 }
 
 /* Set new styles depending on width */
-@media only screen and (max-width: 319px) {
+@media only screen and (max-width: 336px) {
 
   /* Workflow section */
   #workflow {

@@ -319,7 +319,7 @@
     padding: 90px 40px 90px 40px; } }
 
 /* Set new styles depending on width */
-@media (max-width: 881px) {
+@media (max-width: 910px) {
   /* Workflow section */
   #workflow {
     padding: 90px 0px 90px 0px;
@@ -374,27 +374,10 @@
       font-size: 18px;
       line-height: 28px;
       letter-spacing: -.5px; }
-    #workflow .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
-      font-size: 24px; }
-    #workflow .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text {
-      font-size: 16px;
-      letter-spacing: -.5px; } }
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 365px) {
-  /* Workflow section */
-  #workflow {
-    /* Workflow container */ }
-    #workflow .workflow-container .title-container .title-text {
-      font-size: 35px;
-      line-height: 37px; }
-    #workflow .workflow-container .subheading-container .subheading-text {
-      font-size: 15px;
-      line-height: 22px; }
     #workflow .workflow-container .workflow-graph-container .picture-container {
       width: 320px; }
       #workflow .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
-        font-size: 21px; }
+        font-size: 24px; }
       #workflow .workflow-container .workflow-graph-container .picture-container .arrow {
         width: 50px; }
         #workflow .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right {
@@ -413,11 +396,28 @@
         width: 50px;
         display: block; }
     #workflow .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text {
+      font-size: 16px;
+      letter-spacing: -.5px; } }
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 365px) {
+  /* Workflow section */
+  #workflow {
+    /* Workflow container */ }
+    #workflow .workflow-container .title-container .title-text {
+      font-size: 35px;
+      line-height: 37px; }
+    #workflow .workflow-container .subheading-container .subheading-text {
+      font-size: 15px;
+      line-height: 22px; }
+    #workflow .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
+      font-size: 21px; }
+    #workflow .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text {
       font-size: 15px;
       line-height: 22px; } }
 
 /* Set new styles depending on width */
-@media only screen and (max-width: 319px) {
+@media only screen and (max-width: 336px) {
   /* Workflow section */
   #workflow {
     /* Workflow container */ }

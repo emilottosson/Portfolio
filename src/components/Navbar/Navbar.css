@@ -12,7 +12,7 @@
 .navbar-container {
   position: fixed;
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 80px;
   top: -80px;
   background-color: #ffffff;
@@ -37,6 +37,8 @@
       height: 100%;
       min-width: 0px;
       flex-grow: 2;
+      box-sizing: border-box;
+      padding-right: 11.5px;
       /* Navbar heading */ }
       .navbar-container .navbar .logo-container .navbar-logo {
         display: flex;

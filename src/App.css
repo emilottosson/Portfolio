@@ -14,7 +14,7 @@
 /* Base colors */
 body {
   min-height: 100%;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   /* General link style */
@@ -67,8 +67,6 @@ body {
       outline: none; }
 
 .App {
-  height: 100vh;
-  width: 100vw;
-  overflow: auto;
-  overflow: initial;
-  -ms-overflow-style: none; }
+  min-height: 100vh;
+  width: 100%;
+  overflow: auto; }
