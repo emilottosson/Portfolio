@@ -11,10 +11,8 @@
         width: 100%;
         padding: 90px 40px;
         box-sizing: border-box;
-        //background-color: #B484B7;
-        //background-color: #006666;
-        //background-color: #88bdbc;
         background-color: #595ca2;
+
 
         .about1-content {
             display: flex;
@@ -122,6 +120,12 @@
                         font-weight: 500;
                     }
                 }
+            }
+
+            .worldmap {
+                position: relative;
+                height: 100%;
+                width: 100%;
             }
     
             .subheading2-container {

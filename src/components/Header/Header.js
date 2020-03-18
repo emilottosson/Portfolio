@@ -66,7 +66,7 @@ class Header extends Component {
               {/* Title text container */}
               <div className="title-container" style={ this.state.mountedHeaderTitle ? style1 : style2 }>
                 {/* Title text on heading section */}
-                <h1 className="title-text">I´m Emil Ottosson, an Swedish {/*<span className="ui-ux-red">*/}UI/UX{/*</span>*/} designer currently based in Umeå, Sweden</h1>
+                <h1 className="title-text">I´m Emil Ottosson, an Swedish <span className="no-break">front-end</span> developer currently based in Umeå, Sweden</h1>
               </div>
               {/* Sub-heading text container */}
               <div className="text-container" style={ this.state.mountedHeaderText ? style1 : style2 }>

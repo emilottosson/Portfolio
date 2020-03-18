@@ -46,7 +46,7 @@
         font-family: "Mr Dafoe", sans-serif;
         letter-spacing: 5px;
         font-size: 22px;
-        color: grey;
+        color: #9b9b9b;
         text-decoration: none; }
     .navbar-container .navbar .menu-container {
       display: flex;
@@ -55,7 +55,7 @@
       min-width: 0px;
       /* Menu text */ }
       .navbar-container .navbar .menu-container .menu-text {
-        color: grey;
+        color: #9b9b9b;
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
@@ -68,7 +68,7 @@
         .navbar-container .navbar .menu-container .menu-text.active {
           text-decoration: line-through; }
       .navbar-container .navbar .menu-container .btn-menu {
-        padding: 11px 20px 13px; }
+        padding: 11px 20px; }
     .navbar-container .navbar .hamburger-icon {
       display: none; }
 
