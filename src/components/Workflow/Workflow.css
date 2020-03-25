@@ -483,7 +483,7 @@
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
         width: 50px;
         display: block; }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text {
+    #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
       font-size: 16px;
       letter-spacing: -.5px; } }
 
@@ -558,7 +558,7 @@
       font-size: 21px; }
     #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen .step-title .title-text {
       font-size: 21px; }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .secondGraphText-container .graph-second-text {
+    #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
       font-size: 15px;
       line-height: 22px; } }
 

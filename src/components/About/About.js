@@ -46,7 +46,7 @@ class About1 extends Component {
                 <div className="swe"></div>
                 <div className="kor"></div>
               <div className="subheading2-container">
-                <h2 className="subheading2-text">I had the opportunity to study <span className="spanmainbackground">psychology</span> and <span className="spanmainbackground">UI/UX design</span> at Sogang University, South Korea, in fall 2017.</h2>
+                <h2 className="subheading2-text">I had the opportunity to study <span className="spanmainbackground">psychology</span>, <span className="spanmainbackground">digital media</span> and <span className="spanmainbackground">UI/UX design</span> at Sogang University, South Korea, in fall 2017.</h2>
               </div>
               <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn-red">Send me an email</button></a>
             </div>
