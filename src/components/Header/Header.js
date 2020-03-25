@@ -71,17 +71,17 @@ class Header extends Component {
               {/* Sub-heading text container */}
               <div className="text-container" style={ this.state.mountedHeaderText ? style1 : style2 }>
                 {/* Sub-heading text */}
-                <h2 className="sub-heading-text">I focus on <span className="spandarkgray">creating</span> awesome stuff.<br />
-                Define, build, launch, analyze. <span className="spandarkgray">Repeat.</span></h2>
+                <h2 className="sub-heading-text">I focus on <span className="spanred">creating</span> awesome stuff.<br />
+                Define, build, launch, analyze. <span className="spanred">Repeat.</span></h2>
               </div>
               {/* Heading buttons container */}
               <div className="buttons-container" style={ this.state.mountedHeaderButtons ? style1 : style2 }>
                 {/* Heading Buttons */}
-                <Link className="navLinkButtonContainer" to="portfolio" spy={true} smooth={true} offset= {-80} duration= {500}>
-                <button type="button" className="btn btn-header">See selected projects</button>
+                <Link className="navLinkButtonContainer" to="portfolio" spy={true} smooth={true} offset= {-55} duration= {500}>
+                <button type="button" className="btn-green btn-header">See selected projects</button>
                 </Link>
-                <Link className="navLinkButtonContainer" to="workflow" spy={true} smooth={true} offset= {-80} duration= {500}>
-                  <button type="button" className="btn btn-header-right">More about my workflow</button>
+                <Link className="navLinkButtonContainer" to="workflow-anchor" spy={true} smooth={true} offset= {-55} duration= {500}>
+                  <button type="button" className="btn-red btn-header">More about my workflow</button>
                 </Link>
               </div>
             </div>

@@ -4,64 +4,105 @@
 #about-container {
 
     #about1-container {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
         width: 100%;
-        padding: 90px 40px;
+        padding: 90px 40px 0px 40px;
         box-sizing: border-box;
-        background-color: #595ca2;
+        background-color: $color-mainbackground;
 
+        .section-detail-left {
+            position: absolute;
+            background-image: url("../../pngs/ship.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 0%;
+            height: 500px;
+            width: 500px;
+            top: -160px;
+            left: 0;
+            z-index: 1;
+            opacity: 0.1;
+          }
 
-        .about1-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-flow: row wrap;
-            text-align: center;
-            align-content: center;
+        .visual-page-purple-container {
+            position: relative;
             height: 100%;
-            max-width: 1170px;
+            background-image:
+            radial-gradient(
+              closest-corner,
+              $color-purple,
+              $color-black 150%
+            );
+            border-radius: 25px;
+            padding: 90px 20px;
             width: 100%;
+            max-width: 1130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
 
-            .title-container {
+            .section-ribbon {
                 display: flex;
                 justify-content: center;
-                width: 100%;
-
-                .title-text {
-                    max-width: 720px;
-                    color: #fff;
+                align-items: center;
+                position: absolute;
+                top: -30px;
+                height: 90px;
+                width: 240px;
+                background-image: url("../../pngs/ribbon.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+          
+                h1 {
+                  font-size: 35px;
+                  transform: rotate(-10deg);
+                  margin-top: -11px;
                 }
-            }
+              }
 
-            .subheading-container {
+            .about1-content {
                 display: flex;
+                align-items: center;
                 justify-content: center;
+                flex-flow: row wrap;
+                text-align: center;
+                align-content: center;
+                height: 100%;
+                max-width: 1130px;
                 width: 100%;
-                padding: 0px 0px 8px 0px;
 
-                .subheading-text {
-                    max-width: 712px;
-                    //color: #e4cae5;
-                    color: #cdcee3;
+                .title-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
 
-                    .spanwhite {
-                        color: #fff;
-                        font-weight: 500;
+                    .title-text {
+                        max-width: 720px;
+                        color: $color-mainbackground;
                     }
                 }
-            }
 
-            .btn-about {
-                color: #595ca2;
-                //color: #006666;
-                background-color: #fff;
+                .subheading-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 0px 0px 8px 0px;
 
-                &:hover {
-                    color: #32335c;
-                    //color: #003d3d;
+                    .subheading-text {
+                        max-width: 712px;
+                        //color: #e4cae5;
+                        color: $color-text-on-purple;
+
+                        .spanmainbackground {
+                            color: $color-mainbackground;
+                            font-weight: 500;
+                        }
+                    }
                 }
             }
         }
@@ -78,83 +119,134 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
         width: 100%;
-        background-color: white;
-        padding: 90px 40px;
+        padding: 90px 40px 90px 40px;
         box-sizing: border-box;
-    
-        .map {
+        background-color: $color-mainbackground;
+
+        .section-detail-right {
+            position: absolute;
+            background-image: url("../../pngs/anchor.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 650px;
+            width: 500px;
+            top: -235px;
+            right: 0;
+            z-index: 1;
+            opacity: 0.1;
+          }
+
+        .visual-page-green-container {
             position: relative;
+            height: 100%;
+            background-image:
+            radial-gradient(
+              closest-corner,
+              $color-green,
+              $color-black 150%
+            );
+            border-radius: 25px;
+            padding: 90px 20px;
+            width: 100%;
+            max-width: 1130px;
             display: flex;
-            flex-flow: row wrap;
             justify-content: center;
-            width: 790px;
-            min-height: 430px;
-    
-            .title-container {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-    
-                .title-text {
-                    text-align: center;
-                    max-width: 520px;
-                    color: $color-darkgray;
-                }
-            }
-    
-            .subheading-container {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                padding: 0px 0px 40px 0;
-    
-                .subheading-text {
-                    text-align: center;
-                    max-width: 720px;
-                    color: $color-lightgray;
-    
-                    .spandarkgrey {
-                        color: $color-darkgray;
-                        font-weight: 500;
-                    }
-                }
-            }
+            align-items: center;
+            z-index: 2;
 
-            .worldmap {
+            .section-ribbon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -30px;
+                height: 90px;
+                width: 240px;
+                background-image: url("../../pngs/ribbon.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+          
+                h1 {
+                  font-size: 35px;
+                  transform: rotate(-10deg);
+                  margin-top: -11px;
+                }
+              }
+    
+            .map {
                 position: relative;
-                height: 100%;
-                width: 100%;
-            }
-    
-            .subheading2-container {
                 display: flex;
+                flex-flow: row wrap;
                 justify-content: center;
-                width: 100%;
-                padding: 40px 0px 8px 0;
-    
-                .subheading2-text {
-                    font-size: 18px;
-                    text-align: center;
-                    max-width: 618px;
-                    color: $color-lightgray;
-                    padding: 0px 20px;
-    
-                    .spandarkgrey {
-                        color: $color-darkgray;
-                        font-weight: 500;
+                max-width: 790px;
+                min-height: 430px;
+        
+                .title-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+        
+                    .title-text {
+                        text-align: center;
+                        max-width: 520px;
+                        color: $color-mainbackground;
                     }
                 }
-            }
+        
+                .subheading-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 0px 0px 40px 0;
+        
+                    .subheading-text {
+                        text-align: center;
+                        max-width: 720px;
+                        color: $color-text-on-green;
+        
+                        .spanmainbackground {
+                            color: $color-mainbackground;
+                            font-weight: 500;
+                        }
+                    }
+                }
 
-            .btn-about2 {
-                background-color: #595ca2;
-                color: white;
-            }
+                .worldmap {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                }
+        
+                .subheading2-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 40px 0px 8px 0;
+        
+                    .subheading2-text {
+                        font-size: 18px;
+                        text-align: center;
+                        max-width: 618px;
+                        color: $color-text-on-green;
+                        padding: 0px 20px;
+        
+                        .spanmainbackground {
+                            color: $color-mainbackground;
+                            font-weight: 500;
+                        }
+                    }
+                }
 
-            .btn-about2:hover {
-                background-color: #6164b1;
+                .btn-about2 {
+                    background-color: #595ca2;
+                    color: white;
+                }
+
+                .btn-about2:hover {
+                    background-color: #6164b1;
+                }
             }
         }
     }
@@ -170,11 +262,11 @@
     #about-container {
 
         #about1-container {
-            padding: 90px 20px;
+            padding: 90px 20px 0px 20px;
         }
 
         #about2-container {
-            padding: 90px 20px;
+            padding: 90px 20px 90px 20px;
         }
     }
 }
@@ -185,60 +277,66 @@
 
         #about1-container {
 
-            .about1-content {
+            .visual-page-purple-container {
 
-                .title-container {
-                    max-width: 355px;
+                .about1-content {
 
-                    .title-text {
-                        font-size: 42px;
-                        letter-spacing: -1.5px;
-                        line-height: 47px;
+                    .title-container {
+                        max-width: 355px;
+
+                        .title-text {
+                            font-size: 42px;
+                            letter-spacing: -1.5px;
+                            line-height: 47px;
+                        }
                     }
-                }
 
-                .subheading-container {
-                    max-width: 370px;
+                    .subheading-container {
+                        max-width: 370px;
 
-                    .subheading-text {
-                        font-size: 18px;
-                        letter-spacing: -.5px;
-                        line-height: 28px;
+                        .subheading-text {
+                            font-size: 18px;
+                            letter-spacing: -.5px;
+                            line-height: 28px;
+                        }
                     }
                 }
             }
         }
 
         #about2-container {
+
+            .visual-page-green-container {
     
-            .map {
-        
-                .title-container {
-        
-                    .title-text {
-                        max-width: 355px;
-                        font-size: 42px;
-                        letter-spacing: -1.5px;
-                        line-height: 47px;
+                .map {
+            
+                    .title-container {
+            
+                        .title-text {
+                            max-width: 355px;
+                            font-size: 42px;
+                            letter-spacing: -1.5px;
+                            line-height: 47px;
+                        }
                     }
-                }
-        
-                .subheading-container {
-        
-                    .subheading-text {
-                        max-width: 380px;
-                        font-size: 18px;
-                        letter-spacing: -.5px;
-                        line-height: 25px;
+            
+                    .subheading-container {
+            
+                        .subheading-text {
+                            max-width: 380px;
+                            font-size: 18px;
+                            letter-spacing: -.5px;
+                            line-height: 25px;
+                        }
                     }
-                }
-        
-                .subheading2-container {
-        
-                    .subheading2-text {
-                        max-width: 380px;
-                        font-size: 16px;
-                        letter-spacing: -.5px;
+            
+                    .subheading2-container {
+            
+                        .subheading2-text {
+                            max-width: 380px;
+                            font-size: 16px;
+                            letter-spacing: -.5px;
+                        }
                     }
                 }
             }
@@ -252,51 +350,57 @@
 
         #about1-container {
 
-            .about1-content {
+            .visual-page-purple-container {
 
-                .title-container {
+                .about1-content {
 
-                    .title-text {
-                        font-size: 35px;
-                        line-height: 37px;
+                    .title-container {
+
+                        .title-text {
+                            font-size: 35px;
+                            line-height: 37px;
+                        }
                     }
-                }
 
-                .subheading-container {
+                    .subheading-container {
 
-                    .subheading-text {
-                        font-size: 15px;
-                        line-height: 22px;
+                        .subheading-text {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
                     }
                 }
             }
         }
 
         #about2-container {
+
+            .visual-page-green-container {
     
-            .map {
-        
-                .title-container {
-        
-                    .title-text {
-                        font-size: 35px;
-                        line-height: 37px;
+                .map {
+            
+                    .title-container {
+            
+                        .title-text {
+                            font-size: 35px;
+                            line-height: 37px;
+                        }
                     }
-                }
-        
-                .subheading-container {
-        
-                    .subheading-text {
-                        font-size: 15px;
-                        line-height: 22px;
+            
+                    .subheading-container {
+            
+                        .subheading-text {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
                     }
-                }
-        
-                .subheading2-container {
-        
-                    .subheading2-text {
-                        font-size: 15px;
-                        line-height: 22px;
+            
+                    .subheading2-container {
+            
+                        .subheading2-text {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
                     }
                 }
             }

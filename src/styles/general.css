@@ -8,6 +8,8 @@
  * Colors used in entire application
  */
 /* Base colors */
+/*$color-lightblue: #358ed7;*/
+/*$color-lightblue-hover: #2b86d1;*/
 body {
   min-height: 100%;
   width: 100%;
@@ -17,12 +19,13 @@ body {
   /* General text style */
   /* General h1 style */
   /* General h2 style */
+  /* General button style */
   /* General button style */ }
   body a {
     font-family: "Maven Pro", sans-serif;
     font-weight: 400;
     letter-spacing: -.3px;
-    color: grey;
+    color: #383838;
     cursor: pointer; }
   body p {
     font-family: "Maven Pro", sans-serif;
@@ -45,19 +48,35 @@ body {
     font-size: 20px;
     line-height: 28px;
     color: #FFFFFF; }
-  body .btn {
+  body .btn-green {
     font-family: "Maven Pro", sans-serif;
     font-weight: 500;
-    background-color: #358ed7;
+    background-image: radial-gradient(closest-corner, #275a5f, #000000 150%);
     border: none;
     border-radius: 3px;
-    color: white;
+    color: #eeddce;
     padding: 17px 23px;
     font-size: 15px;
     cursor: pointer;
     /* General button hover style */
     /* General button focus style */ }
-    body .btn:hover {
-      background-color: #2b86d1; }
-    body .btn:focus {
+    body .btn-green:hover {
+      background-image: radial-gradient(closest-corner, #275a5f, #000000 200%); }
+    body .btn-green:focus {
+      outline: none; }
+  body .btn-red {
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 500;
+    background-image: radial-gradient(closest-corner, #942a53, #000000 150%);
+    border: none;
+    border-radius: 3px;
+    color: #eeddce;
+    padding: 17px 23px;
+    font-size: 15px;
+    cursor: pointer;
+    /* General button hover style */
+    /* General button focus style */ }
+    body .btn-red:hover {
+      background-image: radial-gradient(closest-corner, #942a53, #000000 200%); }
+    body .btn-red:focus {
       outline: none; }

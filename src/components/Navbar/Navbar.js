@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import MenuToggleButton from '../HamburgerMenu/MenuToggleButton';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
+import Resume from "../../pdfs/Emil-Ottosson-Resume-Dark.pdf";
 import { Link } from "react-scroll";
 
 
@@ -58,7 +59,7 @@ class Navbar extends Component {
           {/* Menu container */}
           <div className="menu-container">
             {/* The menu text */}
-            <Link activeClass="active" className="menu-text" to="workflow" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <Link activeClass="active" className="menu-text" to="workflow-anchor" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Workflow
             </Link>
             <Link activeClass="active" className="menu-text" to="portfolio" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
@@ -67,8 +68,10 @@ class Navbar extends Component {
             <Link activeClass="active" className="menu-text" to="about-container" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               About
             </Link>
+            {/* Resume button in menu */}
+            <a href={Resume} target="_blank"><button type="button" className="btn-green btn-menu-resume">Resume</button></a>
             {/* Contact me button in menu */}
-            <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn btn-menu">Contact me</button></a>
+            <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn-red btn-menu">Contact me</button></a>
           </div>
         </div>
       </div>

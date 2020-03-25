@@ -6,6 +6,7 @@ class MenuToggleButton extends Component {
     return (
       <React.Fragment>
         {/* Container for hamburger menu*/}
+        <div className="toggle-button-container">
         {!this.props.shown ? <button className="toggle-button" onClick={this.props.click}>
 
           {/* To make a 3 line hamburger menu, switch to three "toggle-button-line" 
@@ -19,6 +20,7 @@ class MenuToggleButton extends Component {
         <div className="toggle-cross-line neg-rotation" />
         <div className="toggle-cross-line pos-rotation" />
         </button>}
+        </div>
       </React.Fragment>
     );
   }

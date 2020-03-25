@@ -11,7 +11,7 @@
   background-color: $color-mainbackground;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 4;
 
   /* Navigation bar */
   .navbar {
@@ -21,7 +21,7 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 40px;
     transition: padding .5s ease;
 
     /* Navbar heading container */
@@ -32,7 +32,7 @@
       min-width: 0px;
       flex-grow: 2;
       box-sizing: border-box;
-      padding-right: 11.5px;
+      padding-right: 23px;
 
       /* Navbar heading */
       .navbar-logo {
@@ -40,8 +40,8 @@
         align-items: center;
         font-family: $font-logo;
         letter-spacing: 5px;
-        font-size: 22px;
-        color: $color-lightgray;
+        font-size: 20px;
+        color: $color-darkgray;
         text-decoration: none;
       }
     }
@@ -55,7 +55,7 @@
 
       /* Menu text */
       .menu-text {
-        color: $color-lightgray;
+        color: $color-darkgray;
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
@@ -64,6 +64,7 @@
         /* Menu text hover */
         &:hover {
           text-decoration: line-through;
+          color: $color-red;
         }
 
         &:focus {
@@ -72,86 +73,22 @@
 
         &.active {
           text-decoration: line-through;
-          
+          color: $color-red;
         }
       }
 
       .btn-menu {
         padding: 11px 20px;
       }
+
+      .btn-menu-resume {
+        padding: 11px 20px;
+        margin-right: 8px;
+      }
     }
 
     .hamburger-icon {
       display: none;
-    }
-  }
-}
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 1210px) {
-
-  /* Navigation bar container */
-  .navbar-container {
-
-    /* Navigation bar */
-    .navbar {
-      padding: 0 40px;
-    }
-  }
-}
-
-@media only screen and (width : 1024px) {
-
-  /* Navigation bar container */
-  .navbar-container {
-
-    /* Navigation bar */
-    .navbar {
-
-      /* Menu container */
-      .menu-container {
-
-        /* Menu text */
-        .menu-text {
-
-          /* Menu text hover */
-          &:hover {
-            color: $color-white;
-          }
-
-          &.active {
-            color: $color-darkgray;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (width : 768px) {
-
-  /* Navigation bar container */
-  .navbar-container {
-
-    /* Navigation bar */
-    .navbar {
-
-      /* Menu container */
-      .menu-container {
-
-        /* Menu text */
-        .menu-text {
-
-          /* Menu text hover */
-          &:hover {
-            color: $color-white;
-          }
-
-          &.active {
-            color: $color-darkgray;
-          }
-        }
-      }
     }
   }
 }
@@ -165,7 +102,7 @@
     /* Navigation bar */
     .navbar {
       padding: 0 20px;
-      background-color: $color-white;
+      background-color: $color-mainbackground;
       justify-content: initial;
 
       /* Navbar heading container */

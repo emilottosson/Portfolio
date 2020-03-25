@@ -18,7 +18,8 @@
     position: absolute;
     height: 100%;
     top: 0;
-    max-width: 1470px;
+    /*max-width: 1470px;*/
+    max-width: 1170px;
     width: 100%;
     background-image: url("../../pngs/background.png");
     background-size: auto 85%;
@@ -35,10 +36,10 @@
     width: 100%;
     opacity: 0;
     transition: background-position .5s ease, background-size .5s ease, opacity .5s ease-in-out;
-    background-image: linear-gradient(hsla(0,0%,100%,.8),#fff);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(#fff));
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), #fff);
-    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.8), #fff);
+    background-image: linear-gradient(hsla(0,0%,100%,.8),#eeddce);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 221, 206, 0.8)), to(#eeddce));
+    background-image: -webkit-linear-gradient(rgba(238, 221, 206, 0.8), #eeddce);
+    background-image: -o-linear-gradient(rgba(238, 221, 206, 0.8), #eeddce);
   }
 
   .header-overlay {
@@ -96,12 +97,12 @@
         z-index: 2;
 
         .sub-heading-text {
-          color: $color-lightgray;
+          color: $color-green;
         }
 
         /* Span some light gray text to dark text */
-        .spandarkgray {
-          color: $color-darkgray;
+        .spanred {
+          color: $color-red;
           font-weight: 500;
         }
       }
@@ -118,19 +119,6 @@
       .btn-header {
         padding: 17px 23px;
         margin-right: 8px;
-      }
-
-      /* Right button on header style */
-      .btn-header-right {
-        background-color: $color-white;
-        color: grey;
-        border: 1px solid $color-lightgray-border;
-        padding: 16px 23px;
-
-        /* Right button on header hover */
-        &:hover {
-          background-color: $color-white-hover;
-        }
       }
     }
   }
@@ -189,41 +177,6 @@
 
     #workflow-scroll-anchor {
       height: 55px;
-    }
-  }
-}
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 650px) {
-
-  /* Header section */
-  #header {
-
-    /* Text on header section */
-    .header-content{
-
-      /* Content for all text */
-      .header-content-container {
-
-        /* Title container on header section */
-        .title-container {
-
-          .u-detail {
-            display: none;
-          }
-
-          .x-detail {
-            display: none;
-          }
-
-          .title-text {
-
-            .ui-ux-red {
-              color: $color-mainred;
-            }
-          }
-        }
-      }
     }
   }
 }

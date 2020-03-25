@@ -2,6 +2,11 @@
  * Colors used in entire application
  */
 /* Base colors */
+/*$color-lightblue: #358ed7;*/
+/*$color-lightblue-hover: #2b86d1;*/
+body.noscroll {
+  position: fixed; }
+
 .navbar-small {
   position: fixed;
   transform: translateY(-100%);
@@ -10,8 +15,8 @@
   width: 100%;
   margin-top: 80px;
   top: -80px;
-  background-color: #FFFFFF;
-  z-index: 2;
+  background-color: #eeddce;
+  z-index: 3;
   transition: transform 0.3s; }
   .navbar-small.shown {
     transform: translateY(0); }
@@ -19,7 +24,6 @@
     display: flex;
     height: 100%;
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -34,9 +38,9 @@
       opacity: 0;
       transition: opacity 0.5s 0.1s; }
       .navbar-small .menu-container-small .menu-text-small.active {
-        color: #383838; }
+        color: #942a53; }
     .navbar-small .menu-container-small .menu-text-small:hover {
-      color: #383838; }
+      color: #942a53; }
 
 /* Set new styles depending on width */
 @media (min-width: 768px) {

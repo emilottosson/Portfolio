@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Workflow from './components/Workflow/Workflow';
+import Portfolio from './components/Portfolio/Portfolio';
 import About from './components/About/About';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import LoadedSlide from './components/LoadedSlide/LoadedSlide';
@@ -39,6 +40,7 @@ class App extends Component {
               <Navbar />
               <Header />
               <Workflow />
+              <Portfolio />
               <About />
           </div>
         :

@@ -1,0 +1,71 @@
+/**
+ * Declaring fonts
+ */
+/* Heading text */
+/* Regular text */
+/* Logo text */
+/**
+ * Colors used in entire application
+ */
+/* Base colors */
+/*$color-lightblue: #358ed7;*/
+/*$color-lightblue-hover: #2b86d1;*/
+/* Workflow section */
+#portfolio {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeddce;
+  width: 100%;
+  padding: 90px 40px 0px 40px;
+  box-sizing: border-box; }
+  #portfolio .section-detail-right {
+    position: absolute;
+    background-image: url("../../pngs/rose.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    top: -160px;
+    right: 0;
+    z-index: 1;
+    opacity: 0.1; }
+  #portfolio .visual-page-red-container {
+    position: relative;
+    height: 100%;
+    background-image: radial-gradient(closest-corner, #942a53, #000000 150%);
+    border-radius: 25px;
+    padding: 90px 20px;
+    width: 100%;
+    max-width: 1130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    #portfolio .visual-page-red-container .section-ribbon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -30px;
+      height: 90px;
+      width: 240px;
+      background-image: url("../../pngs/ribbon.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1; }
+      #portfolio .visual-page-red-container .section-ribbon h1 {
+        font-size: 35px;
+        transform: rotate(-10deg);
+        margin-top: -11px; }
+
+#portfolio:after {
+  content: '';
+  min-height: inherit;
+  font-size: 0; }
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 767px) {
+  #portfolio {
+    padding: 90px 20px 0px 20px; } }

@@ -21,21 +21,21 @@
 
   /* Hamburger menu lines hover */
   &:hover .toggle-button-line, &:hover .toggle-button-line-first {
-    background: $color-darkgray;
+    background: $color-red;
   }
 
   /* Hamburger menu lines */
   .toggle-button-line {
     width: 23px;
     height: 2px;
-    background: $color-lightgray;
+    background: $color-darkgray;
   }
 
     /* Hamburger menu lines */
     .toggle-button-line-first {
       width: 23px;
       height: 2px;
-      background: $color-lightgray;
+      background: $color-darkgray;
       margin-bottom: 5px;
     }
 }
@@ -60,7 +60,7 @@
 
   /* Cross button lines hover */
   &:hover .toggle-cross-line {
-    background: $color-darkgray;
+    background: $color-red;
   }
 
   /* Cross button lines */
@@ -68,7 +68,7 @@
     position: absolute;
     width: 23px;
     height: 2px;
-    background: $color-lightgray;
+    background: $color-darkgray;
 
     &.neg-rotation {
       transform: rotate(-45deg);

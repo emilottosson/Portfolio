@@ -12,7 +12,7 @@ body {
     font-family: $font-text;
     font-weight: 400;
     letter-spacing: -.3px;
-    color: grey;
+    color: $color-darkgray;
     cursor: pointer;
   }
 
@@ -47,20 +47,30 @@ body {
   }
 
   /* General button style */
-  .btn {
+  .btn-green {
     font-family: $font-text;
     font-weight: 500;
-    background-color: $color-lightblue;
+    background-image:
+    radial-gradient(
+      closest-corner,
+      $color-green,
+      $color-black 150%
+    );
     border: none;
     border-radius: 3px;
-    color: white;
+    color: $color-mainbackground;
     padding: 17px 23px;
     font-size: 15px;
     cursor: pointer;
 
     /* General button hover style */
     &:hover {
-      background-color: $color-lightblue-hover;
+      background-image:
+      radial-gradient(
+        closest-corner,
+        $color-green,
+        $color-black 200%
+      );
     }
 
     /* General button focus style */
@@ -68,4 +78,37 @@ body {
       outline: none;
     }
   }
+
+    /* General button style */
+    .btn-red {
+      font-family: $font-text;
+      font-weight: 500;
+      background-image:
+      radial-gradient(
+        closest-corner,
+        $color-red,
+        $color-black 150%
+      );
+      border: none;
+      border-radius: 3px;
+      color: $color-mainbackground;
+      padding: 17px 23px;
+      font-size: 15px;
+      cursor: pointer;
+  
+      /* General button hover style */
+      &:hover {
+        background-image:
+        radial-gradient(
+          closest-corner,
+          $color-red,
+          $color-black 200%
+        );
+      }
+  
+      /* General button focus style */
+      &:focus {
+        outline: none;
+      }
+    }
 }

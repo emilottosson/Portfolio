@@ -8,6 +8,8 @@
  * Colors used in entire application
  */
 /* Base colors */
+/*$color-lightblue: #358ed7;*/
+/*$color-lightblue-hover: #2b86d1;*/
 /* Navigation bar container */
 .navbar-container {
   position: fixed;
@@ -15,10 +17,10 @@
   width: 100%;
   height: 80px;
   top: -80px;
-  background-color: #ffffff;
+  background-color: #eeddce;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 4;
   /* Navigation bar */ }
   .navbar-container .navbar {
     display: flex;
@@ -27,7 +29,7 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 40px;
     transition: padding .5s ease;
     /* Navbar heading container */
     /* Menu container */ }
@@ -38,15 +40,15 @@
       min-width: 0px;
       flex-grow: 2;
       box-sizing: border-box;
-      padding-right: 11.5px;
+      padding-right: 23px;
       /* Navbar heading */ }
       .navbar-container .navbar .logo-container .navbar-logo {
         display: flex;
         align-items: center;
         font-family: "Mr Dafoe", sans-serif;
         letter-spacing: 5px;
-        font-size: 22px;
-        color: #9b9b9b;
+        font-size: 20px;
+        color: #383838;
         text-decoration: none; }
     .navbar-container .navbar .menu-container {
       display: flex;
@@ -55,60 +57,27 @@
       min-width: 0px;
       /* Menu text */ }
       .navbar-container .navbar .menu-container .menu-text {
-        color: #9b9b9b;
+        color: #383838;
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
         font-weight: 400;
         /* Menu text hover */ }
         .navbar-container .navbar .menu-container .menu-text:hover {
-          text-decoration: line-through; }
+          text-decoration: line-through;
+          color: #942a53; }
         .navbar-container .navbar .menu-container .menu-text:focus {
           color: none; }
         .navbar-container .navbar .menu-container .menu-text.active {
-          text-decoration: line-through; }
+          text-decoration: line-through;
+          color: #942a53; }
       .navbar-container .navbar .menu-container .btn-menu {
         padding: 11px 20px; }
+      .navbar-container .navbar .menu-container .btn-menu-resume {
+        padding: 11px 20px;
+        margin-right: 8px; }
     .navbar-container .navbar .hamburger-icon {
       display: none; }
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 1210px) {
-  /* Navigation bar container */
-  .navbar-container {
-    /* Navigation bar */ }
-    .navbar-container .navbar {
-      padding: 0 40px; } }
-
-@media only screen and (width: 1024px) {
-  /* Navigation bar container */
-  .navbar-container {
-    /* Navigation bar */ }
-    .navbar-container .navbar {
-      /* Menu container */ }
-      .navbar-container .navbar .menu-container {
-        /* Menu text */ }
-        .navbar-container .navbar .menu-container .menu-text {
-          /* Menu text hover */ }
-          .navbar-container .navbar .menu-container .menu-text:hover {
-            color: #FFFFFF; }
-          .navbar-container .navbar .menu-container .menu-text.active {
-            color: #383838; } }
-
-@media only screen and (width: 768px) {
-  /* Navigation bar container */
-  .navbar-container {
-    /* Navigation bar */ }
-    .navbar-container .navbar {
-      /* Menu container */ }
-      .navbar-container .navbar .menu-container {
-        /* Menu text */ }
-        .navbar-container .navbar .menu-container .menu-text {
-          /* Menu text hover */ }
-          .navbar-container .navbar .menu-container .menu-text:hover {
-            color: #FFFFFF; }
-          .navbar-container .navbar .menu-container .menu-text.active {
-            color: #383838; } }
 
 /* Set new styles depending on width */
 @media (max-width: 767px) {
@@ -118,7 +87,7 @@
     /* Navigation bar */ }
     .navbar-container .navbar {
       padding: 0 20px;
-      background-color: #FFFFFF;
+      background-color: #eeddce;
       justify-content: initial;
       /* Navbar heading container */
       /* Menu container */ }

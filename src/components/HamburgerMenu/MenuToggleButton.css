@@ -2,6 +2,8 @@
  * Colors used in entire application
  */
 /* Base colors */
+/*$color-lightblue: #358ed7;*/
+/*$color-lightblue-hover: #2b86d1;*/
 /* Hamburger menu */
 .toggle-button {
   display: flex;
@@ -21,15 +23,15 @@
   .toggle-button:focus {
     outline: none; }
   .toggle-button:hover .toggle-button-line, .toggle-button:hover .toggle-button-line-first {
-    background: #383838; }
+    background: #942a53; }
   .toggle-button .toggle-button-line {
     width: 23px;
     height: 2px;
-    background: #9b9b9b; }
+    background: #383838; }
   .toggle-button .toggle-button-line-first {
     width: 23px;
     height: 2px;
-    background: #9b9b9b;
+    background: #383838;
     margin-bottom: 5px; }
 
 .toggle-button-cross {
@@ -50,12 +52,12 @@
   .toggle-button-cross:focus {
     outline: none; }
   .toggle-button-cross:hover .toggle-cross-line {
-    background: #383838; }
+    background: #942a53; }
   .toggle-button-cross .toggle-cross-line {
     position: absolute;
     width: 23px;
     height: 2px;
-    background: #9b9b9b; }
+    background: #383838; }
     .toggle-button-cross .toggle-cross-line.neg-rotation {
       transform: rotate(-45deg); }
     .toggle-button-cross .toggle-cross-line.pos-rotation {

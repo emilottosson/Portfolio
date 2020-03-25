@@ -8,11 +8,13 @@
  * Colors used in entire application
  */
 /* Base colors */
+/*$color-lightblue: #358ed7;*/
+/*$color-lightblue-hover: #2b86d1;*/
 /* Header section */
 #header {
   position: relative;
   display: flex;
-  background-color: #ffffff;
+  background-color: #eeddce;
   width: 100%;
   min-height: 100vh;
   align-items: center;
@@ -25,7 +27,8 @@
     position: absolute;
     height: 100%;
     top: 0;
-    max-width: 1470px;
+    /*max-width: 1470px;*/
+    max-width: 1170px;
     width: 100%;
     background-image: url("../../pngs/background.png");
     background-size: auto 85%;
@@ -40,16 +43,16 @@
     width: 100%;
     opacity: 0;
     transition: background-position .5s ease, background-size .5s ease, opacity .5s ease-in-out;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), #fff);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(#fff));
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), #fff);
-    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.8), #fff); }
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), #eeddce);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 221, 206, 0.8)), to(#eeddce));
+    background-image: -webkit-linear-gradient(rgba(238, 221, 206, 0.8), #eeddce);
+    background-image: -o-linear-gradient(rgba(238, 221, 206, 0.8), #eeddce); }
   #header .header-overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: #ffffff; }
+    background-color: #eeddce; }
   #header .header-content {
     position: relative;
     display: flex;
@@ -76,8 +79,7 @@
       /* Title container on header section */
       /* Sub-heading container on header section */
       /* Buttons container on header section */
-      /* Button on header style */
-      /* Right button on header style */ }
+      /* Button on header style */ }
       #header .header-content .header-content-container .title-container {
         position: relative;
         width: 100%;
@@ -93,9 +95,9 @@
         z-index: 2;
         /* Span some light gray text to dark text */ }
         #header .header-content .header-content-container .text-container .sub-heading-text {
-          color: #9b9b9b; }
-        #header .header-content .header-content-container .text-container .spandarkgray {
-          color: #383838;
+          color: #275a5f; }
+        #header .header-content .header-content-container .text-container .spanred {
+          color: #942a53;
           font-weight: 500; }
       #header .header-content .header-content-container .buttons-container {
         display: flex;
@@ -105,14 +107,6 @@
       #header .header-content .header-content-container .btn-header {
         padding: 17px 23px;
         margin-right: 8px; }
-      #header .header-content .header-content-container .btn-header-right {
-        background-color: #FFFFFF;
-        color: grey;
-        border: 1px solid #cecece;
-        padding: 16px 23px;
-        /* Right button on header hover */ }
-        #header .header-content .header-content-container .btn-header-right:hover {
-          background-color: #f7f7f7; }
   #header #workflow-scroll-anchor {
     position: absolute;
     bottom: 0;
@@ -149,22 +143,6 @@
       box-sizing: border-box; }
     #header #workflow-scroll-anchor {
       height: 55px; } }
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 650px) {
-  /* Header section */
-  #header {
-    /* Text on header section */ }
-    #header .header-content {
-      /* Content for all text */ }
-      #header .header-content .header-content-container {
-        /* Title container on header section */ }
-        #header .header-content .header-content-container .title-container .u-detail {
-          display: none; }
-        #header .header-content .header-content-container .title-container .x-detail {
-          display: none; }
-        #header .header-content .header-content-container .title-container .title-text .ui-ux-red {
-          color: #EC5973; } }
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 600px) {
