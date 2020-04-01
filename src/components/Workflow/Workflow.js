@@ -158,7 +158,7 @@ class Workflow extends Component {
             </div>
             <div className="secondGraphText-container">
                 <h2 className="graph-second-text">Everyday i want to learn something new that i can add to my knowledge, So that I can strive for perfection. I do this by mixing <span className="spanmainbackground">different methodologies</span>. The method for a project is just the <span className="spanmainbackground">starting point</span>.</h2>
-                <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn-red">Let´s work together</button></a>
+                <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red">Let´s work together</button></a>
               </div>
           </div>
         </div>

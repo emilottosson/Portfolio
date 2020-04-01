@@ -84,7 +84,7 @@ class HamburgerMenu extends Component {
               About
             </Link>
           <a className="menu-text-small" onClick={this.props.toggle} href={Resume} target="_blank">Resume</a>
-          <a className="menu-text-small" onClick={this.props.toggle} href="mailto:emil_ottosson@hotmail.com">Contact Me</a>
+          <a className="menu-text-small" onClick={this.props.toggle} href="mailto:emil@emilottosson.com">Contact Me</a>
         </div>
       </div>
     );

@@ -25,7 +25,7 @@ class About1 extends Component {
                 Whether it is solving a complex design problem, or fixing the water machine in the office, 
                 I aim for <span className="spanmainbackground">simple solutions</span> that will improve everything around me.</h2>
               </div>
-              <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn-green">Let´s get in touch</button></a>
+              <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-green">Let´s get in touch</button></a>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ class About1 extends Component {
               <div className="subheading2-container">
                 <h2 className="subheading2-text">I had the opportunity to study <span className="spanmainbackground">psychology</span>, <span className="spanmainbackground">digital media</span> and <span className="spanmainbackground">UI/UX design</span> at Sogang University, South Korea, in fall 2017.</h2>
               </div>
-              <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn-red">Send me an email</button></a>
+              <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red">Send me an email</button></a>
             </div>
           </div>
         </div>

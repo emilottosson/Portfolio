@@ -71,7 +71,7 @@ class Navbar extends Component {
             {/* Resume button in menu */}
             <a href={Resume} target="_blank"><button type="button" className="btn-green btn-menu-resume">Resume</button></a>
             {/* Contact me button in menu */}
-            <a href="mailto:emil_ottosson@hotmail.com"><button type="button" className="btn-red btn-menu">Contact me</button></a>
+            <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red btn-menu">Contact me</button></a>
           </div>
         </div>
       </div>
