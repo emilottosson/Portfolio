@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Workflow from './components/Workflow/Workflow';
 import Portfolio from './components/Portfolio/Portfolio';
 import About from './components/About/About';
+import Articles from './components/Articles/Articles';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import LoadedSlide from './components/LoadedSlide/LoadedSlide';
 import { MemoryRouter } from 'react-router'
@@ -42,6 +43,7 @@ class App extends Component {
               <Workflow />
               <Portfolio />
               <About />
+              <Articles />
           </div>
         :
           <LoadingScreen />
