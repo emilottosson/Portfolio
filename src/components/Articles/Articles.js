@@ -18,7 +18,7 @@ class Articles extends Component {
               <h3 className="title-text">Social login authentication with OAuth2.</h3>
             </div>
             <div className="subheading-container">
-              <h2 className="subheading-text">When I work on a project I like the lean methodology using sprints.</h2>
+              <h2 className="subheading-text">A step by step guide on how to make a login authentication with GitHub. The purpose of this guide is to create a simple web application, with a linked database, where a user can log in via a social network.</h2>
             </div>
             <a type="button" className="btn-purple" href="https://medium.com/@emilottosson/social-login-authentication-with-oauth2-d68f7ac3d11c" target="_blank" rel="noopener noreferrer">Read the article</a>
           </div>
@@ -32,7 +32,7 @@ class Articles extends Component {
               <h3 className="title-text">Social login authentication with OAuth2.</h3>
             </div>
             <div className="subheading-container">
-              <h2 className="subheading-text">When I work on a project I like the lean methodology using sprints.</h2>
+              <h2 className="subheading-text">A step by step guide on how to make a login authentication with GitHub. The purpose of this guide is to create a simple web application, with a linked database, where a user can log in via a social network.</h2>
             </div>
             <a type="button" className="btn-green" href="https://medium.com/@emilottosson/social-login-authentication-with-oauth2-d68f7ac3d11c" target="_blank" rel="noopener noreferrer">Read the case study</a>
           </div>
