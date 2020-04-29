@@ -12,6 +12,7 @@
   /*min-height: 100vh;*/
   padding: 0px 40px 0px 40px;
   box-sizing: border-box;
+  transition: background-position .5s ease, padding .5s ease;
 
   #workflow-anchor {
     position: absolute;
@@ -43,10 +44,11 @@
   .section-detail-left {
     position: absolute;
     background-image: url("../../pngs/swallow.png");
+    background-size: 500px;
+    background-position: 0% 0%;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -595,7 +597,6 @@
         }
 
         .secondGraphText-container {
-          padding: 50px 0px 10px 0px;
           max-width: 357px;
         }    
       }

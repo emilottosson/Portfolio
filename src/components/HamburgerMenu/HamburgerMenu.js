@@ -83,6 +83,9 @@ class HamburgerMenu extends Component {
             <Link activeClass="active" className="menu-text-small" to="about-container" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
               About
             </Link>
+            <Link activeClass="active" className="menu-text-small" to="articles" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
+              Articles
+            </Link>
           <a className="menu-text-small" onClick={this.props.toggle} href={Resume} target="_blank">Resume</a>
           <a className="menu-text-small" onClick={this.props.toggle} href="mailto:emil@emilottosson.com">Contact Me</a>
         </div>

@@ -68,8 +68,11 @@ class Navbar extends Component {
             <Link activeClass="active" className="menu-text" to="about-container" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               About
             </Link>
+            <Link activeClass="active" className="menu-text" to="articles" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+              Articles
+            </Link>
             {/* Resume button in menu */}
-            <a href={Resume} target="_blank"><button type="button" className="btn-green btn-menu-resume">Resume</button></a>
+            <a href={Resume} target="_blank" rel="noopener noreferrer"><button type="button" className="btn-green btn-menu-resume">Resume</button></a>
             {/* Contact me button in menu */}
             <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red btn-menu">Contact me</button></a>
           </div>

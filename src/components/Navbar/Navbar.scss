@@ -94,6 +94,38 @@
 }
 
 /* Set new styles depending on width */
+@media(max-width: 833px) {
+
+/* Navigation bar container */
+.navbar-container {
+
+  /* Navigation bar */
+  .navbar {
+
+    /* Navbar heading container */
+    .logo-container {
+      padding-right: 0px;
+
+      /* Navbar heading */
+      .navbar-logo {
+        font-size: 15px;
+      }
+    }
+
+    /* Menu container */
+    .menu-container {
+
+      /* Menu text */
+      .menu-text {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+}
+
+
+/* Set new styles depending on width */
 @media(max-width: 767px) {
   /* Navigation bar container */
   .navbar-container {

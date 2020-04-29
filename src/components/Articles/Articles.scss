@@ -9,58 +9,323 @@
   align-items: center;
   background-color: $color-mainbackground;
   width: 100%;
-  padding: 90px 40px 90px 40px;
+  padding: 90px 40px 0px 40px;
   box-sizing: border-box;
+  transition: background-position .5s ease, padding .5s ease;
 
-  .visual-page-red-container {
-    position: relative;
+  .section-detail-left {
+    position: absolute;
+    background-image: url("../../pngs/heart.png");
+    background-size: 410px;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
     height: 100%;
-    background-image:
-    radial-gradient(
-      closest-corner,
-      $color-red,
-      $color-black 150%
-    );
-    border-radius: 25px;
-    padding: 90px 20px;
-    width: 100%;
-    max-width: 1130px;
+    width: calc(100% - 20px);
+    top: -205px;
+    left: 20px;
+    z-index: 1;
+    opacity: 0.1;
+  }
+
+  .articles-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    width: 100%;
+    max-width: 1170px;
+    box-sizing: border-box;
+    background-color: $color-mainbackground;
 
-    .section-ribbon {
+    .visual-page-red-container {
+      position: relative;
+      height: 100%;
+      background-image:
+      radial-gradient(
+        closest-corner,
+        $color-red,
+        $color-black 150%
+      );
+      border-radius: 25px;
+      padding: 90px 20px;
+      box-sizing: border-box;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      top: -30px;
-      height: 90px;
-      width: 240px;
-      background-image: url("../../pngs/ribbon.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 1;
+      z-index: 2;
 
-      h1 {
-        font-size: 35px;
-        transform: rotate(-10deg);
-        margin-top: -11px;
+      .section-ribbon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -30px;
+        height: 90px;
+        width: 240px;
+        background-image: url("../../pngs/ribbon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+
+        h1 {
+          font-size: 35px;
+          transform: rotate(-10deg);
+          margin-top: -11px;
+        }
+      }
+
+      /* Workflow container */
+      .article-container {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        max-width: 1130px;
+        height: 100%;
+        transition: padding .5s ease;
+  
+        .title-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          min-height: 0px;
+        }
+  
+        .title-container h1 {
+          color: $color-mainbackground;
+        }
+  
+        .subheading-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          min-height: 0px;
+          padding: 0px 30px;
+          margin-bottom: 8px;
+  
+          .subheading-text {
+            color: $color-text-on-red;
+          }
+        }
       }
     }
+
+    .visual-page-purple-container {
+      position: relative;
+      height: 100%;
+      background-image:
+      radial-gradient(
+        closest-corner,
+        $color-purple,
+        $color-black 150%
+      );
+      border-radius: 25px;
+      padding: 90px 20px;
+      box-sizing: border-box;
+      width: 100%;
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+
+      .section-ribbon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -30px;
+        height: 90px;
+        width: 240px;
+        background-image: url("../../pngs/ribbon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+  
+        h1 {
+          font-size: 35px;
+          transform: rotate(-10deg);
+          margin-top: -11px;
+        }
+      }
+
+      /* Workflow container */
+      .article-container {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        max-width: 1130px;
+        height: 100%;
+        transition: padding .5s ease;
+  
+        .title-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          min-height: 0px;
+        }
+  
+        .title-container h1 {
+          color: $color-mainbackground;
+        }
+  
+        .subheading-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          min-height: 0px;
+          padding: 0px 30px;
+          margin-bottom: 8px;
+  
+          .subheading-text {
+            color: $color-text-on-purple;
+          }
+        }
+      }
     }
+  }
 }
 
-    #articles:after {
-        content:'';
-        min-height:inherit;
-        font-size:0;
-    }
+#articles:after {
+    content:'';
+    min-height:inherit;
+    font-size:0;
+}
 
 /* Set new styles depending on width */
 @media only screen and (max-width: 767px) {
     #articles {
-        padding: 90px 20px 90px 20px;
+      padding: 90px 20px 0px 20px;
+
+      .articles-container {
+        flex-direction: column;
+  
+        .visual-page-purple-container {
+          margin-top: 90px;
+          margin-left: 0px;
+        }
+      }
     }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 500px) {
+  /* Workflow section */
+  #articles {
+
+    .articles-container {
+
+      .visual-page-red-container {
+
+        /* Workflow container */
+        .article-container {
+    
+          .title-container h3 {
+            font-size: 36px;
+            line-height: 47px;
+            letter-spacing: -1.5px;
+          }
+
+          .subheading-container {
+            padding: 0px 0px;
+
+            .subheading-text {
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: -.5px;
+            }
+          }
+        }
+      }
+
+      .visual-page-purple-container {
+
+        /* Workflow container */
+        .article-container {
+    
+          .title-container h3 {
+            font-size: 36px;
+            line-height: 47px;
+            letter-spacing: -1.5px;
+          }
+
+          .subheading-container {
+            padding: 0px 0px;
+
+            .subheading-text {
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: -.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 365px) {
+  /* Workflow section */
+  #articles {
+
+    .articles-container {
+
+      .visual-page-red-container {
+
+        /* Workflow container */
+        .article-container {
+    
+          .title-container h3 {
+            font-size: 29px;
+            line-height: 37px;
+          }
+
+          .subheading-container {
+            padding: 0px 0px;
+
+            .subheading-text {
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+
+      .visual-page-purple-container {
+
+        /* Workflow container */
+        .article-container {
+    
+          .title-container h3 {
+            font-size: 29px;
+            line-height: 37px;
+          }
+
+          .subheading-container {
+            padding: 0px 0px;
+
+            .subheading-text {
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

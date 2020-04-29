@@ -1,0 +1,93 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
+/* Workflow section */
+#footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-mainbackground;
+  width: 100%;
+  padding: 90px 40px;
+  box-sizing: border-box;
+  transition: background-position .5s ease, padding .5s ease;
+
+  .footer-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: $color-darkgray;
+      cursor: pointer;
+
+      &:hover {
+          color: $color-red;
+          text-decoration: line-through;
+      }
+    }
+
+    p {
+      color: $color-darkgray;
+      font-size: 17px;
+      line-height: 25px;
+      letter-spacing: -.3px;
+    }
+
+    hr {
+      height: 0;
+      width: 100px;
+      margin: 30px auto;
+      border: 0;
+      border-bottom: 2px solid $color-darkgray;
+    }
+
+    .social {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      margin: 0px 5px;
+      border: 1.5px dotted $color-darkgray-hover;
+      border-radius: 40px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-color: $color-darkgray;
+
+      &:hover {
+        border: 1.5px dotted $color-darkgray;
+        background-color: $color-darkgray-hover;
+      }
+    }
+
+    .email {
+      background-image: url(../../svgs/email-icon.svg);
+      background-size: 20px 14px;
+    }
+
+    .medium {
+      background-image: url(../../svgs/medium-icon.svg);
+      background-size: 20px 14px;
+    }
+  
+    .linkedin {
+      background-image: url(../../svgs/linkedin-icon.svg);
+      background-size: 20px 14px;
+    }
+  }
+}
+
+/* Set new styles depending on width */
+@media only screen and (max-width: 767px) {
+/* Workflow section */
+#footer {
+    padding: 90px 20px;
+  }
+}

@@ -27,12 +27,14 @@
   .toggle-button .toggle-button-line {
     width: 23px;
     height: 2px;
-    background: #383838; }
+    background: #383838;
+    transition: transform .5s ease; }
   .toggle-button .toggle-button-line-first {
     width: 23px;
     height: 2px;
     background: #383838;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    transition: transform .5s ease; }
 
 .toggle-button-cross {
   position: relative;
@@ -57,7 +59,8 @@
     position: absolute;
     width: 23px;
     height: 2px;
-    background: #383838; }
+    background: #383838;
+    transition: transform .5s ease; }
     .toggle-button-cross .toggle-cross-line.neg-rotation {
       transform: rotate(-45deg); }
     .toggle-button-cross .toggle-cross-line.pos-rotation {

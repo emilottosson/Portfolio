@@ -2,6 +2,7 @@
 @import 'src/styles/_colors.scss';
 
 #about-container {
+    transition: background-position .5s ease, padding .5s ease;
 
     #about1-container {
         position: relative;
@@ -12,17 +13,18 @@
         padding: 90px 40px 0px 40px;
         box-sizing: border-box;
         background-color: $color-mainbackground;
+        transition: background-position .5s ease, padding .5s ease;
 
         .section-detail-left {
             position: absolute;
             background-image: url("../../pngs/ship.png");
             background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 100% 0%;
-            height: 500px;
-            width: 500px;
+            background-size: 500px;
+            background-position: 0% 0%;
+            height: 100%;
+            width: 100%;
             top: -160px;
-            left: 0;
+            left: -20px;
             z-index: 1;
             opacity: 0.1;
           }
@@ -123,14 +125,16 @@
         padding: 90px 40px 0px 40px;
         box-sizing: border-box;
         background-color: $color-mainbackground;
+        transition: background-position .5s ease, padding .5s ease;
 
         .section-detail-right {
             position: absolute;
             background-image: url("../../pngs/anchor.png");
             background-repeat: no-repeat;
-            background-size: cover;
-            height: 650px;
-            width: 500px;
+            background-size: 500px;
+            background-position: 100% 0%;
+            height: 100%;
+            width: 100%;
             top: -235px;
             right: 0;
             z-index: 1;
@@ -238,15 +242,6 @@
                         }
                     }
                 }
-
-                .btn-about2 {
-                    background-color: #595ca2;
-                    color: white;
-                }
-
-                .btn-about2:hover {
-                    background-color: #6164b1;
-                }
             }
         }
     }
@@ -263,6 +258,10 @@
 
         #about1-container {
             padding: 90px 20px 0px 20px;
+
+            .section-detail-left {
+                left: 0px;
+            }
         }
 
         #about2-container {

@@ -13,7 +13,6 @@
   cursor: pointer;
   padding: 0;
   box-sizing: border-box;
-
   /* Hamburger menu focus */
   &:focus {
     outline: none;
@@ -29,6 +28,7 @@
     width: 23px;
     height: 2px;
     background: $color-darkgray;
+    transition: transform .5s ease;
   }
 
     /* Hamburger menu lines */
@@ -37,6 +37,7 @@
       height: 2px;
       background: $color-darkgray;
       margin-bottom: 5px;
+      transition: transform .5s ease;
     }
 }
 
@@ -69,6 +70,7 @@
     width: 23px;
     height: 2px;
     background: $color-darkgray;
+    transition: transform .5s ease;
 
     &.neg-rotation {
       transform: rotate(-45deg);
