@@ -8,9 +8,12 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*$color-lightblue: #358ed7;*/
-/*$color-lightblue-hover: #2b86d1;*/
-/* Navigation bar container */
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
 .navbar-container {
   position: fixed;
   display: flex;
@@ -20,8 +23,7 @@
   background-color: #eeddce;
   align-items: center;
   justify-content: center;
-  z-index: 4;
-  /* Navigation bar */ }
+  z-index: 5; }
   .navbar-container .navbar {
     display: flex;
     max-width: 1170px;
@@ -30,9 +32,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    transition: padding .5s ease;
-    /* Navbar heading container */
-    /* Menu container */ }
+    transition: padding .5s ease; }
     .navbar-container .navbar .logo-container {
       display: flex;
       align-items: center;
@@ -40,8 +40,7 @@
       min-width: 0px;
       flex-grow: 2;
       box-sizing: border-box;
-      padding-right: 23px;
-      /* Navbar heading */ }
+      padding-right: 23px; }
       .navbar-container .navbar .logo-container .navbar-logo {
         display: flex;
         align-items: center;
@@ -54,15 +53,13 @@
       display: flex;
       align-items: center;
       height: 100%;
-      min-width: 0px;
-      /* Menu text */ }
+      min-width: 0px; }
       .navbar-container .navbar .menu-container .menu-text {
         color: #383838;
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
-        font-weight: 400;
-        /* Menu text hover */ }
+        font-weight: 400; }
         .navbar-container .navbar .menu-container .menu-text:hover {
           text-decoration: line-through;
           color: #942a53; }
@@ -71,47 +68,26 @@
         .navbar-container .navbar .menu-container .menu-text.active {
           text-decoration: line-through;
           color: #942a53; }
-      .navbar-container .navbar .menu-container .btn-menu {
-        padding: 11px 20px; }
-      .navbar-container .navbar .menu-container .btn-menu-resume {
-        padding: 11px 20px;
-        margin-right: 8px; }
     .navbar-container .navbar .hamburger-icon {
       display: none; }
 
-/* Set new styles depending on width */
 @media (max-width: 833px) {
-  /* Navigation bar container */
-  .navbar-container {
-    /* Navigation bar */ }
-    .navbar-container .navbar {
-      /* Navbar heading container */
-      /* Menu container */ }
-      .navbar-container .navbar .logo-container {
-        padding-right: 0px;
-        /* Navbar heading */ }
-        .navbar-container .navbar .logo-container .navbar-logo {
-          font-size: 15px; }
-      .navbar-container .navbar .menu-container {
-        /* Menu text */ }
-        .navbar-container .navbar .menu-container .menu-text {
-          margin-right: 15px; } }
+  .navbar-container .navbar .logo-container {
+    padding-right: 0px; }
+    .navbar-container .navbar .logo-container .navbar-logo {
+      font-size: 15px; }
+  .navbar-container .navbar .menu-container .menu-text {
+    margin-right: 15px; } }
 
-/* Set new styles depending on width */
 @media (max-width: 767px) {
-  /* Navigation bar container */
   .navbar-container {
-    height: 55px;
-    /* Navigation bar */ }
+    height: 55px; }
     .navbar-container .navbar {
       padding: 0 20px;
       background-color: #eeddce;
-      justify-content: initial;
-      /* Navbar heading container */
-      /* Menu container */ }
+      justify-content: initial; }
       .navbar-container .navbar .logo-container {
-        justify-content: center;
-        /* Navbar heading */ }
+        justify-content: center; }
         .navbar-container .navbar .logo-container .navbar-logo {
           font-size: 18px;
           color: #383838; }

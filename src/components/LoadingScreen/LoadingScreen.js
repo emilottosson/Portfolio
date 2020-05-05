@@ -12,7 +12,6 @@ class LoadingScreen extends Component {
     };
 
     return (
-      // Container for loading screen content
       <div id="loading-screen">
         <div className="loading-animation">
           <Lottie options={defaultOptions}/>

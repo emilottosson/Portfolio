@@ -12,7 +12,6 @@ class LoadedSlide extends Component {
     this.startAnimation = this.startAnimation.bind(this);
   }
 
-  // Start animation helper using nested requestAnimationFrames
   startAnimation(callback) {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
@@ -22,7 +21,6 @@ class LoadedSlide extends Component {
   };
 
   componentDidMount() {
-    // You'll need to import startAnimation at the top of the file
     this.startAnimation(() => {
       this.setState({ animate: true });
     });

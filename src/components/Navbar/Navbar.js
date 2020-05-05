@@ -4,6 +4,7 @@ import MenuToggleButton from '../HamburgerMenu/MenuToggleButton';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import Resume from "../../pdfs/Emil-Ottosson-Resume-Dark.pdf";
 import { Link } from "react-scroll";
+import Button from '../Button/Button';
 
 
 class Navbar extends Component {
@@ -43,22 +44,17 @@ class Navbar extends Component {
 
     return (
       <React.Fragment>
-      {/* Navigation bar */}
       <div className="navbar-container" style={ this.state.mountedNavbar ? style1 : style2 }>
         <div className="navbar" >
           <div className="hamburger-icon">
             <MenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>
           </div>
-          {/* Navbar logo container */}
           <div className="logo-container">
-            {/* The logo on left in the navbar */}
             <Link activeClass="active" className="navbar-logo" to="header" spy={true} smooth={true} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               EMIL OTTOSSON
             </Link>
           </div>
-          {/* Menu container */}
           <div className="menu-container">
-            {/* The menu text */}
             <Link activeClass="active" className="menu-text" to="workflow-anchor" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Workflow
             </Link>
@@ -71,10 +67,18 @@ class Navbar extends Component {
             <Link activeClass="active" className="menu-text" to="articles" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Articles
             </Link>
-            {/* Resume button in menu */}
-            <a href={Resume} target="_blank" rel="noopener noreferrer"><button type="button" className="btn-green btn-menu-resume">Resume</button></a>
-            {/* Contact me button in menu */}
-            <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red btn-menu">Contact me</button></a>
+            <Button 
+              color="green"
+              buttonText="Resume"
+              buttonStyle={{padding: '11px 20px', marginRight: '8px'}}
+              buttonHref={Resume}
+            />
+            <Button 
+              color="red"
+              buttonText="Contact me"
+              buttonStyle={{padding: '11px 20px'}}
+              buttonHref="mailto:emil@emilottosson.com"
+            />
           </div>
         </div>
       </div>

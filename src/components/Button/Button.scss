@@ -1,0 +1,165 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
+ .general-button {
+    position: relative;
+    display: inline-block;
+    font-family: $font-text;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    color: $color-mainbackground;
+    padding: 17px 23px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 100;
+
+    &.green {
+      background-image:
+      radial-gradient(
+        closest-corner,
+        $color-green,
+        $color-black 150%
+      );
+  
+      &:before {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          font-family: $font-text;
+          font-weight: 500;
+          background-image:
+          radial-gradient(
+            closest-corner,
+            $color-green,
+            $color-black 200%
+          );
+          content: '';
+          border: none;
+          border-radius: 3px;
+          color: $color-mainbackground;
+          padding: 17px 23px;
+          font-size: 15px;
+          cursor: pointer;
+          text-decoration: none;
+          opacity: 0;
+          margin: 0;
+          padding: 0;
+          z-index: -100;
+      }
+  
+      &:hover {
+        &:before {
+          opacity: 1;
+  
+        }
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.red {
+        background-image:
+        radial-gradient(
+          closest-corner,
+          $color-red,
+          $color-black 150%
+        );
+    
+        &:before {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          font-family: $font-text;
+          font-weight: 500;
+          background-image:
+          radial-gradient(
+            closest-corner,
+            $color-red,
+            $color-black 200%
+          );
+          content: '';
+          border: none;
+          border-radius: 3px;
+          color: $color-mainbackground;
+          padding: 17px 23px;
+          font-size: 15px;
+          cursor: pointer;
+          text-decoration: none;
+          opacity: 0;
+          margin: 0;
+          padding: 0;
+          z-index: -100;
+      }
+    
+      &:hover {
+        &:before {
+          opacity: 1;
+    
+        }
+      }
+    
+        &:focus {
+          outline: none;
+        }
+      }
+
+    &.purple {
+    background-image:
+    radial-gradient(
+        closest-corner,
+        $color-purple,
+        $color-black 150%
+    );
+
+        &:before {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            font-family: $font-text;
+            font-weight: 500;
+            background-image:
+            radial-gradient(
+            closest-corner,
+            $color-purple,
+            $color-black 200%
+            );
+            content: '';
+            border: none;
+            border-radius: 3px;
+            color: $color-mainbackground;
+            padding: 17px 23px;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            z-index: -100;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+

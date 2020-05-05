@@ -1,6 +1,5 @@
 @import 'src/styles/_colors.scss';
 
-/* Hamburger menu */
 .toggle-button {
   display: flex;
   flex-direction: column;
@@ -13,17 +12,15 @@
   cursor: pointer;
   padding: 0;
   box-sizing: border-box;
-  /* Hamburger menu focus */
+
   &:focus {
     outline: none;
   }
 
-  /* Hamburger menu lines hover */
   &:hover .toggle-button-line, &:hover .toggle-button-line-first {
     background: $color-red;
   }
 
-  /* Hamburger menu lines */
   .toggle-button-line {
     width: 23px;
     height: 2px;
@@ -31,7 +28,6 @@
     transition: transform .5s ease;
   }
 
-    /* Hamburger menu lines */
     .toggle-button-line-first {
       width: 23px;
       height: 2px;
@@ -54,17 +50,14 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* Cross button focus */
   &:focus {
     outline: none;
   }
 
-  /* Cross button lines hover */
   &:hover .toggle-cross-line {
     background: $color-red;
   }
 
-  /* Cross button lines */
   .toggle-cross-line {
     position: absolute;
     width: 23px;
@@ -87,7 +80,6 @@
   .toggle-button {
     margin-top: 5px;
 
-    /* Hamburger menu lines */
     .toggle-button-line {
       margin-bottom: 5px;
     }

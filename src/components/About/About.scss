@@ -17,17 +17,17 @@
 
         .section-detail-left {
             position: absolute;
-            background-image: url("../../pngs/ship.png");
+            background-image: url("../../pngs/anchor.png");
             background-repeat: no-repeat;
             background-size: 500px;
             background-position: 0% 0%;
             height: 100%;
             width: 100%;
-            top: -160px;
+            top: -250px;
             left: -20px;
             z-index: 1;
             opacity: 0.1;
-          }
+        }
 
         .visual-page-purple-container {
             position: relative;
@@ -65,7 +65,7 @@
                   transform: rotate(-10deg);
                   margin-top: -11px;
                 }
-              }
+            }
 
             .about1-content {
                 display: flex;
@@ -97,7 +97,6 @@
 
                     .subheading-text {
                         max-width: 712px;
-                        //color: #e4cae5;
                         color: $color-text-on-purple;
 
                         .spanmainbackground {
@@ -126,20 +125,6 @@
         box-sizing: border-box;
         background-color: $color-mainbackground;
         transition: background-position .5s ease, padding .5s ease;
-
-        .section-detail-right {
-            position: absolute;
-            background-image: url("../../pngs/anchor.png");
-            background-repeat: no-repeat;
-            background-size: 500px;
-            background-position: 100% 0%;
-            height: 100%;
-            width: 100%;
-            top: -235px;
-            right: 0;
-            z-index: 1;
-            opacity: 0.1;
-          }
 
         .visual-page-green-container {
             position: relative;
@@ -177,7 +162,7 @@
                   transform: rotate(-10deg);
                   margin-top: -11px;
                 }
-              }
+            }
     
             .map {
                 position: relative;
@@ -270,7 +255,6 @@
     }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
     #about-container {
 
@@ -343,7 +327,6 @@
     }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
     #about-container {
 

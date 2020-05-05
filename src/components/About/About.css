@@ -8,8 +8,12 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*$color-lightblue: #358ed7;*/
-/*$color-lightblue-hover: #2b86d1;*/
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
 #about-container {
   transition: background-position .5s ease, padding .5s ease; }
   #about-container #about1-container {
@@ -24,13 +28,13 @@
     transition: background-position .5s ease, padding .5s ease; }
     #about-container #about1-container .section-detail-left {
       position: absolute;
-      background-image: url("../../pngs/ship.png");
+      background-image: url("../../pngs/anchor.png");
       background-repeat: no-repeat;
       background-size: 500px;
       background-position: 0% 0%;
       height: 100%;
       width: 100%;
-      top: -160px;
+      top: -250px;
       left: -20px;
       z-index: 1;
       opacity: 0.1; }
@@ -104,18 +108,6 @@
     box-sizing: border-box;
     background-color: #eeddce;
     transition: background-position .5s ease, padding .5s ease; }
-    #about-container #about2-container .section-detail-right {
-      position: absolute;
-      background-image: url("../../pngs/anchor.png");
-      background-repeat: no-repeat;
-      background-size: 500px;
-      background-position: 100% 0%;
-      height: 100%;
-      width: 100%;
-      top: -235px;
-      right: 0;
-      z-index: 1;
-      opacity: 0.1; }
     #about-container #about2-container .visual-page-green-container {
       position: relative;
       height: 100%;
@@ -202,7 +194,6 @@
   #about-container #about2-container {
     padding: 90px 20px 0px 20px; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
   #about-container #about1-container .visual-page-purple-container .about1-content .title-container {
     max-width: 355px; }
@@ -231,7 +222,6 @@
     font-size: 16px;
     letter-spacing: -.5px; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
   #about-container #about1-container .visual-page-purple-container .about1-content .title-container .title-text {
     font-size: 35px;

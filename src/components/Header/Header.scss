@@ -1,7 +1,6 @@
 @import 'src/styles/_fonts.scss';
 @import 'src/styles/_colors.scss';
 
-/* Header section */
 #header {
   position: relative;
   display: flex;
@@ -13,12 +12,10 @@
   z-index: 1;
   overflow: hidden;
 
-  /* Background on header section */
   .header-background {
     position: absolute;
     height: 100%;
     top: 0;
-    /*max-width: 1470px;*/
     max-width: 1170px;
     width: 100%;
     background-image: url("../../pngs/background.png");
@@ -50,7 +47,6 @@
     background-color: $color-mainbackground;
   }
 
-  /* Text on header section */
   .header-content{
     position: relative;
     display: flex;
@@ -64,7 +60,6 @@
     z-index: 1;
     transition: padding .5s ease;
 
-    /* Content for all text */
     .header-content-container {
       position: relative;
       display: flex;
@@ -76,7 +71,6 @@
       box-sizing: border-box;
       padding-bottom: 5px;
 
-      /* Title container on header section */
       .title-container {
         position: relative;
         width: 100%;
@@ -89,7 +83,6 @@
         }
       }
 
-      /* Sub-heading container on header section */
       .text-container {
         width: 100%;
         min-height: 0px;
@@ -100,25 +93,17 @@
           color: $color-green;
         }
 
-        /* Span some light gray text to dark text */
         .spanred {
           color: $color-red;
           font-weight: 500;
         }
       }
 
-      /* Buttons container on header section */
       .buttons-container {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
         min-height: 0px;
-      }
-
-      /* Button on header style */
-      .btn-header {
-        padding: 17px 23px;
-        margin-right: 8px;
       }
     }
   }
@@ -138,23 +123,18 @@
   font-size:0;
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 1500px) {
 
-  /* Header section */
   #header {
 
-    /* Background on header section */
     .header-background {
       background-position: 100% 100%;
     }
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 1250px) {
 
-  /* Header section */
   #header {
 
     .header-gradient {
@@ -163,13 +143,10 @@
   }
 }
 
-/* Set new styles depending on width */
 @media(max-width: 767px) {
 
-  /* Header section */
   #header {
 
-    /* Text on header section */
     .header-content{
       padding: 90px 20px 70px 20px;
       box-sizing: border-box;
@@ -181,38 +158,29 @@
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 600px) {
 
-  /* Header section */
   #header {
 
-    /* Background on header section */
     .header-background {
       background-position: 5% 100%;
     }
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
 
-  /* Header section */
   #header {
 
-    /* Text on header section */
     .header-content{
       justify-content: center;
       text-align: center;
 
-      /* Content for all text */
       .header-content-container {
         max-width: 355px;
 
-        /* Title container on header section */
         .title-container {
 
-          /* Title text */
           .title-text {
             font-size: 42px;
             letter-spacing: -1.5px;
@@ -220,10 +188,8 @@
           }
         }
 
-        /* Sub-heading container on header section */
         .text-container {
 
-          /* Sub-heading text */
           .sub-heading-text {
             font-size: 18px;
             letter-spacing: -.5px;
@@ -231,70 +197,43 @@
           }
         }
 
-        /* Buttons container on header section */
         .buttons-container {
           max-width: calc(365px - 65px);
           display: flex;
           justify-content: center;
-
-          /* Buttons container on header section */
-          .navLinkButtonContainer {
-            width: 100%;
-          }
-
-          /* Button on header style */
-          .btn-header {
-            margin-right: 0px;
-            margin-bottom: 5px;
-            width: 100%;
-          }
-
-          /* Right button on header style */
-          .btn-header-right {
-            width: 100%;
-          }
         }
       }
     }
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
 
-  /* Header section */
   #header {
 
-    /* Text on header section */
     .header-content{
       justify-content: center;
       text-align: center;
 
-      /* Content for all text */
       .header-content-container {
         max-width: 295px;
 
-        /* Title container on header section */
         .title-container {
 
-          /* Title text */
           .title-text {
             font-size: 35px;
             line-height: 37px;
           }
         }
 
-        /* Sub-heading container on header section */
         .text-container {
 
-          /* Sub-heading text */
           .sub-heading-text {
             font-size: 15px;
             line-height: 22px;
           }
         }
 
-        /* Buttons container on header section */
         .buttons-container {
           max-width: calc(365px - 118px);
           display: flex;
@@ -303,29 +242,4 @@
       }
     }
   }
-}
-
-@-moz-document url-prefix() {
-
-    /* Header section */
-    #header {
-
-      /* Text on header section */
-      .header-content{
-
-        /* Content for all text */
-        .header-content-container {
-
-          /* Button on header style */
-          .btn-header {
-            padding: 17px 26px;
-          }
-
-          /* Right button on header style */
-          .btn-header-right {
-            padding: 16px 26px;
-          }
-        }
-      }
-    }
 }

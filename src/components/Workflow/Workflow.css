@@ -8,9 +8,12 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*$color-lightblue: #358ed7;*/
-/*$color-lightblue-hover: #2b86d1;*/
-/* Workflow section */
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
 #workflow {
   position: relative;
   display: flex;
@@ -18,7 +21,6 @@
   align-items: center;
   background-color: #eeddce;
   width: 100%;
-  /*min-height: 100vh;*/
   padding: 0px 40px 0px 40px;
   box-sizing: border-box;
   transition: background-position .5s ease, padding .5s ease; }
@@ -66,8 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
-    /* Workflow container */ }
+    z-index: 2; }
     #workflow .visual-page-green-container .section-ribbon {
       display: flex;
       justify-content: center;
@@ -111,8 +112,7 @@
         width: 100%;
         min-height: 0px; }
         #workflow .visual-page-green-container .workflow-container .subheading-container .subheading-text {
-          color: #78afb4;
-          /* Span some light gray text to dark text */ }
+          color: #78afb4; }
           #workflow .visual-page-green-container .workflow-container .subheading-container .subheading-text .spanmainbackground {
             color: #eeddce;
             font-weight: 500; }
@@ -391,8 +391,7 @@
         #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
           color: #78afb4;
           font-size: 18px;
-          line-height: 28px;
-          /* Span some light gray text to dark text */ }
+          line-height: 28px; }
           #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text .spanmainbackground {
             color: #eeddce;
             font-weight: 500; }
@@ -410,180 +409,159 @@
   min-height: inherit;
   font-size: 0; }
 
-/* Set new styles depending on width */
 @media (max-width: 937px) {
-  /* Workflow section */
-  #workflow .visual-page-green-container {
-    /* Workflow container */ }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
-      width: 357px; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen {
-        display: block; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-bigscreen {
-        display: none; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-bigscreen {
-        display: none; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left {
-        display: flex; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowright-bigscreen {
-        display: none; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
-        display: flex; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
-        display: flex; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
-        display: block; }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .graphText-container {
-      margin-top: 40px; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .graphText-container .graph-text {
-        text-align: center;
-        padding-left: 0px; }
-    #workflow .visual-page-green-container .workflow-container .repeat-container {
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
+    width: 357px; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen {
+      display: block; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-bigscreen {
       display: none; }
-    #workflow .visual-page-green-container .workflow-container .secondGraphText-container {
-      max-width: 357px; } }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-bigscreen {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left {
+      display: flex; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowright-bigscreen {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
+      display: flex; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
+      display: flex; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
+      display: block; }
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container .graphText-container {
+    margin-top: 40px; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .graphText-container .graph-text {
+      text-align: center;
+      padding-left: 0px; }
+  #workflow .visual-page-green-container .workflow-container .repeat-container {
+    display: none; }
+  #workflow .visual-page-green-container .workflow-container .secondGraphText-container {
+    max-width: 357px; } }
 
-/* Set new styles depending on width */
 @media (max-width: 767px) {
-  /* Header section */
   #workflow {
     padding: 0px 20px 0px 20px; }
     #workflow .visual-page-green-container #portfolio-scroll-anchor {
       height: 55px; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
-  #workflow .visual-page-green-container {
-    /* Workflow container */ }
-    #workflow .visual-page-green-container .workflow-container .title-container .title-text {
-      font-size: 42px;
-      line-height: 47px;
-      letter-spacing: -1.5px; }
-    #workflow .visual-page-green-container .workflow-container .subheading-container .subheading-text {
-      font-size: 18px;
-      line-height: 28px;
-      letter-spacing: -.5px; }
+  #workflow .visual-page-green-container .workflow-container .title-container .title-text {
+    font-size: 42px;
+    line-height: 47px;
+    letter-spacing: -1.5px; }
+  #workflow .visual-page-green-container .workflow-container .subheading-container .subheading-text {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -.5px; }
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
+    width: 320px; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
+      font-size: 24px; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow {
+      width: 50px; }
+      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right {
+        display: none; }
+      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-smallest {
+        display: flex; }
+      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left {
+        display: none; }
+      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left-smallest {
+        display: flex; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
+      display: flex; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
+      display: flex; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
+      width: 50px;
+      display: block; }
+  #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
+    font-size: 16px;
+    letter-spacing: -.5px; } }
+
+@media only screen and (max-width: 417px) {
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container {
+    width: 220px; }
     #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
-      width: 320px; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
-        font-size: 24px; }
+      width: 220px; }
+      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step {
+        height: 131px;
+        width: 95px; }
+        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step .step-circle {
+          height: 91px;
+          width: 91px; }
+      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen {
+        height: 131px;
+        width: 95px; }
+        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen .step-circle {
+          height: 91px;
+          width: 91px; }
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow {
-        width: 50px; }
+        width: 30px;
+        height: 131px;
+        padding-top: 79px; }
         #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right {
           display: none; }
         #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-smallest {
+          display: none; }
+        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-smallest-2 {
           display: flex; }
         #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left {
           display: none; }
         #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left-smallest {
+          display: none; }
+        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left-smallest-2 {
           display: flex; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
-        display: flex; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
-        display: flex; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
-        width: 50px;
-        display: block; }
-    #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
-      font-size: 16px;
-      letter-spacing: -.5px; } }
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 417px) {
-  /* Workflow section */
-  #workflow .visual-page-green-container {
-    /* Workflow container */ }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container {
-      width: 220px; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
-        width: 220px; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step {
-          height: 131px;
-          width: 95px; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step .step-circle {
-            height: 91px;
-            width: 91px; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen {
-          height: 131px;
-          width: 95px; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen .step-circle {
-            height: 91px;
-            width: 91px; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow {
-          width: 30px;
-          height: 131px;
-          padding-top: 79px; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right {
-            display: none; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-smallest {
-            display: none; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-right-smallest-2 {
-            display: flex; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left {
-            display: none; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left-smallest {
-            display: none; }
-          #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow .arrow-left-smallest-2 {
-            display: flex; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
-          display: none; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen-2 {
-          display: flex;
-          height: 60px;
-          width: 95px; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
-          display: none; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen-2 {
-          display: flex;
-          height: 60px;
-          width: 95px; }
-        #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
-          width: 30px;
-          height: 60px;
-          display: block; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .graphText-container {
-        margin-top: 20px; } }
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 365px) {
-  /* Workflow section */
-  #workflow .visual-page-green-container {
-    /* Workflow container */ }
-    #workflow .visual-page-green-container .workflow-container .title-container .title-text {
-      font-size: 35px;
-      line-height: 37px; }
-    #workflow .visual-page-green-container .workflow-container .subheading-container .subheading-text {
-      font-size: 15px;
-      line-height: 22px; }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
-      font-size: 21px; }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen .step-title .title-text {
-      font-size: 21px; }
-    #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
-      font-size: 15px;
-      line-height: 22px; } }
-
-/* Set new styles depending on width */
-@media only screen and (max-width: 319px) {
-  /* Workflow section */
-  #workflow .visual-page-green-container {
-    /* Workflow container */ }
-    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
-      flex-flow: column;
-      align-items: center; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step {
-        margin-bottom: 20px; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen {
-        margin-bottom: 20px; }
-      #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow {
-        display: none; }
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
         display: none; }
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen-2 {
-        display: none; }
+        display: flex;
+        height: 60px;
+        width: 95px; }
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
         display: none; }
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen-2 {
-        display: none; }
+        display: flex;
+        height: 60px;
+        width: 95px; }
       #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
-        display: none; } }
+        width: 30px;
+        height: 60px;
+        display: block; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .graphText-container {
+      margin-top: 20px; } }
+
+@media only screen and (max-width: 365px) {
+  #workflow .visual-page-green-container .workflow-container .title-container .title-text {
+    font-size: 35px;
+    line-height: 37px; }
+  #workflow .visual-page-green-container .workflow-container .subheading-container .subheading-text {
+    font-size: 15px;
+    line-height: 22px; }
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step .step-title .title-text {
+    font-size: 21px; }
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen .step-title .title-text {
+    font-size: 21px; }
+  #workflow .visual-page-green-container .workflow-container .secondGraphText-container .graph-second-text {
+    font-size: 15px;
+    line-height: 22px; } }
+
+@media only screen and (max-width: 319px) {
+  #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container {
+    flex-flow: column;
+    align-items: center; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step {
+      margin-bottom: 20px; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .step-smallscreen {
+      margin-bottom: 20px; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrow {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowup-smallscreen-2 {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .arrowdown-smallscreen-2 {
+      display: none; }
+    #workflow .visual-page-green-container .workflow-container .workflow-graph-container .picture-container .filling-div {
+      display: none; } }

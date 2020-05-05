@@ -1,7 +1,6 @@
 @import 'src/styles/_fonts.scss';
 @import 'src/styles/_colors.scss';
 
-/* Workflow section */
 #workflow {
   position: relative;
   display: flex;
@@ -9,7 +8,6 @@
   align-items: center;
   background-color: $color-mainbackground;
   width: 100%;
-  /*min-height: 100vh;*/
   padding: 0px 40px 0px 40px;
   box-sizing: border-box;
   transition: background-position .5s ease, padding .5s ease;
@@ -93,7 +91,6 @@
       }
     }
 
-    /* Workflow container */
     .workflow-container {
       position: relative;
       display: flex;
@@ -129,7 +126,6 @@
         .subheading-text {
           color: $color-text-on-green;
 
-          /* Span some light gray text to dark text */
           .spanmainbackground {
             color: $color-mainbackground;
             font-weight: 500;
@@ -501,7 +497,6 @@
           font-size: 18px;
           line-height: 28px;
           
-          /* Span some light gray text to dark text */
           .spanmainbackground {
             color: $color-mainbackground;
             font-weight: 500;
@@ -530,15 +525,12 @@
   font-size:0;
 }
 
-/* Set new styles depending on width */
 @media(max-width: 937px) {
 
-  /* Workflow section */
   #workflow {
 
     .visual-page-green-container {
 
-      /* Workflow container */
       .workflow-container {
 
         .workflow-graph-container {
@@ -604,10 +596,8 @@
   }
 }
 
-/* Set new styles depending on width */
 @media(max-width: 767px) {
 
-  /* Header section */
   #workflow {
     padding: 0px 20px 0px 20px;
 
@@ -620,13 +610,12 @@
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
+
   #workflow {
 
     .visual-page-green-container {
 
-      /* Workflow container */
       .workflow-container {
 
         .title-container {
@@ -709,14 +698,12 @@
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 417px) {
-  /* Workflow section */
+
   #workflow {
 
     .visual-page-green-container {
 
-      /* Workflow container */
       .workflow-container {
 
         .workflow-graph-container {
@@ -812,15 +799,12 @@
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
 
-  /* Workflow section */
   #workflow {
 
     .visual-page-green-container {
 
-      /* Workflow container */
       .workflow-container {
 
         .title-container {
@@ -877,15 +861,12 @@
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 319px) {
 
-  /* Workflow section */
   #workflow {
 
     .visual-page-green-container {
 
-      /* Workflow container */
       .workflow-container {
 
         .workflow-graph-container {

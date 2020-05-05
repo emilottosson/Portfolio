@@ -1,7 +1,6 @@
 @import 'src/styles/_fonts.scss';
 @import 'src/styles/_colors.scss';
 
-/* Workflow section */
 #portfolio {
   position: relative;
   display: flex;
@@ -9,11 +8,10 @@
   align-items: center;
   background-color: $color-mainbackground;
   width: 100%;
-  padding: 90px 40px 0px 40px;
+  padding: 0px 40px 0px 40px;
   box-sizing: border-box;
   transition: background-position .5s ease, padding .5s ease;
 
-  
   .section-detail-right {
     position: absolute;
     background-image: url("../../pngs/rose.png");
@@ -22,61 +20,55 @@
     background-position: 100% 0%;
     height: 100%;
     width: 100%;
-    top: -160px;
+    top: -200px;
     right: 0;
     z-index: 1;
     opacity: 0.1;
   }
 
-  .visual-page-red-container {
-    position: relative;
-    height: 100%;
-    background-image:
-    radial-gradient(
-      closest-corner,
-      $color-red,
-      $color-black 150%
-    );
-    border-radius: 25px;
-    padding: 90px 20px;
-    width: 100%;
-    max-width: 1130px;
+  .projects-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 2;
+    width: 100%;
+    max-width: 1170px;
+    flex-direction: column;
 
-    .section-ribbon {
+    .project-blocks-wrapper {
+      height: 100%;
+      width: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: -30px;
-      height: 90px;
-      width: 240px;
-      background-image: url("../../pngs/ribbon.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 1;
+    }
 
-      h1 {
-        font-size: 35px;
-        transform: rotate(-10deg);
-        margin-top: -11px;
-      }
+    .project-blocks-wrapper-grid {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
     }
-    }
+  }
 }
 
-    #portfolio:after {
-        content:'';
-        min-height:inherit;
-        font-size:0;
-    }
+#portfolio:after {
+    content:'';
+    min-height:inherit;
+    font-size:0;
+}
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 767px) {
     #portfolio {
-        padding: 90px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
+
+        .projects-container {
+
+          .project-blocks-wrapper {
+            flex-direction: column;
+          }
+
+          .project-blocks-wrapper-grid {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 0px;
+          }
+        }
     }
 }

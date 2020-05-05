@@ -69,11 +69,8 @@ class HamburgerMenu extends Component {
 
   render() {
     return (
-      // Container for navigation bar on small screens
       <div className={"navbar-small " + (this.props.shown ? "shown" : "")}>
-        {/* Menu text container for small screens */}
         <div className={"menu-container-small " + (this.props.shown ? "shown" : "")}>
-          {/* Menu text for small screens */}
           <Link activeClass="active" className="menu-text-small" to="workflow-anchor" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
               Workflow
             </Link>

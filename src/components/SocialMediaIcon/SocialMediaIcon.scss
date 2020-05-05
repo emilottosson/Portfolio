@@ -1,0 +1,20 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
+.social {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0px 5px;
+    border: 1.5px dotted $color-darkgray-hover;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $color-darkgray;
+    background-size: 20px 14px;
+
+    &:hover {
+      border: 1.5px dotted $color-darkgray;
+      background-color: $color-darkgray-hover;
+    }
+  }

@@ -8,8 +8,12 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*$color-lightblue: #358ed7;*/
-/*$color-lightblue-hover: #2b86d1;*/
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
 body {
   min-height: 100%;
   width: 100%;

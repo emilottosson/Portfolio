@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
-
 import worldmap from '../../svgs/worldmap.svg';
+import Button from '../Button/Button';
 
 class About1 extends Component {
 
@@ -20,17 +20,20 @@ class About1 extends Component {
                 <h1 className="title-text">Stay you,<br /> then you're strong.</h1>
               </div>
               <div className="subheading-container">
-                <h2 className="subheading-text">I’am a <span className="spanmainbackground">designer</span> who create amazing stuff based on <span className="spanmainbackground">user experience</span> and <span className="spanmainbackground">visual design</span>. That pretty much sums it up.
+                <h2 className="subheading-text">I’m a <span className="spanmainbackground">designer</span> who create amazing stuff based on <span className="spanmainbackground">user experience</span> and <span className="spanmainbackground">visual design</span>. That pretty much sums it up.
                 I enjoy being a part of the <span className="spanmainbackground">entire design process</span>, for <span className="spanmainbackground">making things better</span>. 
                 Whether it is solving a complex design problem, or fixing the water machine in the office, 
                 I aim for <span className="spanmainbackground">simple solutions</span> that will improve everything around me.</h2>
               </div>
-              <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-green">Let´s get in touch</button></a>
+              <Button 
+                color="green"
+                buttonText="Let´s get in touch"
+                buttonHref="mailto:emil@emilottosson.com"
+              />
             </div>
           </div>
         </div>
         <div id="about2-container">
-          <div className="section-detail-right"/>
           <div className="visual-page-green-container">
             <div className="section-ribbon">
               <h1>About</h1>
@@ -48,7 +51,11 @@ class About1 extends Component {
               <div className="subheading2-container">
                 <h2 className="subheading2-text">I had the opportunity to study <span className="spanmainbackground">psychology</span>, <span className="spanmainbackground">digital media</span> and <span className="spanmainbackground">UI/UX design</span> at Sogang University, South Korea, in fall 2017.</h2>
               </div>
-              <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red">Send me an email</button></a>
+              <Button 
+                color="red"
+                buttonText="Send me an email"
+                buttonHref="mailto:emil@emilottosson.com"
+              />
             </div>
           </div>
         </div>

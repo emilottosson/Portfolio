@@ -2,9 +2,12 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*$color-lightblue: #358ed7;*/
-/*$color-lightblue-hover: #2b86d1;*/
-/* Hamburger menu */
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
 .toggle-button {
   display: flex;
   flex-direction: column;
@@ -15,11 +18,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  box-sizing: border-box;
-  /* Hamburger menu focus */
-  /* Hamburger menu lines hover */
-  /* Hamburger menu lines */
-  /* Hamburger menu lines */ }
+  box-sizing: border-box; }
   .toggle-button:focus {
     outline: none; }
   .toggle-button:hover .toggle-button-line, .toggle-button:hover .toggle-button-line-first {
@@ -47,10 +46,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  box-sizing: border-box;
-  /* Cross button focus */
-  /* Cross button lines hover */
-  /* Cross button lines */ }
+  box-sizing: border-box; }
   .toggle-button-cross:focus {
     outline: none; }
   .toggle-button-cross:hover .toggle-cross-line {
@@ -68,7 +64,6 @@
 
 @-moz-document url-prefix() {
   .toggle-button {
-    margin-top: 5px;
-    /* Hamburger menu lines */ }
+    margin-top: 5px; }
     .toggle-button .toggle-button-line {
       margin-bottom: 5px; } }

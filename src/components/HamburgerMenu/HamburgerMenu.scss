@@ -13,7 +13,7 @@ body.noscroll {
   margin-top: 80px;
   top: -80px;
   background-color: $color-mainbackground;
-  z-index: 3;
+  z-index: 4;
   transition: transform 0.3s;
 
   &.shown {
@@ -52,7 +52,6 @@ body.noscroll {
   }
 }
 
-/* Set new styles depending on width */
 @media(min-width: 768px) {
   .navbar-small {
     display: none;

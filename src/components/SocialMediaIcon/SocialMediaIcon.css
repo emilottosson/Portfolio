@@ -1,0 +1,30 @@
+/**
+ * Declaring fonts
+ */
+/* Heading text */
+/* Regular text */
+/* Logo text */
+/**
+ * Colors used in entire application
+ */
+/* Base colors */
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
+.social {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0px 5px;
+  border: 1.5px dotted #464545;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #383838;
+  background-size: 20px 14px; }
+  .social:hover {
+    border: 1.5px dotted #383838;
+    background-color: #464545; }

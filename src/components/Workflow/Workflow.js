@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import './Workflow.css';
-//import questionmark from '../../svgs/questionmark.svg';
-//import build from '../../svgs/build.svg';
-//import launch from '../../svgs/launch.svg';
-//import analyze from '../../svgs/analyze.svg';
 import arrowright from '../../svgs/arrow-right.svg';
 import arrowleft from '../../svgs/arrow-left.svg';
 import arrowleftsmall from '../../svgs/arrow-left-small.svg';
@@ -11,12 +7,13 @@ import arrowrightsmall from '../../svgs/arrow-right-small.svg';
 import arrowup from '../../svgs/arrow-up.svg';
 import arrowdown from '../../svgs/arrow-down.svg';
 import repeat from '../../svgs/repeat.svg';
+import Button from '../Button/Button';
 
 class Workflow extends Component {
 
   render() {
+
     return (
-      // Workflow section
       <div id="workflow">
         <div id="workflow-anchor"/>
         <div className="workflow-separator">
@@ -27,7 +24,6 @@ class Workflow extends Component {
           <div className="section-ribbon">
             <h1>Workflow</h1>
           </div>
-          {/* Workflow content container */}
           <div className="workflow-container">
             <div className="title-container">
               <h1 className="title-text">Small sprints, big results</h1>
@@ -43,7 +39,6 @@ class Workflow extends Component {
                   </div>
                   <div className="step-circle">
                     <div className="middle-circle"></div>
-                    {/*<img src={questionmark} className="questionmark" height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="arrow">
@@ -63,7 +58,6 @@ class Workflow extends Component {
                   </div>
                   <div className="step-circle">
                     <div className="middle-circle"></div>
-                    {/*<img src={build} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="arrowright-bigscreen">
@@ -100,7 +94,6 @@ class Workflow extends Component {
                   </div>
                   <div className="step-circle">
                     <div className="middle-circle"></div>
-                    {/*<img src={launch} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="step-smallscreen">
@@ -109,7 +102,6 @@ class Workflow extends Component {
                   </div>
                   <div className="step-circle">
                     <div className="middle-circle"></div>
-                    {/*<img src={analyze} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="arrow">
@@ -132,7 +124,6 @@ class Workflow extends Component {
                   </div>
                   <div className="step-circle">
                     <div className="middle-circle"></div>
-                    {/*<img src={analyze} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
                 <div className="step-smallscreen">
@@ -141,7 +132,6 @@ class Workflow extends Component {
                   </div>
                   <div className="step-circle">
                     <div className="middle-circle"></div>
-                    {/*<img src={launch} height="70" width="70" alt='icon' />*/}
                   </div>
                 </div>
               </div>
@@ -158,7 +148,11 @@ class Workflow extends Component {
             </div>
             <div className="secondGraphText-container">
                 <h2 className="graph-second-text">Everyday i want to learn something new that i can add to my knowledge, So that I can strive for perfection. I do this by mixing <span className="spanmainbackground">different methodologies</span>. The method for a project is just the <span className="spanmainbackground">starting point</span>.</h2>
-                <a href="mailto:emil@emilottosson.com"><button type="button" className="btn-red">Let´s work together</button></a>
+                <Button 
+                  color="red"
+                  buttonText="Let's work together"
+                  buttonHref="mailto:emil@emilottosson.com"
+                />
               </div>
           </div>
         </div>

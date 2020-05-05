@@ -8,9 +8,12 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*$color-lightblue: #358ed7;*/
-/*$color-lightblue-hover: #2b86d1;*/
-/* Header section */
+/*
+PROPS FOR PURPLE BACKGROUND
+const purpleBackground = {
+    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
+  }
+*/
 #header {
   position: relative;
   display: flex;
@@ -20,14 +23,11 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  overflow: hidden;
-  /* Background on header section */
-  /* Text on header section */ }
+  overflow: hidden; }
   #header .header-background {
     position: absolute;
     height: 100%;
     top: 0;
-    /*max-width: 1470px;*/
     max-width: 1170px;
     width: 100%;
     background-image: url("../../pngs/background.png");
@@ -64,8 +64,7 @@
     align-content: center;
     flex-flow: row wrap;
     z-index: 1;
-    transition: padding .5s ease;
-    /* Content for all text */ }
+    transition: padding .5s ease; }
     #header .header-content .header-content-container {
       position: relative;
       display: flex;
@@ -75,11 +74,7 @@
       height: 100%;
       max-width: 500px;
       box-sizing: border-box;
-      padding-bottom: 5px;
-      /* Title container on header section */
-      /* Sub-heading container on header section */
-      /* Buttons container on header section */
-      /* Button on header style */ }
+      padding-bottom: 5px; }
       #header .header-content .header-content-container .title-container {
         position: relative;
         width: 100%;
@@ -92,8 +87,7 @@
         width: 100%;
         min-height: 0px;
         padding-bottom: 8px;
-        z-index: 2;
-        /* Span some light gray text to dark text */ }
+        z-index: 2; }
         #header .header-content .header-content-container .text-container .sub-heading-text {
           color: #275a5f; }
         #header .header-content .header-content-container .text-container .spanred {
@@ -104,9 +98,6 @@
         flex-flow: row wrap;
         width: 100%;
         min-height: 0px; }
-      #header .header-content .header-content-container .btn-header {
-        padding: 17px 23px;
-        margin-right: 8px; }
   #header #workflow-scroll-anchor {
     position: absolute;
     bottom: 0;
@@ -119,120 +110,57 @@
   min-height: inherit;
   font-size: 0; }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 1500px) {
-  /* Header section */
-  #header {
-    /* Background on header section */ }
-    #header .header-background {
-      background-position: 100% 100%; } }
+  #header .header-background {
+    background-position: 100% 100%; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 1250px) {
-  /* Header section */
   #header .header-gradient {
     opacity: 1; } }
 
-/* Set new styles depending on width */
 @media (max-width: 767px) {
-  /* Header section */
-  #header {
-    /* Text on header section */ }
-    #header .header-content {
-      padding: 90px 20px 70px 20px;
-      box-sizing: border-box; }
-    #header #workflow-scroll-anchor {
-      height: 55px; } }
+  #header .header-content {
+    padding: 90px 20px 70px 20px;
+    box-sizing: border-box; }
+  #header #workflow-scroll-anchor {
+    height: 55px; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 600px) {
-  /* Header section */
-  #header {
-    /* Background on header section */ }
-    #header .header-background {
-      background-position: 5% 100%; } }
+  #header .header-background {
+    background-position: 5% 100%; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
-  /* Header section */
-  #header {
-    /* Text on header section */ }
-    #header .header-content {
-      justify-content: center;
-      text-align: center;
-      /* Content for all text */ }
-      #header .header-content .header-content-container {
-        max-width: 355px;
-        /* Title container on header section */
-        /* Sub-heading container on header section */
-        /* Buttons container on header section */ }
-        #header .header-content .header-content-container .title-container {
-          /* Title text */ }
-          #header .header-content .header-content-container .title-container .title-text {
-            font-size: 42px;
-            letter-spacing: -1.5px;
-            line-height: 47px; }
-        #header .header-content .header-content-container .text-container {
-          /* Sub-heading text */ }
-          #header .header-content .header-content-container .text-container .sub-heading-text {
-            font-size: 18px;
-            letter-spacing: -.5px;
-            line-height: 25px; }
-        #header .header-content .header-content-container .buttons-container {
-          max-width: calc(365px - 65px);
-          display: flex;
-          justify-content: center;
-          /* Buttons container on header section */
-          /* Button on header style */
-          /* Right button on header style */ }
-          #header .header-content .header-content-container .buttons-container .navLinkButtonContainer {
-            width: 100%; }
-          #header .header-content .header-content-container .buttons-container .btn-header {
-            margin-right: 0px;
-            margin-bottom: 5px;
-            width: 100%; }
-          #header .header-content .header-content-container .buttons-container .btn-header-right {
-            width: 100%; } }
+  #header .header-content {
+    justify-content: center;
+    text-align: center; }
+    #header .header-content .header-content-container {
+      max-width: 355px; }
+      #header .header-content .header-content-container .title-container .title-text {
+        font-size: 42px;
+        letter-spacing: -1.5px;
+        line-height: 47px; }
+      #header .header-content .header-content-container .text-container .sub-heading-text {
+        font-size: 18px;
+        letter-spacing: -.5px;
+        line-height: 25px; }
+      #header .header-content .header-content-container .buttons-container {
+        max-width: calc(365px - 65px);
+        display: flex;
+        justify-content: center; } }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
-  /* Header section */
-  #header {
-    /* Text on header section */ }
-    #header .header-content {
-      justify-content: center;
-      text-align: center;
-      /* Content for all text */ }
-      #header .header-content .header-content-container {
-        max-width: 295px;
-        /* Title container on header section */
-        /* Sub-heading container on header section */
-        /* Buttons container on header section */ }
-        #header .header-content .header-content-container .title-container {
-          /* Title text */ }
-          #header .header-content .header-content-container .title-container .title-text {
-            font-size: 35px;
-            line-height: 37px; }
-        #header .header-content .header-content-container .text-container {
-          /* Sub-heading text */ }
-          #header .header-content .header-content-container .text-container .sub-heading-text {
-            font-size: 15px;
-            line-height: 22px; }
-        #header .header-content .header-content-container .buttons-container {
-          max-width: calc(365px - 118px);
-          display: flex;
-          justify-content: center; } }
-
-@-moz-document url-prefix() {
-  /* Header section */
-  #header {
-    /* Text on header section */ }
-    #header .header-content {
-      /* Content for all text */ }
-      #header .header-content .header-content-container {
-        /* Button on header style */
-        /* Right button on header style */ }
-        #header .header-content .header-content-container .btn-header {
-          padding: 17px 26px; }
-        #header .header-content .header-content-container .btn-header-right {
-          padding: 16px 26px; } }
+  #header .header-content {
+    justify-content: center;
+    text-align: center; }
+    #header .header-content .header-content-container {
+      max-width: 295px; }
+      #header .header-content .header-content-container .title-container .title-text {
+        font-size: 35px;
+        line-height: 37px; }
+      #header .header-content .header-content-container .text-container .sub-heading-text {
+        font-size: 15px;
+        line-height: 22px; }
+      #header .header-content .header-content-container .buttons-container {
+        max-width: calc(365px - 118px);
+        display: flex;
+        justify-content: center; } }

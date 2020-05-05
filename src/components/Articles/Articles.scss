@@ -1,7 +1,6 @@
 @import 'src/styles/_fonts.scss';
 @import 'src/styles/_colors.scss';
 
-/* Workflow section */
 #articles {
   position: relative;
   display: flex;
@@ -17,12 +16,12 @@
     position: absolute;
     background-image: url("../../pngs/heart.png");
     background-size: 410px;
-    background-position: 0% 0%;
+    background-position: 100% 0%;
     background-repeat: no-repeat;
     height: 100%;
     width: calc(100% - 20px);
     top: -205px;
-    left: 20px;
+    right: 20px;
     z-index: 1;
     opacity: 0.1;
   }
@@ -75,7 +74,6 @@
         }
       }
 
-      /* Workflow container */
       .article-container {
         position: relative;
         display: flex;
@@ -156,7 +154,6 @@
         }
       }
 
-      /* Workflow container */
       .article-container {
         position: relative;
         display: flex;
@@ -206,7 +203,6 @@
     font-size:0;
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 767px) {
     #articles {
       padding: 90px 20px 0px 20px;
@@ -222,16 +218,14 @@
     }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 500px) {
-  /* Workflow section */
+
   #articles {
 
     .articles-container {
 
       .visual-page-red-container {
 
-        /* Workflow container */
         .article-container {
     
           .title-container h3 {
@@ -254,7 +248,6 @@
 
       .visual-page-purple-container {
 
-        /* Workflow container */
         .article-container {
     
           .title-container h3 {
@@ -278,16 +271,14 @@
   }
 }
 
-/* Set new styles depending on width */
 @media only screen and (max-width: 365px) {
-  /* Workflow section */
+
   #articles {
 
     .articles-container {
 
       .visual-page-red-container {
 
-        /* Workflow container */
         .article-container {
     
           .title-container h3 {
@@ -308,7 +299,6 @@
 
       .visual-page-purple-container {
 
-        /* Workflow container */
         .article-container {
     
           .title-container h3 {
