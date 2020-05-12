@@ -30,10 +30,11 @@
     position: absolute;
     height: 100%;
     top: 0;
+    left: 0;
     width: 100%;
     opacity: 0;
     transition: background-position .5s ease, background-size .5s ease, opacity .5s ease-in-out;
-    background-image: linear-gradient(hsla(0,0%,100%,.8),#eeddce);
+    background-image: linear-gradient(rgba(255, 255, 255, 0),#eeddce);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 221, 206, 0.8)), to(#eeddce));
     background-image: -webkit-linear-gradient(rgba(238, 221, 206, 0.8), #eeddce);
     background-image: -o-linear-gradient(rgba(238, 221, 206, 0.8), #eeddce);
@@ -43,6 +44,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    left: 0;
     z-index: 1;
     background-color: $color-mainbackground;
   }
@@ -104,6 +106,7 @@
         flex-flow: row wrap;
         width: 100%;
         min-height: 0px;
+        margin-bottom: 5px;
       }
     }
   }

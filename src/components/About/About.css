@@ -8,12 +8,6 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
 #about-container {
   transition: background-position .5s ease, padding .5s ease; }
   #about-container #about1-container {
@@ -47,6 +41,7 @@ const purpleBackground = {
       width: 100%;
       max-width: 1130px;
       display: flex;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
       z-index: 2; }
@@ -56,6 +51,7 @@ const purpleBackground = {
         align-items: center;
         position: absolute;
         top: -30px;
+        left: calc(50% - 120px);
         height: 90px;
         width: 240px;
         background-image: url("../../pngs/ribbon.png");
@@ -117,6 +113,7 @@ const purpleBackground = {
       width: 100%;
       max-width: 1130px;
       display: flex;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
       z-index: 2; }
@@ -126,6 +123,7 @@ const purpleBackground = {
         align-items: center;
         position: absolute;
         top: -30px;
+        left: calc(50% - 120px);
         height: 90px;
         width: 240px;
         background-image: url("../../pngs/ribbon.png");
@@ -142,7 +140,8 @@ const purpleBackground = {
         flex-flow: row wrap;
         justify-content: center;
         max-width: 790px;
-        min-height: 430px; }
+        min-height: 430px;
+        width: 100%; }
         #about-container #about2-container .visual-page-green-container .map .title-container {
           display: flex;
           justify-content: center;
@@ -158,7 +157,7 @@ const purpleBackground = {
           padding: 0px 0px 40px 0; }
           #about-container #about2-container .visual-page-green-container .map .subheading-container .subheading-text {
             text-align: center;
-            max-width: 720px;
+            max-width: 712px;
             color: #78afb4; }
             #about-container #about2-container .visual-page-green-container .map .subheading-container .subheading-text .spanmainbackground {
               color: #eeddce;
@@ -176,8 +175,7 @@ const purpleBackground = {
             font-size: 18px;
             text-align: center;
             max-width: 618px;
-            color: #78afb4;
-            padding: 0px 20px; }
+            color: #78afb4; }
             #about-container #about2-container .visual-page-green-container .map .subheading2-container .subheading2-text .spanmainbackground {
               color: #eeddce;
               font-weight: 500; }
@@ -212,11 +210,12 @@ const purpleBackground = {
     font-size: 42px;
     letter-spacing: -1.5px;
     line-height: 47px; }
-  #about-container #about2-container .visual-page-green-container .map .subheading-container .subheading-text {
-    max-width: 380px;
-    font-size: 18px;
-    letter-spacing: -.5px;
-    line-height: 25px; }
+  #about-container #about2-container .visual-page-green-container .map .subheading-container {
+    max-width: 370px; }
+    #about-container #about2-container .visual-page-green-container .map .subheading-container .subheading-text {
+      font-size: 18px;
+      letter-spacing: -.5px;
+      line-height: 25px; }
   #about-container #about2-container .visual-page-green-container .map .subheading2-container .subheading2-text {
     max-width: 380px;
     font-size: 16px;

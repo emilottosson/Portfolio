@@ -20,9 +20,39 @@ $color-white-hover: #f7f7f7;
 $color-lightgray-border: #cecece;
 $color-mainred: #EC5973;
 
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
+$gradient-green:      
+    radial-gradient(
+    closest-corner,
+    $color-green,
+    $color-black 150%
+    );
+$gradient-red:      
+    radial-gradient(
+    closest-corner,
+    $color-red,
+    $color-black 150%
+  );
+$gradient-purple:      
+    radial-gradient(
+    closest-corner,
+    $color-purple,
+    $color-black 150%
+  );
+$gradient-green-hover:      
+    radial-gradient(
+    closest-corner,
+    $color-green,
+    $color-black 200%
+    );
+$gradient-red-hover:      
+    radial-gradient(
+    closest-corner,
+    $color-red,
+    $color-black 200%
+  );
+$gradient-purple-hover:      
+    radial-gradient(
+    closest-corner,
+    $color-purple,
+    $color-black 200%
+  );

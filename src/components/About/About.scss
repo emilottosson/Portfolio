@@ -32,17 +32,13 @@
         .visual-page-purple-container {
             position: relative;
             height: 100%;
-            background-image:
-            radial-gradient(
-              closest-corner,
-              $color-purple,
-              $color-black 150%
-            );
+            background-image: $gradient-purple;
             border-radius: 25px;
             padding: 90px 20px;
             width: 100%;
             max-width: 1130px;
             display: flex;
+            flex-flow: column;
             justify-content: center;
             align-items: center;
             z-index: 2;
@@ -53,6 +49,7 @@
                 align-items: center;
                 position: absolute;
                 top: -30px;
+                left: calc(50% - 120px);
                 height: 90px;
                 width: 240px;
                 background-image: url("../../pngs/ribbon.png");
@@ -129,17 +126,13 @@
         .visual-page-green-container {
             position: relative;
             height: 100%;
-            background-image:
-            radial-gradient(
-              closest-corner,
-              $color-green,
-              $color-black 150%
-            );
+            background-image: $gradient-green;
             border-radius: 25px;
             padding: 90px 20px;
             width: 100%;
             max-width: 1130px;
             display: flex;
+            flex-flow: column;
             justify-content: center;
             align-items: center;
             z-index: 2;
@@ -150,6 +143,7 @@
                 align-items: center;
                 position: absolute;
                 top: -30px;
+                left: calc(50% - 120px);
                 height: 90px;
                 width: 240px;
                 background-image: url("../../pngs/ribbon.png");
@@ -171,6 +165,7 @@
                 justify-content: center;
                 max-width: 790px;
                 min-height: 430px;
+                width: 100%;
         
                 .title-container {
                     display: flex;
@@ -192,7 +187,7 @@
         
                     .subheading-text {
                         text-align: center;
-                        max-width: 720px;
+                        max-width: 712px;
                         color: $color-text-on-green;
         
                         .spanmainbackground {
@@ -219,7 +214,6 @@
                         text-align: center;
                         max-width: 618px;
                         color: $color-text-on-green;
-                        padding: 0px 20px;
         
                         .spanmainbackground {
                             color: $color-mainbackground;
@@ -304,9 +298,9 @@
                     }
             
                     .subheading-container {
+                        max-width: 370px;
             
                         .subheading-text {
-                            max-width: 380px;
                             font-size: 18px;
                             letter-spacing: -.5px;
                             line-height: 25px;

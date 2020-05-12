@@ -1,3 +1,4 @@
+@import 'src/styles/_fonts.scss';
 @import 'src/styles/_colors.scss';
 
 .project-end-block {
@@ -12,12 +13,18 @@
     box-sizing: border-box;
     margin-top: 90px;
     z-index: 2;
-    background-image:
-      radial-gradient(
-        closest-corner,
-        $color-red,
-        $color-black 150%
-      );
+
+    &.green {
+        background-image: $gradient-green;
+    }
+
+    &.red {
+        background-image: $gradient-red;
+    }
+
+    &.purple {
+        background-image: $gradient-purple;
+    }
 
     .title-container {
         display: flex;
@@ -35,11 +42,22 @@
 
         .subheading-text {
             max-width: 712px;
-            color: $color-text-on-red;
 
             .spanmainbackground {
                 color: $color-mainbackground;
                 font-weight: 500;
+            }
+
+            &.green {
+                color: $color-text-on-green;
+            }
+        
+            &.red {
+                color: $color-text-on-red;
+            }
+        
+            &.purple {
+                color: $color-text-on-purple;
             }
         }
     }

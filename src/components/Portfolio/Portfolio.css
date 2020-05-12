@@ -8,12 +8,6 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
 #portfolio {
   position: relative;
   display: flex;
@@ -49,9 +43,9 @@ const purpleBackground = {
     #portfolio .projects-container .project-blocks-wrapper-grid {
       height: 100%;
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px; }
+      display: flex; }
+      #portfolio .projects-container .project-blocks-wrapper-grid .flex-separator {
+        width: 80px; }
 
 #portfolio:after {
   content: '';
@@ -64,5 +58,6 @@ const purpleBackground = {
     #portfolio .projects-container .project-blocks-wrapper {
       flex-direction: column; }
     #portfolio .projects-container .project-blocks-wrapper-grid {
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 0px; } }
+      flex-flow: column; }
+      #portfolio .projects-container .project-blocks-wrapper-grid .flex-separator {
+        display: none; } }

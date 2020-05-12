@@ -8,12 +8,6 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
 #footer {
   position: relative;
   display: flex;

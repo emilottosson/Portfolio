@@ -25,6 +25,7 @@
     width: 100%;
     height: 90px;
     z-index: 1;
+    left: 0;
 
     .workflow-gradient {
       position: absolute;
@@ -56,17 +57,13 @@
   .visual-page-green-container {
     position: relative;
     height: 100%;
-    background-image:
-    radial-gradient(
-      closest-corner,
-      $color-green,
-      $color-black 150%
-    );
+    background-image: $gradient-green;
     border-radius: 25px;
     padding: 90px 20px;
     width: 100%;
     max-width: 1130px;
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     z-index: 2;
@@ -77,6 +74,7 @@
       align-items: center;
       position: absolute;
       top: -30px;
+      left: calc(50% - 120px);
       height: 90px;
       width: 240px;
       background-image: url("../../pngs/ribbon.png");
@@ -489,8 +487,8 @@
         text-align: center;
         min-height: 0px;
         width: 100%;
-        padding: 40px 10px 8px 10px;
-        max-width: 801px;
+        padding-top: 40px;
+        max-width: 618px;
   
         .graph-second-text {
           color: $color-text-on-green;
@@ -587,10 +585,6 @@
         .repeat-container {
           display: none;
         }
-
-        .secondGraphText-container {
-          max-width: 357px;
-        }    
       }
     }
   }
@@ -687,6 +681,7 @@
         }
 
         .secondGraphText-container {
+          max-width: 380px;
             
           .graph-second-text {
             font-size: 16px;

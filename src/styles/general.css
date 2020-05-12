@@ -8,23 +8,11 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
 body {
   min-height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  /* General link style */
-  /* General text style */
-  /* General h1 style */
-  /* General h2 style */
-  /* General button style */
-  /* General button style */
   /* General button style */ }
   body a {
     font-family: "Maven Pro", sans-serif;
@@ -52,7 +40,7 @@ body {
     letter-spacing: -.3px;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF; }
+    color: #eeddce; }
   body h3 {
     font-family: "EB Garamond", serif;
     font-weight: 600;
@@ -117,9 +105,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
-    z-index: 100;
-    /* General button hover style */
-    /* General button focus style */ }
+    z-index: 100; }
     body .btn-red:before {
       position: absolute;
       display: block;
@@ -159,9 +145,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
-    z-index: 100;
-    /* General button hover style */
-    /* General button focus style */ }
+    z-index: 100; }
     body .btn-purple:before {
       position: absolute;
       display: block;

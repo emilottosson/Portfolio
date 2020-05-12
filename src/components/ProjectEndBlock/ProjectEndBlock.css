@@ -1,13 +1,13 @@
 /**
+ * Declaring fonts
+ */
+/* Heading text */
+/* Regular text */
+/* Logo text */
+/**
  * Colors used in entire application
  */
 /* Base colors */
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
 .project-end-block {
   position: relative;
   display: flex;
@@ -19,8 +19,13 @@ const purpleBackground = {
   padding: 90px 20px;
   box-sizing: border-box;
   margin-top: 90px;
-  z-index: 2;
-  background-image: radial-gradient(closest-corner, #942a53, #000000 150%); }
+  z-index: 2; }
+  .project-end-block.green {
+    background-image: radial-gradient(closest-corner, #275a5f, #000000 150%); }
+  .project-end-block.red {
+    background-image: radial-gradient(closest-corner, #942a53, #000000 150%); }
+  .project-end-block.purple {
+    background-image: radial-gradient(closest-corner, #3d174b, #000000 150%); }
   .project-end-block .title-container {
     display: flex;
     justify-content: center;
@@ -33,11 +38,16 @@ const purpleBackground = {
     width: 100%;
     padding: 0px 0px 8px 0px; }
     .project-end-block .subheading-container .subheading-text {
-      max-width: 712px;
-      color: #e78aae; }
+      max-width: 712px; }
       .project-end-block .subheading-container .subheading-text .spanmainbackground {
         color: #eeddce;
         font-weight: 500; }
+      .project-end-block .subheading-container .subheading-text.green {
+        color: #78afb4; }
+      .project-end-block .subheading-container .subheading-text.red {
+        color: #e78aae; }
+      .project-end-block .subheading-container .subheading-text.purple {
+        color: #9c70ac; }
 
 @media only screen and (max-width: 500px) {
   .project-end-block .title-container {

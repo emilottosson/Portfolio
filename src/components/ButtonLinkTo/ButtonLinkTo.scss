@@ -19,12 +19,7 @@
      z-index: 100;
 
     &.green {
-      background-image:
-      radial-gradient(
-        closest-corner,
-        $color-green,
-        $color-black 150%
-      );
+      background-image: $gradient-green;
   
       &:before {
           position: absolute;
@@ -35,12 +30,7 @@
           left: 0;
           font-family: $font-text;
           font-weight: 500;
-          background-image:
-          radial-gradient(
-            closest-corner,
-            $color-green,
-            $color-black 200%
-          );
+          background-image: $gradient-green-hover;
           content: '';
           border: none;
           border-radius: 3px;
@@ -68,12 +58,7 @@
     }
 
     &.red {
-        background-image:
-        radial-gradient(
-          closest-corner,
-          $color-red,
-          $color-black 150%
-        );
+      background-image: $gradient-red;
     
         &:before {
           position: absolute;
@@ -84,12 +69,7 @@
           left: 0;
           font-family: $font-text;
           font-weight: 500;
-          background-image:
-          radial-gradient(
-            closest-corner,
-            $color-red,
-            $color-black 200%
-          );
+          background-image: $gradient-red-hover;
           content: '';
           border: none;
           border-radius: 3px;
@@ -117,12 +97,7 @@
       }
 
     &.purple {
-    background-image:
-    radial-gradient(
-        closest-corner,
-        $color-purple,
-        $color-black 150%
-    );
+      background-image: $gradient-purple;
 
         &:before {
             position: absolute;
@@ -133,12 +108,7 @@
             left: 0;
             font-family: $font-text;
             font-weight: 500;
-            background-image:
-            radial-gradient(
-            closest-corner,
-            $color-purple,
-            $color-black 200%
-            );
+            background-image: $gradient-purple-hover;
             content: '';
             border: none;
             border-radius: 3px;

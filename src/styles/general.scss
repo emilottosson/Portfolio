@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
 
-  /* General link style */
   a {
     font-family: $font-text;
     font-weight: 400;
@@ -16,7 +15,6 @@ body {
     cursor: pointer;
   }
 
-  /* General text style */
   p {
     font-family: $font-text;
     font-weight: 400;
@@ -24,7 +22,6 @@ body {
     color: grey;
   }
 
-  /* General h1 style */
   h1 {
     font-family: $font-heading;
     font-weight: 600;
@@ -36,14 +33,13 @@ body {
     margin-top: 0px;
   }
 
-  /* General h2 style */
   h2 {
     font-family: $font-text;
     font-weight: 400;
     letter-spacing: -.3px;
     font-size: 20px;
     line-height: 28px;
-    color: $color-white;
+    color: $color-mainbackground;
   }
 
   h3 {
@@ -57,7 +53,6 @@ body {
     margin-top: 0px;
   }
 
-  /* General button style */
   .btn-green {
     position: relative;
     display: inline-block;
@@ -171,7 +166,6 @@ body {
       z-index: -100;
   }
 
-  /* General button hover style */
   &:hover {
     &:before {
       opacity: 1;
@@ -179,13 +173,11 @@ body {
     }
   }
 
-    /* General button focus style */
     &:focus {
       outline: none;
     }
   }
 
-  /* General button style */
   .btn-purple {
     position: relative;
     display: inline-block;
@@ -235,7 +227,6 @@ body {
       z-index: -100;
   }
 
-  /* General button hover style */
   &:hover {
     &:before {
       opacity: 1;
@@ -243,7 +234,6 @@ body {
     }
   }
 
-    /* General button focus style */
     &:focus {
       outline: none;
     }

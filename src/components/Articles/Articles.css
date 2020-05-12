@@ -8,12 +8,6 @@
  * Colors used in entire application
  */
 /* Base colors */
-/*
-PROPS FOR PURPLE BACKGROUND
-const purpleBackground = {
-    backgroundImage: 'radial-gradient(closest-corner, #3d174b 0%, #000000 150%)'
-  }
-*/
 #articles {
   position: relative;
   display: flex;
@@ -54,6 +48,7 @@ const purpleBackground = {
       box-sizing: border-box;
       width: 100%;
       display: flex;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
       z-index: 2; }
@@ -63,6 +58,7 @@ const purpleBackground = {
         align-items: center;
         position: absolute;
         top: -30px;
+        left: calc(50% - 120px);
         height: 90px;
         width: 240px;
         background-image: url("../../pngs/ribbon.png");
@@ -113,6 +109,7 @@ const purpleBackground = {
       width: 100%;
       margin-left: 40px;
       display: flex;
+      flex-flow: column;
       justify-content: center;
       align-items: center;
       z-index: 2; }
@@ -122,6 +119,7 @@ const purpleBackground = {
         align-items: center;
         position: absolute;
         top: -30px;
+        left: calc(50% - 120px);
         height: 90px;
         width: 240px;
         background-image: url("../../pngs/ribbon.png");
@@ -203,16 +201,12 @@ const purpleBackground = {
   #articles .articles-container .visual-page-red-container .article-container .title-container h3 {
     font-size: 29px;
     line-height: 37px; }
-  #articles .articles-container .visual-page-red-container .article-container .subheading-container {
-    padding: 0px 0px; }
-    #articles .articles-container .visual-page-red-container .article-container .subheading-container .subheading-text {
-      font-size: 15px;
-      line-height: 22px; }
+  #articles .articles-container .visual-page-red-container .article-container .subheading-container .subheading-text {
+    font-size: 15px;
+    line-height: 22px; }
   #articles .articles-container .visual-page-purple-container .article-container .title-container h3 {
     font-size: 29px;
     line-height: 37px; }
-  #articles .articles-container .visual-page-purple-container .article-container .subheading-container {
-    padding: 0px 0px; }
-    #articles .articles-container .visual-page-purple-container .article-container .subheading-container .subheading-text {
-      font-size: 15px;
-      line-height: 22px; } }
+  #articles .articles-container .visual-page-purple-container .article-container .subheading-container .subheading-text {
+    font-size: 15px;
+    line-height: 22px; } }

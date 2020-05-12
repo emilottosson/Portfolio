@@ -1,9 +1,13 @@
+@import 'src/styles/_fonts.scss';
+@import 'src/styles/_colors.scss';
+
 .wrapper {
     position: relative;
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-flow: column;
+    align-items: center;
 
     .section-ribbon {
         display: flex;
@@ -11,6 +15,7 @@
         align-items: center;
         position: absolute;
         top: 60px;
+        left: calc(50% - 120px);
         height: 90px;
         width: 240px;
         background-image: url("../../pngs/ribbon.png");
@@ -23,27 +28,43 @@
           transform: rotate(-10deg);
           margin-top: -11px;
         }
+
+        &:hover ~ .project-block-small .background {
+            transform: scale(1.05);
+        }
+
+        &:hover ~ .project-block-small {
+            box-shadow: 0 1px 1px rgba(0,0,0, 0.12),
+                        0 2px 2px rgba(0,0,0, 0.12),
+                        0 4px 4px rgba(0,0,0, 0.12),
+                        0 8px 8px rgba(0,0,0, 0.12),
+                        0 16px 16px rgba(0,0,0, 0.12),
+        }
     }
 
     .project-block-small {
         position: relative;
         display: flex;
+        text-align: center;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
-        min-height: 450px;
         width: 100%;
+        height: 100%;
+        box-sizing: border-box;
         border-radius: 25px;
-        padding: 0px 0px;
+        padding: 90px 20px;
         margin-top: 90px;
         z-index: 2;
         overflow: hidden;
         transition: all .6s;
-        cursor: pointer;
 
         .background {
             position: absolute;
             width: 100%;
             height: 100%;
+            left: 0;
+            top: 0;
             background-size: cover;
             background-repeat: no-repeat;
             transition: all .6s;
@@ -55,7 +76,96 @@
         }
 
         &:hover {
-            box-shadow: 0 0 11px rgba(33,33,33,1); 
+            box-shadow: 0 1px 1px rgba(0,0,0, 0.12),
+                        0 2px 2px rgba(0,0,0, 0.12),
+                        0 4px 4px rgba(0,0,0, 0.12),
+                        0 8px 8px rgba(0,0,0, 0.12),
+                        0 16px 16px rgba(0,0,0, 0.12),
+        }
+
+        .project-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0.9;
+
+            &.green {
+                background-image: $gradient-green;
+            }
+
+            &.red {
+                background-image: $gradient-red;
+            }
+
+            &.purple {
+                background-image: $gradient-purple;
+            }
+        }
+
+        .project-text-container {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            max-width: 712px;
+            padding: 0px 30px;
+            box-sizing: border-box;
+
+            .subheading-text {
+                margin-top: 0px;
+                width: 100%;
+            }
+
+            .skills-text {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+                margin-top: 0px;
+                font-size: 18px;
+                max-width: 618px;
+                width: 100%;
+
+                .skills-container {
+                    display: flex;
+
+                    p {
+                        margin: 0;
+
+                        &.green {
+                            color: $color-text-on-green;
+                        }
+
+                        &.red {
+                            color: $color-text-on-red;
+                        }
+
+                        &.purple {
+                            color: $color-text-on-purple;
+                        }
+                    }
+
+                    .separator {
+                        margin: 0px 5px;
+
+                        &.green {
+                            color: $color-text-on-green;
+                        }
+
+                        &.red {
+                            color: $color-text-on-red;
+                        }
+
+                        &.purple {
+                            color: $color-text-on-purple;
+                        }
+                    }
+                }
+            }
         }
     }
 }  
@@ -63,5 +173,53 @@
 @media only screen and (max-width: 767px) {
     .wrapper {
         margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .wrapper {
+    
+        .project-block-small {
+    
+            .project-text-container {
+                max-width: 370px;
+                padding: 0px 0px;
+    
+                .subheading-text {
+                    font-size: 18px;
+                    letter-spacing: -.5px;
+                    line-height: 28px;
+                }
+
+                .skills-text {
+                    max-width: 380px;
+                    font-size: 16px;
+                    letter-spacing: -.5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 365px) {
+
+    .wrapper {
+    
+        .project-block-small {
+    
+            .project-text-container {
+    
+                .subheading-text {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+
+                .skills-text {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
     }
 }
