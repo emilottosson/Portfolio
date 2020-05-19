@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, {useRef} from 'react';
+import {useIntersection} from 'react-use';
+import gsap from "gsap"
 import './Workflow.css';
 import arrowright from '../../svgs/arrow-right.svg';
 import arrowleft from '../../svgs/arrow-left.svg';
@@ -9,9 +11,48 @@ import arrowdown from '../../svgs/arrow-down.svg';
 import repeat from '../../svgs/repeat.svg';
 import Button from '../Button/Button';
 
-class Workflow extends Component {
+const Workflow = () => {
 
-  render() {
+  const sectionRef = useRef(null);
+
+    const intersection = useIntersection(sectionRef, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2
+    });
+
+    const fadeIn = element => {
+        gsap.to(element, 2, {
+            opacity: 1,
+            ease: 'power4.out',
+            stagger: {
+                amount: .5
+            }
+        })
+    };
+
+    const testFunction = element => {
+      gsap.to(element, 2, {
+          opacity: 1,
+          ease: 'power4.out',
+          stagger: {
+              amount: 1
+          }
+      })
+  };
+
+    const fadeOut = element => {
+
+    };
+
+    const runFunctions = () => {
+      fadeIn(".fadeInWorkflow")
+      testFunction(".fadeInWorkflowPictures")
+    }
+
+    intersection && intersection.isIntersecting
+    ? runFunctions()
+    : fadeOut(".fadeInWorkflow");
 
     return (
       <div id="workflow">
@@ -24,24 +65,24 @@ class Workflow extends Component {
           <div className="section-ribbon">
             <h1>Workflow</h1>
           </div>
-          <div className="workflow-container">
+          <div ref={sectionRef} className="workflow-container">
             <div className="title-container">
-              <h1 className="title-text">Small sprints, big results</h1>
+              <h1 className="title-text fadeInWorkflow">Small sprints, big results</h1>
             </div>
             <div className="subheading-container">
-              <h2 className="subheading-text">When I work on a project I like the <span className="spanmainbackground">lean</span> methodology using <span className="spanmainbackground">sprints</span>.</h2>
+              <h2 className="subheading-text fadeInWorkflow">When I work on a project I like the <span className="spanmainbackground">lean</span> methodology using <span className="spanmainbackground">sprints</span>.</h2>
             </div>
-            <div className="workflow-graph-container">
+            <div className="workflow-graph-container fadeInWorkflow">
               <div className="picture-container">
                 <div className="step">
-                  <div className="step-title">
+                  <div className="step-title fadeInWorkflowPictures">
                     <h2 className="title-text">Define</h2>
                   </div>
-                  <div className="step-circle">
+                  <div className="step-circle fadeInWorkflowPictures">
                     <div className="middle-circle"></div>
                   </div>
                 </div>
-                <div className="arrow">
+                <div className="arrow fadeInWorkflowPictures">
                   <div className="arrow-right">
                     <img src={arrowright} height="10" width="154" alt='icon' />
                   </div>
@@ -53,14 +94,14 @@ class Workflow extends Component {
                   </div>
                 </div>
                 <div className="step">
-                  <div className="step-title">
+                  <div className="step-title fadeInWorkflowPictures">
                     <h2 className="title-text">Build</h2>
                   </div>
-                  <div className="step-circle">
+                  <div className="step-circle fadeInWorkflowPictures">
                     <div className="middle-circle"></div>
                   </div>
                 </div>
-                <div className="arrowright-bigscreen">
+                <div className="arrowright-bigscreen fadeInWorkflowPictures">
                   <div className="arrow-right-bigscreen">
                     <img src={arrowright} height="10" width="154" alt='icon' />
                   </div>
@@ -78,33 +119,33 @@ class Workflow extends Component {
                 <div className="filling-div">
 
                 </div>
-                <div className="arrowdown-smallscreen">
+                <div className="arrowdown-smallscreen fadeInWorkflowPictures">
                   <div className="arrow-down">
                     <img src={arrowdown} height="154" width="10" alt='icon' />
                   </div>
                 </div>
-                <div className="arrowdown-smallscreen-2">
+                <div className="arrowdown-smallscreen-2 fadeInWorkflowPictures">
                   <div className="arrow-down">
                     <img src={arrowdown} height="107" width="10" alt='icon' />
                   </div>
                 </div>
                 <div className="step-bigscreen">
-                  <div className="step-title">
+                  <div className="step-title fadeInWorkflowPictures">
                     <h2 className="title-text">Launch</h2>
                   </div>
-                  <div className="step-circle">
+                  <div className="step-circle fadeInWorkflowPictures">
                     <div className="middle-circle"></div>
                   </div>
                 </div>
                 <div className="step-smallscreen">
-                  <div className="step-title">
+                  <div className="step-title fadeInWorkflowPictures">
                     <h2 className="title-text">Analyze</h2>
                   </div>
-                  <div className="step-circle">
+                  <div className="step-circle fadeInWorkflowPictures">
                     <div className="middle-circle"></div>
                   </div>
                 </div>
-                <div className="arrow">
+                <div className="arrow fadeInWorkflowPictures">
                   <div className="arrow-right-bigscreen">
                     <img src={arrowright} height="10" width="154" alt='icon' />
                   </div>
@@ -119,46 +160,47 @@ class Workflow extends Component {
                   </div>
                 </div>
                 <div className="step-bigscreen">
-                  <div className="step-title">
+                  <div className="step-title fadeInWorkflowPictures">
                     <h2 className="title-text">Analyze</h2>
                   </div>
-                  <div className="step-circle">
+                  <div className="step-circle fadeInWorkflowPictures">
                     <div className="middle-circle"></div>
                   </div>
                 </div>
                 <div className="step-smallscreen">
-                  <div className="step-title">
+                  <div className="step-title fadeInWorkflowPictures">
                     <h2 className="title-text">Launch</h2>
                   </div>
-                  <div className="step-circle">
+                  <div className="step-circle fadeInWorkflowPictures">
                     <div className="middle-circle"></div>
                   </div>
                 </div>
               </div>
               <div className="repeat-container">
-                <div className="repeat-picture">
+                <div className="repeat-picture fadeInWorkflowPictures">
                   <img src={repeat} alt='icon' />
                 </div>
               </div>
-              <div className="graphText-container">
+              <div className="graphText-container fadeInWorkflowPictures">
                 <h2 className="graph-text">2 weeks sprint</h2>
                 <h2 className="graph-text">Repeat</h2>
               </div>
 
             </div>
             <div className="secondGraphText-container">
-                <h2 className="graph-second-text">Everyday i want to learn something new that i can add to my knowledge, So that I can strive for perfection. I do this by mixing <span className="spanmainbackground">different methodologies</span>. The method for a project is just the <span className="spanmainbackground">starting point</span>.</h2>
-                <Button 
-                  color="red"
-                  buttonText="Let's work together"
-                  buttonHref="mailto:emil@emilottosson.com"
-                />
+                <h2 className="graph-second-text fadeInWorkflow">Everyday i want to learn something new that i can add to my knowledge, So that I can strive for perfection. I do this by mixing <span className="spanmainbackground">different methodologies</span>. The method for a project is just the <span className="spanmainbackground">starting point</span>.</h2>
+                <div className="fadeInWorkflow">
+                  <Button 
+                    color="red"
+                    buttonText="Let's work together"
+                    buttonHref="mailto:emil@emilottosson.com"
+                  />
+                </div>
               </div>
           </div>
         </div>
       </div>
     )
-  }
 }
 
 export default Workflow;

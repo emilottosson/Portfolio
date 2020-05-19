@@ -1,6 +1,6 @@
 # Instructions
 
-This is a frontend case connected to ATG.se.
+This is my portfolio.
 To run the application locally, follow the steps below:
 
 ##### Open and run from zip files:
