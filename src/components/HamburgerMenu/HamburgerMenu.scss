@@ -29,20 +29,22 @@ body.noscroll {
     text-align: center;
     align-items: center;
 
-    &.shown .menu-text-small {
-      opacity: 1
-    }
-
     .menu-text-small {
       margin: 10px 0px;
       font-size: 30px;
       width: 160px;
       text-decoration: none;
       opacity: 0;
-      transition: opacity 0.5s 0.1s;
+      transform: translateY(-20px);
+      transition: opacity .5s 0.1s, transform .5s;
 
       &.active {
         color: $color-red;
+      }
+
+      &.showItem {
+        opacity: 1;
+        transform: translateY(0px);
       }
     }
 

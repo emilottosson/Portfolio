@@ -25,7 +25,7 @@ class Portfolio extends Component {
             projectText="I have from scratch, with big focus on the customer experience and smooth payments, 
               built the new e-commerce webshop for Ingrids specialaffär. I worked a lot with colors and fonts, 
               trying to give the webshop a clean and unique design."
-            skills= {["Wordpress", "Woocommerce", "Web hosting", "HTML", "CSS"]}
+            skills= {["Wordpress", "Woocommerce", "Web hosting", "HTML5", "CSS3"]}
             skillsTextColor="red"
           />
           </div>
@@ -39,7 +39,7 @@ class Portfolio extends Component {
             projectText="With an agile process I developed the new website for EATY, 
               a company that handles delivery of food from different type of restaurants. 
               A major focus was on front-end functionality."
-            skills= {["JavaScript", "PHP", "HTML", "CSS"]}
+            skills= {["JavaScript", "PHP", "HTML5", "CSS3"]}
             skillsTextColor="purple"
           />
           <div className="flex-separator" />
@@ -53,7 +53,7 @@ class Portfolio extends Component {
             projectText="Brawl Gaming is an e-sport plattform developed by Source Empire AB, 
             a startup company created by me and some friends. I have been involved throughout 
             the process from idea to current beta version, working with the full-stack."
-            skills= {["React", "JavaScript", "HTML", "Sass", "JSON", "SQL", "Kotlin"]}
+            skills= {["React", "JavaScript", "HTML5", "Sass", "JSON", "SQL", "Kotlin"]}
             skillsTextColor="green"
           />
           </div>

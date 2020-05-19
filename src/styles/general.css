@@ -172,3 +172,8 @@ body {
       opacity: 1; }
     body .btn-purple:focus {
       outline: none; }
+  body .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in; }
+  body .fade-in.appear {
+    opacity: 1; }

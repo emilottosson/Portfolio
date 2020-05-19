@@ -26,17 +26,19 @@ body.noscroll {
     justify-content: center;
     text-align: center;
     align-items: center; }
-    .navbar-small .menu-container-small.shown .menu-text-small {
-      opacity: 1; }
     .navbar-small .menu-container-small .menu-text-small {
       margin: 10px 0px;
       font-size: 30px;
       width: 160px;
       text-decoration: none;
       opacity: 0;
-      transition: opacity 0.5s 0.1s; }
+      transform: translateY(-20px);
+      transition: opacity .5s 0.1s, transform .5s; }
       .navbar-small .menu-container-small .menu-text-small.active {
         color: #942a53; }
+      .navbar-small .menu-container-small .menu-text-small.showItem {
+        opacity: 1;
+        transform: translateY(0px); }
     .navbar-small .menu-container-small .menu-text-small:hover {
       color: #942a53; }
 

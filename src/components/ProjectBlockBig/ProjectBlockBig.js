@@ -1,8 +1,10 @@
 import React from 'react';
 import './ProjectBlockBig.css';
 import Button from '../Button/Button';
+import useScript from '../FadeInSection/FadeInSection';
 
 const ProjectBlockBig = (props) => (
+    useScript('/src/observers/observer.js'),
     <div className="wrapper">
         <div className="section-ribbon">
             <h1 style={props.ribbonStyleSmallerText}>{props.projectTitle}</h1>
@@ -13,10 +15,9 @@ const ProjectBlockBig = (props) => (
                 
             </div>
             <div className="project-text-container">
-                <h2 className="subheading-text">{props.projectText}</h2>
+                <h2 className="subheading-text fade-in">{props.projectText}</h2>
                 <h2 className="skills-text">
                     {props.skills.map((item, i) => {
-                        console.log(i)
                         if(props.skills.length === i+1) {
                             return (
                                 <div className="skills-container" key={i}>

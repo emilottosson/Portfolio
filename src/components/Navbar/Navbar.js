@@ -12,12 +12,60 @@ class Navbar extends Component {
     super(props)
     this.state = {
       hamburgerMenuOpen: false,
-      mountedNavbar: false
+      mountedNavbar: false,
+      hamburgerMenuItem1Shown: false,
+      hamburgerMenuItem2Shown: false,
+      hamburgerMenuItem3Shown: false,
+      hamburgerMenuItem4Shown: false,
+      hamburgerMenuItem5Shown: false,
+      hamburgerMenuItem6Shown: false,
     };
     this.menuToggleClickHandler = this.menuToggleClickHandler.bind(this);
   }
 
   menuToggleClickHandler() {
+    if(!this.state.hamburgerMenuOpen) {
+      setTimeout(() => {
+        console.log("hej")
+        this.setState ({
+          hamburgerMenuItem1Shown: true,
+        });
+      }, 100);
+      setTimeout(() => {
+        this.setState ({
+          hamburgerMenuItem2Shown: true,
+        });
+      }, 200);
+      setTimeout(() => {
+        this.setState ({
+          hamburgerMenuItem3Shown: true,
+        });
+      }, 300);
+      setTimeout(() => {
+        this.setState ({
+          hamburgerMenuItem4Shown: true,
+        });
+      }, 400);
+      setTimeout(() => {
+        this.setState ({
+          hamburgerMenuItem5Shown: true,
+        });
+      }, 500);
+      setTimeout(() => {
+        this.setState ({
+          hamburgerMenuItem6Shown: true,
+        });
+      }, 600);
+    } else {
+      this.setState ({
+        hamburgerMenuItem1Shown: false,
+        hamburgerMenuItem2Shown: false,
+        hamburgerMenuItem3Shown: false,
+        hamburgerMenuItem4Shown: false,
+        hamburgerMenuItem5Shown: false,
+        hamburgerMenuItem6Shown: false,
+      });
+    }
     this.setState( {
       hamburgerMenuOpen: !this.state.hamburgerMenuOpen
     });
@@ -82,7 +130,16 @@ class Navbar extends Component {
           </div>
         </div>
       </div>
-      <HamburgerMenu shown={this.state.hamburgerMenuOpen} toggle={this.menuToggleClickHandler} style={ this.state.mountedNavbar ? style1 : style2 }/>
+      <HamburgerMenu 
+        shown={this.state.hamburgerMenuOpen} 
+        hamburgerMenuItem1Shown={this.state.hamburgerMenuItem1Shown} 
+        hamburgerMenuItem2Shown={this.state.hamburgerMenuItem2Shown}
+        hamburgerMenuItem3Shown={this.state.hamburgerMenuItem3Shown}
+        hamburgerMenuItem4Shown={this.state.hamburgerMenuItem4Shown}
+        hamburgerMenuItem5Shown={this.state.hamburgerMenuItem5Shown}
+        hamburgerMenuItem6Shown={this.state.hamburgerMenuItem6Shown}
+        toggle={this.menuToggleClickHandler} 
+        style={ this.state.mountedNavbar ? style1 : style2 }/>
       </React.Fragment>
     );
   }

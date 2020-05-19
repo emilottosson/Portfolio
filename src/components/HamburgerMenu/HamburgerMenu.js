@@ -71,20 +71,20 @@ class HamburgerMenu extends Component {
     return (
       <div className={"navbar-small " + (this.props.shown ? "shown" : "")}>
         <div className={"menu-container-small " + (this.props.shown ? "shown" : "")}>
-          <Link activeClass="active" className="menu-text-small" to="workflow-anchor" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
+          <Link activeClass="active" className={"menu-text-small " + (this.props.hamburgerMenuItem1Shown ? "showItem" : "")} to="workflow-anchor" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
               Workflow
             </Link>
-            <Link activeClass="active" className="menu-text-small" to="portfolio" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
+            <Link activeClass="active" className={"menu-text-small " + (this.props.hamburgerMenuItem2Shown ? "showItem" : "")} to="portfolio" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
               Portfolio
             </Link>
-            <Link activeClass="active" className="menu-text-small" to="about-container" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
+            <Link activeClass="active" className={"menu-text-small " + (this.props.hamburgerMenuItem3Shown ? "showItem" : "")} to="about-container" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
               About
             </Link>
-            <Link activeClass="active" className="menu-text-small" to="articles" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
+            <Link activeClass="active" className={"menu-text-small " + (this.props.hamburgerMenuItem4Shown ? "showItem" : "")} to="articles" href="about.js#top" spy={true} smooth={true} offset= {-55} duration= {500} onClick={this.props.toggle}>
               Articles
             </Link>
-          <a className="menu-text-small" onClick={this.props.toggle} href={Resume} target="_blank">Resume</a>
-          <a className="menu-text-small" onClick={this.props.toggle} href="mailto:emil@emilottosson.com">Contact Me</a>
+          <a className={"menu-text-small " + (this.props.hamburgerMenuItem5Shown ? "showItem" : "")} onClick={this.props.toggle} href={Resume} target="_blank">Resume</a>
+          <a className={"menu-text-small " + (this.props.hamburgerMenuItem6Shown ? "showItem" : "")} onClick={this.props.toggle} href="mailto:emil@emilottosson.com">Contact Me</a>
         </div>
       </div>
     );

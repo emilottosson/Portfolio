@@ -16,7 +16,6 @@ const ProjectBlockSmall = (props) => (
             <h2 className="subheading-text">{props.projectText}</h2>
                 <h2 className="skills-text">
                     {props.skills.map((item, i) => {
-                        console.log(i)
                         if(props.skills.length === i+1) {
                             return (
                                 <div className="skills-container" key={i}>
