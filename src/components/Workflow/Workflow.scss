@@ -198,105 +198,6 @@
               }
             }
           }
-
-          .step-smallscreen {
-            display: none;
-            height: 172px;
-            width: 135px;
-
-            .step-title {
-              position: relative;
-              display: flex;
-              justify-content: center;
-              height: 32px;
-              width: 100%;
-              margin-bottom: 5px;
-
-              .title-text {
-                margin-left: 0 auto;
-                margin-top: 0;
-                color: $color-mainbackground;
-                font-size: 26px;
-                font-weight: 500;
-              }
-            }
-
-            .step-circle {
-              position: relative;
-              display: flex;
-              flex-flow: row wrap;
-              justify-content: center;
-              align-items: center;
-              height: 131px;
-              width: 131px;
-              border-radius: 135px;
-              border: 1.5px dashed $color-mainbackground;
-              background-color: rgba(24,56,59,.8);
-              z-index: 1;
-
-              .questionmark {
-                padding-left: 3px;
-              }
-
-              .middle-circle {
-                position: relative;
-                width: 5px;
-                height: 5px;
-                background-color: $color-mainbackground;
-                border-radius: 50%;
-                z-index: 1;
-              }
-            }
-          }
-
-          .step-bigscreen {
-            height: 172px;
-            width: 135px;
-
-            .step-title {
-              position: relative;
-              display: flex;
-              justify-content: center;
-              height: 32px;
-              width: 100%;
-              margin-bottom: 5px;
-
-              .title-text {
-                margin-left: 0 auto;
-                margin-top: 0;
-                color: $color-mainbackground;
-                font-size: 26px;
-                font-weight: 500;
-              }
-            }
-
-            .step-circle {
-              position: relative;
-              display: flex;
-              flex-flow: row wrap;
-              justify-content: center;
-              align-items: center;
-              height: 131px;
-              width: 131px;
-              border-radius: 135px;
-              border: 1.5px dashed $color-mainbackground;
-              background-color: rgba(24,56,59,.8);
-              z-index: 1;
-
-              .questionmark {
-                padding-left: 3px;
-              }
-
-              .middle-circle {
-                position: relative;
-                width: 5px;
-                height: 5px;
-                background-color: $color-mainbackground;
-                border-radius: 50%;
-                z-index: 1;
-              }
-            }
-          }
           
           .arrow {
             position: relative;
@@ -385,6 +286,7 @@
           }
 
           .arrowup-smallscreen {
+            order: 4;
             position: relative;
             display: none;
             justify-content: center;
@@ -400,6 +302,7 @@
           }
 
           .arrowup-smallscreen-2 {
+            order: 4;
             position: relative;
             display: none;
             justify-content: center;
@@ -415,6 +318,7 @@
           }
 
           .arrowdown-smallscreen {
+            order: 6;
             position: relative;
             display: none;
             justify-content: center;
@@ -431,6 +335,7 @@
           }
 
           .arrowdown-smallscreen-2 {
+            order: 6;
             position: relative;
             display: none;
             justify-content: center;
@@ -447,6 +352,7 @@
           }
 
           .filling-div {
+            order: 5;
             position: relative;
             visibility: hidden;
             display: none;
@@ -535,14 +441,6 @@
 
           .picture-container {
             width: 357px;
-
-            .step-smallscreen {
-              display: block;
-            }
-
-            .step-bigscreen {
-              display: none;
-            }
 
             .arrow {
 
@@ -718,16 +616,6 @@
               }
             }
 
-            .step-smallscreen {
-              height: 131px;
-              width: 95px;
-  
-              .step-circle {
-                height: 91px;
-                width: 91px;
-              }
-            }
-
             .arrow {
               width: 30px;
               height: 131px;
@@ -831,16 +719,6 @@
                 }
               }
             }
-
-            .step-smallscreen {
-  
-              .step-title {
-  
-                .title-text {
-                  font-size: 21px;
-                }
-              }
-            }
           }
         }
 
@@ -871,10 +749,6 @@
             align-items: center;
 
             .step {
-              margin-bottom: 20px;
-            }
-
-            .step-smallscreen {
               margin-bottom: 20px;
             }
 

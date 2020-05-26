@@ -112,7 +112,7 @@
       }
     }
 
-    .visual-page-purple-container {
+    #visual-page-purple-container {
       position: relative;
       height: 100%;
       background-image: $gradient-purple;
@@ -204,7 +204,7 @@
       .articles-container {
         flex-direction: column;
   
-        .visual-page-purple-container {
+        #visual-page-purple-container {
           margin-top: 90px;
           margin-left: 0px;
         }
@@ -240,7 +240,7 @@
         }
       }
 
-      .visual-page-purple-container {
+      #visual-page-purple-container {
 
         .article-container {
     
@@ -290,7 +290,7 @@
         }
       }
 
-      .visual-page-purple-container {
+      #visual-page-purple-container {
 
         .article-container {
     

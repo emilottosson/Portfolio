@@ -99,7 +99,7 @@
           margin-bottom: 8px; }
           #articles .articles-container .visual-page-red-container .article-container .subheading-container .subheading-text {
             color: #e78aae; }
-    #articles .articles-container .visual-page-purple-container {
+    #articles .articles-container #visual-page-purple-container {
       position: relative;
       height: 100%;
       background-image: radial-gradient(closest-corner, #3d174b, #000000 150%);
@@ -113,7 +113,7 @@
       justify-content: center;
       align-items: center;
       z-index: 2; }
-      #articles .articles-container .visual-page-purple-container .section-ribbon {
+      #articles .articles-container #visual-page-purple-container .section-ribbon {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,11 +126,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1; }
-        #articles .articles-container .visual-page-purple-container .section-ribbon h1 {
+        #articles .articles-container #visual-page-purple-container .section-ribbon h1 {
           font-size: 35px;
           transform: rotate(-10deg);
           margin-top: -11px; }
-      #articles .articles-container .visual-page-purple-container .article-container {
+      #articles .articles-container #visual-page-purple-container .article-container {
         position: relative;
         display: flex;
         flex-flow: row wrap;
@@ -140,16 +140,16 @@
         max-width: 1130px;
         height: 100%;
         transition: padding .5s ease; }
-        #articles .articles-container .visual-page-purple-container .article-container .title-container {
+        #articles .articles-container #visual-page-purple-container .article-container .title-container {
           position: relative;
           display: flex;
           justify-content: center;
           text-align: center;
           width: 100%;
           min-height: 0px; }
-        #articles .articles-container .visual-page-purple-container .article-container .title-container h1 {
+        #articles .articles-container #visual-page-purple-container .article-container .title-container h1 {
           color: #eeddce; }
-        #articles .articles-container .visual-page-purple-container .article-container .subheading-container {
+        #articles .articles-container #visual-page-purple-container .article-container .subheading-container {
           position: relative;
           display: flex;
           justify-content: center;
@@ -158,7 +158,7 @@
           min-height: 0px;
           padding: 0px 30px;
           margin-bottom: 8px; }
-          #articles .articles-container .visual-page-purple-container .article-container .subheading-container .subheading-text {
+          #articles .articles-container #visual-page-purple-container .article-container .subheading-container .subheading-text {
             color: #9c70ac; }
 
 #articles:after {
@@ -171,7 +171,7 @@
     padding: 90px 20px 0px 20px; }
     #articles .articles-container {
       flex-direction: column; }
-      #articles .articles-container .visual-page-purple-container {
+      #articles .articles-container #visual-page-purple-container {
         margin-top: 90px;
         margin-left: 0px; } }
 
@@ -186,13 +186,13 @@
       font-size: 18px;
       line-height: 28px;
       letter-spacing: -.5px; }
-  #articles .articles-container .visual-page-purple-container .article-container .title-container h3 {
+  #articles .articles-container #visual-page-purple-container .article-container .title-container h3 {
     font-size: 36px;
     line-height: 47px;
     letter-spacing: -1.5px; }
-  #articles .articles-container .visual-page-purple-container .article-container .subheading-container {
+  #articles .articles-container #visual-page-purple-container .article-container .subheading-container {
     padding: 0px 0px; }
-    #articles .articles-container .visual-page-purple-container .article-container .subheading-container .subheading-text {
+    #articles .articles-container #visual-page-purple-container .article-container .subheading-container .subheading-text {
       font-size: 18px;
       line-height: 28px;
       letter-spacing: -.5px; } }
@@ -204,9 +204,9 @@
   #articles .articles-container .visual-page-red-container .article-container .subheading-container .subheading-text {
     font-size: 15px;
     line-height: 22px; }
-  #articles .articles-container .visual-page-purple-container .article-container .title-container h3 {
+  #articles .articles-container #visual-page-purple-container .article-container .title-container h3 {
     font-size: 29px;
     line-height: 37px; }
-  #articles .articles-container .visual-page-purple-container .article-container .subheading-container .subheading-text {
+  #articles .articles-container #visual-page-purple-container .article-container .subheading-container .subheading-text {
     font-size: 15px;
     line-height: 22px; } }

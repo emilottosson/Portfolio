@@ -26,7 +26,8 @@
     width: 240px;
     background-image: url("../../pngs/ribbon.png");
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    z-index: 3; }
     .wrapper .section-ribbon h1 {
       font-size: 35px;
       transform: rotate(-10deg);

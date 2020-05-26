@@ -17,6 +17,7 @@ class Portfolio extends Component {
         <div className="projects-container">
           <div className="project-blocks-wrapper">
           <ProjectBlockBig 
+            order="first"
             projectTitle="Ingrids" 
             backgroundImage={{backgroundImage: `url(${ingrids})`}}
             overlayColor="red"
@@ -27,10 +28,12 @@ class Portfolio extends Component {
               trying to give the webshop a clean and unique design."
             skills= {["Wordpress", "Woocommerce", "Web hosting", "HTML5", "CSS3"]}
             skillsTextColor="red"
+            buttonHref="/ingrids"
           />
           </div>
           <div className="project-blocks-wrapper-grid">
           <ProjectBlockSmall 
+            order="second"
             projectTitle="Eaty"
             backgroundImage={{backgroundImage: `url(${eaty})`}}
             overlayColor="purple"
@@ -41,9 +44,11 @@ class Portfolio extends Component {
               A major focus was on front-end functionality."
             skills= {["JavaScript", "PHP", "HTML5", "CSS3"]}
             skillsTextColor="purple"
+            buttonHref="/eaty"
           />
           <div className="flex-separator" />
           <ProjectBlockSmall 
+            order="third"
             projectTitle="Brawl Gaming" 
             backgroundImage={{backgroundImage: `url(${brawlGaming})`}}
             fontSize={{fontSize: '33px'}}
@@ -55,6 +60,7 @@ class Portfolio extends Component {
             the process from idea to current beta version, working with the full-stack."
             skills= {["React", "JavaScript", "HTML5", "Sass", "JSON", "SQL", "Kotlin"]}
             skillsTextColor="green"
+            buttonHref="/brawlgaming"
           />
           </div>
           <div className="project-blocks-wrapper">

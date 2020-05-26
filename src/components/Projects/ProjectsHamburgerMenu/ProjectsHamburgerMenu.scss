@@ -1,0 +1,61 @@
+@import 'src/styles/_colors.scss';
+
+body.noscroll {
+  position: fixed;
+}
+
+.projects-navbar-small {
+  position: fixed;
+  transform: translateY(-100%);
+  height: calc(100%);
+  min-height: 250px;
+  width: 100%;
+  margin-top: 80px;
+  top: -80px;
+  background-color: $color-mainbackground;
+  z-index: 4;
+  transition: transform 0.3s;
+
+  &.shown {
+    transform: translateY(0);
+  }
+
+  .projects-menu-container-small {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .projects-menu-text-small {
+      margin: 10px 0px;
+      font-size: 30px;
+      width: 160px;
+      text-decoration: none;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity .5s 0.1s, transform .5s;
+
+      &.active {
+        color: $color-red;
+      }
+
+      &.showItem {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .projects-menu-text-small:hover {
+        color: $color-red;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .projects-navbar-small {
+    display: none;
+  }
+}

@@ -53,15 +53,84 @@ body {
     margin-top: 0px;
   }
 
-  .fadeIn {
-    opacity: 0;
+  .show {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
   }
 
-  .fadeInWorkflow {
-    opacity: 0;
+  .show-matrix {
+    opacity: 1;
+    -webkit-animation: scale 0.2s ease-in-out 0s;
+    -moz-animation: scale 0.2s ease-in-out 0s;
+    -o-animation: scale 0.2s ease-in-out 0s;
+    animation: scale 0.2s ease-in-out 0s;
   }
 
-  .fadeInWorkflowPictures {
+  .hide {
     opacity: 0;
   }
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-6 {
+  order: 6;
+}
+
+.order-7 {
+  order: 7;
+}
+
+@media(max-width: 937px) {
+
+  .order-5 {
+    order: 9;
+  }
+  
+  .order-6 {
+    order: 8;
+  }
+  
+  .order-7 {
+    order: 7;
+  }
+}
+
+@media(max-width: 319px) {
+
+  .order-5 {
+    order: 7;
+  }
+  
+  .order-7 {
+    order: 9;
+  }
+}
+
+@keyframes scale {
+  0% {}
+  50% { transform: scale(1.07); }
+}
+
+@-webkit-keyframes scale {
+  0% {}
+  50% { -webkit-transform: scale(1.07); }
 }

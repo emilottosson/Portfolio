@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './HamburgerMenu.css';
-import Resume from "../../pdfs/Emil-Ottosson-Resume-Dark.pdf";
+import Resume from "../../pdfs/Emil-Ottosson-Resume.pdf";
 import { Link } from "react-scroll";
 import $ from 'jquery';
 

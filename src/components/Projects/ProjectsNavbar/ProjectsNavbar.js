@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import './Navbar.css';
-import MenuToggleButton from '../HamburgerMenu/MenuToggleButton';
-import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
-import Resume from "../../pdfs/Emil-Ottosson-Resume.pdf";
-import { Link } from "react-scroll";
-import Button from '../Button/Button';
+import './ProjectsNavbar.css';
+import MenuToggleButton from '../../HamburgerMenu/MenuToggleButton';
+import ProjectsHamburgerMenu from '../ProjectsHamburgerMenu/ProjectsHamburgerMenu';
+import Resume from "../../../pdfs/Emil-Ottosson-Resume.pdf";
+import Button from '../../Button/Button';
 
 
-class Navbar extends Component {
+class ProjectsNavbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
       hamburgerMenuOpen: false,
-      mountedNavbar: false,
       hamburgerMenuItem1Shown: false,
       hamburgerMenuItem2Shown: false,
       hamburgerMenuItem3Shown: false,
@@ -70,50 +68,33 @@ class Navbar extends Component {
     });
   };
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState ({
-        mountedNavbar: true,
-      });
-    }, 1800);
-  }
-
   render() {
-
-    var style1 = { 
-      opacity: '1', 
-      transition: 'opacity .5s ease-in-out, transform .5s ease-in-out', 
-      transform: 'translateY(80px)'
-    }
-    var style2 = { 
-      opacity: '0' 
-    }
 
     return (
       <React.Fragment>
-      <div className="navbar-container" style={ this.state.mountedNavbar ? style1 : style2 }>
-        <div className="navbar" >
-          <div className="hamburger-icon">
+      <div className="projects-navbar-container">
+        <div className="projects-navbar" >
+          <div className="projects-hamburger-icon">
             <MenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>
           </div>
-          <div className="logo-container">
-            <Link activeClass="active" className="navbar-logo" to="header" spy={true} smooth={true} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+          <div className="projects-logo-container">
+            <a className="projects-navbar-logo" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               EMIL OTTOSSON
-            </Link>
+            </a>
           </div>
-          <div className="menu-container">
-            <Link activeClass="active" className="menu-text" to="workflow-anchor" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+          <div className="projects-menu-container">
+            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Workflow
-            </Link>
-            <Link activeClass="active" className="menu-text" to="portfolio" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            </a>
+            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Portfolio
-            </Link>
-            <Link activeClass="active" className="menu-text" to="about-container" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            </a>
+            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               About
-            </Link>
-            <Link activeClass="active" className="menu-text" to="articles" spy={true} smooth={true} offset= {-80} duration= {500} onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            </a>
+            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Articles
-            </Link>
+            </a>
             <Button 
               color="green"
               buttonText="Resume"
@@ -130,7 +111,7 @@ class Navbar extends Component {
           </div>
         </div>
       </div>
-      <HamburgerMenu 
+      <ProjectsHamburgerMenu 
         shown={this.state.hamburgerMenuOpen} 
         hamburgerMenuItem1Shown={this.state.hamburgerMenuItem1Shown} 
         hamburgerMenuItem2Shown={this.state.hamburgerMenuItem2Shown}
@@ -138,11 +119,10 @@ class Navbar extends Component {
         hamburgerMenuItem4Shown={this.state.hamburgerMenuItem4Shown}
         hamburgerMenuItem5Shown={this.state.hamburgerMenuItem5Shown}
         hamburgerMenuItem6Shown={this.state.hamburgerMenuItem6Shown}
-        toggle={this.menuToggleClickHandler} 
-        style={ this.state.mountedNavbar ? style1 : style2 }/>
+        toggle={this.menuToggleClickHandler}/>
       </React.Fragment>
     );
   }
 }
 
-export default Navbar;
+export default ProjectsNavbar;

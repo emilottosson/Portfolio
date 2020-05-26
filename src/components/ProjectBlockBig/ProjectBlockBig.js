@@ -1,78 +1,84 @@
-import React, {useRef} from 'react';
-import {useIntersection} from 'react-use';
+import React, {Component} from 'react';
 import './ProjectBlockBig.css';
 import Button from '../Button/Button';
-import gsap from "gsap"
 
-const ProjectBlockBig = (props) => {
+class ProjectBlockBig extends Component {
 
-    const sectionRef = useRef(null);
+    constructor(props) {
+        super(props)
+        this.state = {
+            projectText: false,
+            projectSkills: false,
+            projectButton: false,
+        };
+      }
 
+    addScrollingClasses = () => {
+    var browserHeight = window.innerHeight;
+    var offsets = document.getElementById(this.props.order).getBoundingClientRect();
+    if (offsets.top <= browserHeight/2) {
+        this.setState ({
+            projectText: true,
+        });
+        setTimeout(() => {
+        this.setState ({
+            projectSkills: true,
+        });
+        }, 200);
+        setTimeout(() => {
+        this.setState ({
+            projectButton: true,
+        });
+        }, 400);
+    } else {
+        return
+    }
+    }
 
-    const intersection = useIntersection(sectionRef, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5
-    });
+    render() {
 
-    const fadeIn = element => {
-        gsap.to(element, 2, {
-            opacity: 1,
-            ease: 'power4.out',
-            stagger: {
-                amount: .5
-            }
-        })
-    };
-
-    const fadeOut = element => {
-
-    };
-
-    intersection && intersection.isIntersecting
-    ? fadeIn(".fadeIn")
-    : fadeOut(".fadeIn");
+    window.addEventListener('scroll', this.addScrollingClasses);
 
     return (
-    <div className="wrapper">
+    <div className="wrapper"  id={`${this.props.order}`}>
         <div className="section-ribbon">
-            <h1 style={props.ribbonStyleSmallerText}>{props.projectTitle}</h1>
+            <h1 style={this.props.ribbonStyleSmallerText}>{this.props.projectTitle}</h1>
         </div>
-        <div ref={sectionRef} className="project-block-big">
-            <div className="background" style={props.backgroundImage} />
-            <div className={`project-overlay ${props.overlayColor}`}>
+        <div className="project-block-big">
+            <div className="background" style={this.props.backgroundImage} />
+            <div className={`project-overlay ${this.props.overlayColor}`}>
                 
             </div>
             <div className="project-text-container">
-                <h2 className="subheading-text fadeIn">{props.projectText}</h2>
-                <h2 className="skills-text fadeIn">
-                    {props.skills.map((item, i) => {
-                        if(props.skills.length === i+1) {
+                <h2 className={"subheading-text " + (this.state.projectText ? "show" : "hide")}>{this.props.projectText}</h2>
+                <h2 className={"skills-text " + (this.state.projectSkills ? "show" : "hide")}>
+                    {this.props.skills.map((item, i) => {
+                        if(this.props.skills.length === i+1) {
                             return (
                                 <div className="skills-container" key={i}>
-                                    <p className={`${props.skillsTextColor}`}>{item}</p>
+                                    <p className={`${this.props.skillsTextColor}`}>{item}</p>
                                 </div>
                             );
                         } else {
                             return (
                                 <div className="skills-container" key={i}>
-                                    <p className={`${props.skillsTextColor}`}>{item}</p>
-                                    <div className={`separator ${props.skillsTextColor}`}>|</div>
+                                    <p className={`${this.props.skillsTextColor}`}>{item}</p>
+                                    <div className={`separator ${this.props.skillsTextColor}`}>|</div>
                                 </div>
                             );
                         }
                     })}
                 </h2>
             </div>
-            <div className="fadeIn">
+            <div className={(this.state.projectButton ? "show" : "hide")}>
             <Button 
-                color={props.buttonColor}
-                buttonText={props.buttonText}
-                buttonHref={props.buttonHref}
+                color={this.props.buttonColor}
+                buttonText={this.props.buttonText}
+                buttonHref={this.props.buttonHref}
             />
             </div>
         </div>
     </div>
     )};
-
+}
  export default ProjectBlockBig 
