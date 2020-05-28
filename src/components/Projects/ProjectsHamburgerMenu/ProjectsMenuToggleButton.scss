@@ -1,0 +1,107 @@
+@import 'src/styles/_colors.scss';
+
+.projects-toggle-button {
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-around; add for 3 line menu
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .projects-toggle-button-line, &:hover .projects-toggle-button-line-first {
+    background: hsla(0,0%,100%,1);
+  }
+
+  &:hover .projects-toggle-button-line.scrolled, &:hover .projects-toggle-button-line-first.scrolled {
+    background: $color-red;
+  }
+
+  .projects-toggle-button-line {
+    width: 23px;
+    height: 2px;
+    background: hsla(0,0%,100%,0.8);
+    transition: transform .5s ease;
+
+    &.scrolled {
+      background: $color-darkgray;
+    }
+  }
+
+    .projects-toggle-button-line-first {
+      width: 23px;
+      height: 2px;
+      background: hsla(0,0%,100%,0.8);
+      margin-bottom: 5px;
+      transition: transform .5s ease;
+
+      &.scrolled {
+        background: $color-darkgray;
+      }
+    }
+}
+
+.projects-toggle-button-cross {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .projects-toggle-cross-line {
+    background: hsla(0,0%,100%,1);
+  }
+
+  &:hover .projects-toggle-cross-line.scrolled {
+    background: $color-red;
+  }
+
+  .projects-toggle-cross-line {
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background: hsla(0,0%,100%,0.8);
+    transition: transform .5s ease;
+
+    &.scrolled {
+      background: $color-darkgray;
+    }
+
+    &.neg-rotation {
+      transform: rotate(-45deg);
+    }
+
+    &.pos-rotation {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+
+@-moz-document url-prefix() {
+  .projects-toggle-button {
+    margin-top: 5px;
+
+    .projects-toggle-button-line {
+      margin-bottom: 5px;
+    }
+  }
+}

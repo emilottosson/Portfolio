@@ -12,10 +12,16 @@ body.noscroll {
   min-height: 250px;
   width: 100%;
   margin-top: 80px;
-  top: -80px;
   background-color: #eeddce;
+  top: -80px;
   z-index: 4;
   transition: transform 0.3s; }
+  .projects-navbar-small.green {
+    background-color: #275a5f; }
+  .projects-navbar-small.red {
+    background-color: #942a53; }
+  .projects-navbar-small.purple {
+    background-color: #3d174b; }
   .projects-navbar-small.shown {
     transform: translateY(0); }
   .projects-navbar-small .projects-menu-container-small {
@@ -33,14 +39,19 @@ body.noscroll {
       text-decoration: none;
       opacity: 0;
       transform: translateY(-20px);
-      transition: opacity .5s 0.1s, transform .5s; }
+      transition: opacity .5s 0.1s, transform .5s;
+      color: rgba(255, 255, 255, 0.8); }
       .projects-navbar-small .projects-menu-container-small .projects-menu-text-small.active {
         color: #942a53; }
       .projects-navbar-small .projects-menu-container-small .projects-menu-text-small.showItem {
         opacity: 1;
         transform: translateY(0px); }
+      .projects-navbar-small .projects-menu-container-small .projects-menu-text-small.scrolled {
+        color: #383838; }
+        .projects-navbar-small .projects-menu-container-small .projects-menu-text-small.scrolled:hover {
+          color: #942a53; }
     .projects-navbar-small .projects-menu-container-small .projects-menu-text-small:hover {
-      color: #942a53; }
+      color: white; }
 
 @media (min-width: 768px) {
   .projects-navbar-small {

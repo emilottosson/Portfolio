@@ -11,6 +11,7 @@ class ProjectsHamburgerMenu extends Component {
       bodyOverflowToggle: false,
       scrollDisabled: false,
       count: 0,
+      navbarScroll: false,
     };
 
     this.count = 0;
@@ -19,7 +20,7 @@ class ProjectsHamburgerMenu extends Component {
   }
 
   componentDidMount() {
-    $('.toggle-button-container').on('click', this.toggleScroll);
+    $('.projects-toggle-button-container').on('click', this.toggleScroll);
     $('.projects-menu-text-small').on('click', this.toggleScroll);
     $('.projects-navbar-logo').on('click', this.removeClassOnBody);
   }
@@ -66,24 +67,40 @@ class ProjectsHamburgerMenu extends Component {
     });
   }
 
+  toggleScrollingClasses = () => {
+    var scroll = window.scrollY;
+    if(scroll !== 0) {
+      this.setState( {
+        navbarScroll: true,
+      });
+    } else {
+      this.setState( {
+        navbarScroll: false,
+      });
+    }
+  }
+
   render() {
+
+    window.addEventListener('scroll', this.toggleScrollingClasses);
+
     return (
-      <div className={"projects-navbar-small " + (this.props.shown ? "shown" : "")}>
+      <div className={"projects-navbar-small " + (this.props.shown ? "shown" : "") + (this.state.navbarScroll ? "" : ` ${this.props.mainColor}`)}>
         <div className={"projects-menu-container-small " + (this.props.shown ? "shown" : "")}>
-          <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem1Shown ? "showItem" : "")} href="/" onClick={this.props.toggle}>
+          <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem1Shown ? "showItem" : "") + (this.state.navbarScroll ? " scrolled" : "")} href="/" onClick={this.props.toggle}>
               Workflow
             </a>
-            <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem2Shown ? "showItem" : "")} href="/" onClick={this.props.toggle}>
+            <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem2Shown ? "showItem" : "") + (this.state.navbarScroll ? " scrolled" : "")} href="/" onClick={this.props.toggle}>
               Portfolio
             </a>
-            <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem3Shown ? "showItem" : "")} href="/" onClick={this.props.toggle}>
+            <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem3Shown ? "showItem" : "") + (this.state.navbarScroll ? " scrolled" : "")} href="/" onClick={this.props.toggle}>
               About
             </a>
-            <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem4Shown ? "showItem" : "")} href="/" onClick={this.props.toggle}>
+            <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem4Shown ? "showItem" : "") + (this.state.navbarScroll ? " scrolled" : "")} href="/" onClick={this.props.toggle}>
               Articles
             </a>
-          <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem5Shown ? "showItem" : "")} onClick={this.props.toggle} href={Resume} target="_blank">Resume</a>
-          <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem6Shown ? "showItem" : "")} onClick={this.props.toggle} href="mailto:emil@emilottosson.com">Contact Me</a>
+          <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem5Shown ? "showItem" : "") + (this.state.navbarScroll ? " scrolled" : "")} onClick={this.props.toggle} href={Resume} target="_blank">Resume</a>
+          <a className={"projects-menu-text-small " + (this.props.hamburgerMenuItem6Shown ? "showItem" : "") + (this.state.navbarScroll ? " scrolled" : "")} onClick={this.props.toggle} href="mailto:emil@emilottosson.com">Contact Me</a>
         </div>
       </div>
     );

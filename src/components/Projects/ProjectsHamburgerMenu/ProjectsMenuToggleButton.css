@@ -1,0 +1,73 @@
+/**
+ * Colors used in entire application
+ */
+/* Base colors */
+.projects-toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box; }
+  .projects-toggle-button:focus {
+    outline: none; }
+  .projects-toggle-button:hover .projects-toggle-button-line, .projects-toggle-button:hover .projects-toggle-button-line-first {
+    background: white; }
+  .projects-toggle-button:hover .projects-toggle-button-line.scrolled, .projects-toggle-button:hover .projects-toggle-button-line-first.scrolled {
+    background: #942a53; }
+  .projects-toggle-button .projects-toggle-button-line {
+    width: 23px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: transform .5s ease; }
+    .projects-toggle-button .projects-toggle-button-line.scrolled {
+      background: #383838; }
+  .projects-toggle-button .projects-toggle-button-line-first {
+    width: 23px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    transition: transform .5s ease; }
+    .projects-toggle-button .projects-toggle-button-line-first.scrolled {
+      background: #383838; }
+
+.projects-toggle-button-cross {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 23px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box; }
+  .projects-toggle-button-cross:focus {
+    outline: none; }
+  .projects-toggle-button-cross:hover .projects-toggle-cross-line {
+    background: white; }
+  .projects-toggle-button-cross:hover .projects-toggle-cross-line.scrolled {
+    background: #942a53; }
+  .projects-toggle-button-cross .projects-toggle-cross-line {
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: transform .5s ease; }
+    .projects-toggle-button-cross .projects-toggle-cross-line.scrolled {
+      background: #383838; }
+    .projects-toggle-button-cross .projects-toggle-cross-line.neg-rotation {
+      transform: rotate(-45deg); }
+    .projects-toggle-button-cross .projects-toggle-cross-line.pos-rotation {
+      transform: rotate(45deg); }
+
+@-moz-document url-prefix() {
+  .projects-toggle-button {
+    margin-top: 5px; }
+    .projects-toggle-button .projects-toggle-button-line {
+      margin-bottom: 5px; } }

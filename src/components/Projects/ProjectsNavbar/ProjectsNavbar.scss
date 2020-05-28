@@ -7,10 +7,35 @@
   width: 100%;
   height: 80px;
   top: 0px;
-  background-color: $color-mainbackground;
   align-items: center;
   justify-content: center;
-  z-index: 5;
+  background-color: $color-mainbackground;
+  z-index: 105;
+  transition: all .2s ease;
+
+  &.green {
+    background-color: rgba(39, 90, 95, 0.2);
+  }
+
+  &.green:hover {
+    background-color: rgba(39, 90, 95, 1);
+  }
+
+  &.red {
+    background-color: rgba(148, 42, 83, 0.2);
+  }
+
+  &.red:hover {
+    background-color: rgba(148, 42, 83, 1);
+  }
+
+  &.purple {
+    background-color: rgba(61, 23, 75, 0.2);
+  }
+
+  &.purple:hover {
+    background-color: rgba(61, 23, 75, 1);
+  }
 
   .projects-navbar {
     display: flex;
@@ -37,8 +62,12 @@
         font-family: $font-logo;
         letter-spacing: 5px;
         font-size: 20px;
-        color: $color-darkgray;
+        color: hsla(0,0%,100%,.8);
         text-decoration: none;
+
+        &.scrolled {
+          color: $color-darkgray;
+        }
       }
     }
 
@@ -49,15 +78,24 @@
       min-width: 0px;
 
       .projects-menu-text {
-        color: $color-darkgray;
+        color: hsla(0,0%,100%,.8);
         margin-right: 25px;
         font-size: 15px;
         text-decoration: none;
         font-weight: 400;
 
+        &.scrolled {
+          color: $color-darkgray;
+
+          &:hover {
+            text-decoration: line-through;
+            color: $color-red;
+          }
+        }
+
         &:hover {
           text-decoration: line-through;
-          color: $color-red;
+          color: hsla(0,0%,100%,1);
         }
 
         &:focus {
@@ -108,15 +146,25 @@
 
     .projects-navbar {
       padding: 0 20px;
-      background-color: $color-mainbackground;
       justify-content: initial;
+
+      &.green {
+        background-color: rgba(39, 90, 95, 0.2);
+      }
+    
+      &.red {
+        background-color: rgba(148, 42, 83, 0.2);
+      }
+    
+      &.purple {
+        background-color: rgba(61, 23, 75, 0.2);
+      }
 
       .projects-logo-container {
         justify-content: center;
 
         .projects-navbar-logo {
           font-size: 18px;
-          color: $color-darkgray;
         }
       }
 

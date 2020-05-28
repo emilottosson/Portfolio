@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Eaty.css';
 import ProjectTemplate from '../ProjectTemplate/ProjectTemplate';
 import ProjectsNavbar from '../ProjectsNavbar/ProjectsNavbar';
+import eaty from '../../../pngs/eaty.png';
 
 class Eaty extends Component {
 
@@ -13,9 +14,20 @@ class Eaty extends Component {
 
     return (
       <div>
-        <ProjectsNavbar />
+        <ProjectsNavbar 
+          mainColor="purple"
+        />
         <ProjectTemplate 
-          projectTitle="Eaty"
+          mainColor="purple"
+          backgroundImage={{backgroundImage: `url(${eaty})`}}
+          nextProjectBackgroundColor="green"
+          nextProjectName="Brawl Gaming"
+          homepageButtonColor="red"
+          homepageButtonText="Back to the homepage"
+          homepageButtonHref="/"
+          nextButtonColor="purple"
+          nextButtonText="Read the case study"
+          nextButtonHref="/brawlgaming"
         />
       </div>
     )

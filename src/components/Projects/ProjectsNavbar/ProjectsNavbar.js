@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './ProjectsNavbar.css';
-import MenuToggleButton from '../../HamburgerMenu/MenuToggleButton';
+import ProjectsMenuToggleButton from '../ProjectsHamburgerMenu/ProjectsMenuToggleButton';
 import ProjectsHamburgerMenu from '../ProjectsHamburgerMenu/ProjectsHamburgerMenu';
 import Resume from "../../../pdfs/Emil-Ottosson-Resume.pdf";
 import Button from '../../Button/Button';
@@ -17,8 +17,11 @@ class ProjectsNavbar extends Component {
       hamburgerMenuItem4Shown: false,
       hamburgerMenuItem5Shown: false,
       hamburgerMenuItem6Shown: false,
+      navbarScroll: false,
     };
     this.menuToggleClickHandler = this.menuToggleClickHandler.bind(this);
+    this.resumeButtonColor = "transparent"
+    this.contactButtonColor = "transparent"
   }
 
   menuToggleClickHandler() {
@@ -68,42 +71,61 @@ class ProjectsNavbar extends Component {
     });
   };
 
+  toggleScrollingClasses = () => {
+    var scroll = window.scrollY;
+    if(scroll !== 0) {
+      this.resumeButtonColor = "green"
+      this.contactButtonColor = "red"
+      this.setState( {
+        navbarScroll: true,
+      });
+    } else {
+      this.resumeButtonColor = "transparent"
+      this.contactButtonColor = "transparent"
+      this.setState( {
+        navbarScroll: false,
+      });
+    }
+  }
+
   render() {
+
+    window.addEventListener('scroll', this.toggleScrollingClasses);
 
     return (
       <React.Fragment>
-      <div className="projects-navbar-container">
-        <div className="projects-navbar" >
+      <div className={"projects-navbar-container " + (this.state.navbarScroll ? "" : `${this.props.mainColor}`)}>
+        <div className={"projects-navbar " + (this.state.navbarScroll ? "" : `${this.props.mainColor}`)} >
           <div className="projects-hamburger-icon">
-            <MenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>
+            <ProjectsMenuToggleButton click={this.menuToggleClickHandler} shown={this.state.hamburgerMenuOpen}/>
           </div>
           <div className="projects-logo-container">
-            <a className="projects-navbar-logo" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <a className={"projects-navbar-logo " + (this.state.navbarScroll ? "scrolled" : "")} href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               EMIL OTTOSSON
             </a>
           </div>
           <div className="projects-menu-container">
-            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <a className={"projects-menu-text " + (this.state.navbarScroll ? "scrolled" : "")} href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Workflow
             </a>
-            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <a className={"projects-menu-text " + (this.state.navbarScroll ? "scrolled" : "")} href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Portfolio
             </a>
-            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <a className={"projects-menu-text " + (this.state.navbarScroll ? "scrolled" : "")} href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               About
             </a>
-            <a className="projects-menu-text" href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
+            <a className={"projects-menu-text " + (this.state.navbarScroll ? "scrolled" : "")} href="/" onClick={ () => this.setState({hamburgerMenuOpen: false})}>
               Articles
             </a>
             <Button 
-              color="green"
+              color={this.resumeButtonColor}
               buttonText="Resume"
               buttonStyle={{padding: '11px 20px', marginRight: '8px'}}
               buttonHref={Resume}
               target="_blank"
             />
             <Button 
-              color="red"
+              color={this.contactButtonColor}
               buttonText="Contact me"
               buttonStyle={{padding: '11px 20px'}}
               buttonHref="mailto:emil@emilottosson.com"
@@ -112,6 +134,7 @@ class ProjectsNavbar extends Component {
         </div>
       </div>
       <ProjectsHamburgerMenu 
+        mainColor={this.props.mainColor}
         shown={this.state.hamburgerMenuOpen} 
         hamburgerMenuItem1Shown={this.state.hamburgerMenuItem1Shown} 
         hamburgerMenuItem2Shown={this.state.hamburgerMenuItem2Shown}

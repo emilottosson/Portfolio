@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './BrawlGaming.css';
 import ProjectTemplate from '../ProjectTemplate/ProjectTemplate';
 import ProjectsNavbar from '../ProjectsNavbar/ProjectsNavbar';
+import brawlgaming from '../../../pngs/brawlgaming.png';
 
 class BrawlGaming extends Component {
 
@@ -13,9 +14,20 @@ class BrawlGaming extends Component {
 
     return (
       <div>
-        <ProjectsNavbar />
+        <ProjectsNavbar 
+          mainColor="green"
+        />
         <ProjectTemplate 
-          projectTitle="Brawl Gaming"
+          mainColor="green"
+          backgroundImage={{backgroundImage: `url(${brawlgaming})`}}
+          nextProjectBackgroundColor="red"
+          nextProjectName="Ingrids"
+          homepageButtonColor="purple"
+          homepageButtonText="Back to the homepage"
+          homepageButtonHref="/"
+          nextButtonColor="green"
+          nextButtonText="Read the case study"
+          nextButtonHref="/ingrids"
         />
       </div>
     )

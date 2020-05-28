@@ -11,10 +11,22 @@ body.noscroll {
   min-height: 250px;
   width: 100%;
   margin-top: 80px;
-  top: -80px;
   background-color: $color-mainbackground;
+  top: -80px;
   z-index: 4;
   transition: transform 0.3s;
+
+  &.green {
+    background-color: rgba(39, 90, 95, 1);
+  }
+
+  &.red {
+    background-color: rgba(148, 42, 83, 1);
+  }
+
+  &.purple {
+    background-color: rgba(61, 23, 75, 1);
+  }
 
   &.shown {
     transform: translateY(0);
@@ -37,6 +49,7 @@ body.noscroll {
       opacity: 0;
       transform: translateY(-20px);
       transition: opacity .5s 0.1s, transform .5s;
+      color: hsla(0,0%,100%,.8);
 
       &.active {
         color: $color-red;
@@ -46,10 +59,18 @@ body.noscroll {
         opacity: 1;
         transform: translateY(0px);
       }
+
+      &.scrolled {
+        color: $color-darkgray;
+
+        &:hover {
+          color: $color-red;
+        }
+      }
     }
 
     .projects-menu-text-small:hover {
-        color: $color-red;
+      color: hsla(0,0%,100%,1);
     }
   }
 }
