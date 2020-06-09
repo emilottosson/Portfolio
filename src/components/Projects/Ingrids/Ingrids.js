@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import './Ingrids.css';
 import ProjectTemplate from '../ProjectTemplate/ProjectTemplate';
 import ProjectsNavbar from '../ProjectsNavbar/ProjectsNavbar';
-import ingrids from '../../../pngs/ingrids.png';
-import test1 from '../../../pngs/test1.png';
-import test1small from '../../../pngs/test1small.png';
-import test2 from '../../../pngs/test2.jpg';
+import ingrids from '../../../pngs/ingrids/ingrids-banner.png';
+import ingridsHome from '../../../pngs/ingrids/ingrids-home.png';
+import ingridsOrders from '../../../pngs/ingrids/ingrids-orders.png';
+import ingridsShop from '../../../pngs/ingrids/ingrids-shop.png';
+import ingridsProduct from '../../../pngs/ingrids/ingrids-product.png';
+import ingridsCart from '../../../pngs/ingrids/ingrids-cart.png';
+import ingridsCheckout from '../../../pngs/ingrids/ingrids-checkout.png';
 import Button from '../../Button/Button';
 
 class Ingrids extends Component {
@@ -37,85 +40,75 @@ class Ingrids extends Component {
               <section id="desc">
                 <div className="content">
                   <h1>Ingrids</h1>
-                  <h2 className="red">Cancare is an <span className="purpleText">on-demand</span> medical cannabis <span className="purpleText">delivery app</span>. The MVP, designed and developed in three months, includes 
-                  a shipment real-time tracking. The App Store's strict review guidelines don't allow cannabis-related apps, so the product was <span className="purpleText">directly 
-                  launched</span> on the market as a webapp, in order to <span className="purpleText">test the traction</span> and <span className="purpleText">validate the idea</span>.</h2>
+                  <h2 className="red">Ingrids specialaffär was established 1965 in Umeå and has since 1998 been selling underwear at Kungsgatan 51, Umeå. 
+                  With increased <span className="purpleText">e-commerce</span> globally, Ingrids old webshop was in need of a <span className="purpleText">redesign</span>, including new <span className="purpleText">web hosting</span> and <span className="purpleText">payment contracts</span>. 
+                  Excluding the <span className="purpleText">payment support</span>, the website was designed and developed in four month.</h2>
                 </div>
               </section>
               <section id="challenge" className="purple">
                 <div className="content">
                   <h1 className="main">Target and challenge</h1>
-                  <h2 className="textOnPurple">The <span className="mainText">user base</span> for this project consists of people in the 18-30 age range. The main requirements 
-                  were <span className="mainText">transparency</span> and <span className="mainText">friendliness</span>. Univi needed to 
-                  be <span className="mainText">easily understadable</span> by people without any specific knowledge regarding investment or saving strategies.</h2>
+                  <h2 className="textOnPurple">Main goal for this webshop was to provide a <span className="mainText">good customer experience</span> and <span className="mainText">smooth payments</span>. 
+                  A webshop that is nice to visit when it comes to <span className="mainText">visual experience</span>, something that feels <span className="mainText">unique</span> but <span className="mainText">recognizable</span>. 
+                  Ingrids needed to be <span className="mainText">easily understandable</span> by people who are not used to online shopping.</h2>
                 </div>
               </section>
               <section id="problem">
                 <div className="content">
                   <h1>Problems solved</h1>
-                  <h2 className="purple margin-bottom">After some weeks of negotiation, the founder didn't reach an agreement with the dispensaries that were supposed to be 
-                  part of the project. The image below shows the <span className="greenText">impact</span> that an issue like that would have on a <span className="greenText">normal release cycle</span>.</h2>
-                  <img className="img-lg margin-bottom" src={test1} alt="test" />
-                  <img className="img-sm margin-bottom" src={test1small} alt="test" />
-                  <h2 className="purple margin-bottom">The founder decided to launch the app with just one partner. To <span className="greenText">differentiate</span> the product and <span className="greenText">stand out</span> 
-                  from the competition, one month before deployment, we <span className="greenText">iterated</span> on the already available design, to find a new, compelling feature. That’s the 
-                  moment we gave birth to the <span className="greenText">real-time tracking</span>.</h2>
-                  <img className="img-lg margin-bottom" src={test1} alt="test" />
-                  <img className="img-sm margin-bottom" src={test1small} alt="test" />
-                  <h2 className="purple">This is a really clear example of how great it is to work with people who understand the importance of a <span className="greenText">loose scope</span>. 
-                  A change of plans doesn't necessarily mean harmful, uncontrolled feature creep.</h2>
+                  <h2 className="purple margin-bottom">Initially, it was difficult for the customers to both <span className="greenText">find products</span> on the webshop and <span className="greenText">complete their checkout</span>. 
+                  Hoping their customers spend time to look around, or are used to online shopping is probably not a good solution.</h2>
+                  <h2 className="purple margin-top-none">To <span className="greenText">avoid frustration</span> and <span className="greenText">increase customer experience</span>, the checkout and payment solution got 
+                  <span className="greenText">simplified</span> with the help of new contracts from the external payment service. A new, <span className="greenText">more pleasurable</span> way to display and find 
+                  products got implemented.</h2>
                 </div>
               </section>
               <section id="outcome" className="green">
                 <div className="content">
                   <h1 className="main">Outcomes and achievements</h1>
-                  <h2 className="textOnGreen">Considering how rapidly the medical cannabis market segment is evolving, Cancare required a <span className="mainText">fast turn around</span>. 
-                  The app got <span className="mainText">to the market</span> in just three months, and it was already winning over most competitors thanks to its <span className="mainText">usability</span> and <span className="mainText">reliability</span>. 
-                  After a quick marketing campaign, the founders have been able to <span className="mainText">generate revenues from day one</span>.</h2>
+                  <h2 className="textOnGreen">After the launch, Ingrids quickly got a <span className="mainText">lot of response</span> on their social media on how great their new webshop was. 
+                  Both <span className="mainText">user and visual experience</span> were things that were mentioned often. The staff <span className="mainText">facilitated their orders</span> as well as improved their <span className="mainText">support 
+                  possibilities</span> with their external services.</h2>
                 </div>
               </section>
               <section id="details">
                 <div className="content">
-                  <h3 className="darkgray">The main screens</h3>
-                  <h2 className="green margin-bottom"><span className="redText">Shop</span>, <span className="redText">categories</span>, and <span className="redText">search</span>: colors, font sizes, and product listing layout were determined by running multiple <span className="redText">A/B tests</span>. 
-                  For the listing, it turned out that a grid arrangement slightly <span className="redText">increased the conversions</span>, thanks to its professionally shot pictures.</h2>
-                  <div className="row-content triple-column">
+                  <h3 className="darkgray">Welcome screen</h3>
+                  <h2 className="green margin-bottom">The welcome screen shows <span className="redText">news</span> that the company wants to reach its customers as well as 
+                  information about <span className="redText">shipping</span>, <span className="redText">open purchase</span> and <span className="redText">sizes</span>.</h2>
+                  <div className="row-content">
                     <article>
-                      <img src={test2} alt="test" />
-                    </article>
-                    <article>
-                      <img src={test2} alt="test" />
-                    </article>
-                    <article>
-                      <img src={test2} alt="test" />
+                      <img src={ingridsHome} alt="welcome" />
                     </article>
                   </div>
-                  <h3 className="darkgray">Details and cart</h3>
-                  <h2 className="green margin-bottom">The <span className="redText">details</span> screen shows an accurate breakdown of the effects and pathologies treated by the specific strain. 
-                  Those aspects can be also filtered from the listing screen itself. These specs were crucial to highlight the <span className="redText">medical connotations</span> of the app.</h2>
+                  <h3 className="darkgray">The account</h3>
+                  <h2 className="green margin-bottom"><span className="redText">Orders</span> that a customer have made can be reached on their own personal <span className="redText">account page</span>.</h2>
+                  <div className="row-content">
+                    <article>
+                      <img src={ingridsOrders} alt="orders" />
+                    </article>
+                  </div>
+                  <h3 className="darkgray">The shop</h3>
+                  <h2 className="green margin-bottom">The shop are divided into <span className="redText">categories</span> which can be reached from within all sections of the page. 
+                  Products can be <span className="redText">filtered</span> with price and sizes. All products are shown with a <span className="redText">good description</span>.</h2>
                   <div className="row-content double-column">
                     <article>
-                      <img src={test2} alt="test" />
+                      <img src={ingridsShop} alt="shop" />
                     </article>
                     <article>
-                      <img src={test2} alt="test" />
+                      <img src={ingridsProduct} alt="product" />
                     </article>
                   </div>
-                  <h3 className="darkgray">Details and cart</h3>
-                  <h2 className="green margin-bottom">The <span className="redText">details</span> screen shows an accurate breakdown of the effects and pathologies treated by the specific strain. 
-                  Those aspects can be also filtered from the listing screen itself. These specs were crucial to highlight the <span className="redText">medical connotations</span> of the app.</h2>
-                  <div className="row-content four-column">
+                  <h3 className="darkgray">Cart and checkout</h3>
+                  <h2 className="green margin-bottom">The <span className="redText">cart</span> screen shows an <span className="redText">accurate breakdown</span> of the products and prices. 
+                  You can change the quantity or remove the product. The checkout screen shows information about your cart, shipping, 
+                  voucher and <span className="redText">available payment methods</span>.</h2>
+                  <div className="row-content double-column">
                     <article>
-                      <img src={test2} alt="test" />
+                      <img src={ingridsCart} alt="cart" />
                     </article>
                     <article>
-                      <img src={test2} alt="test" />
-                    </article>
-                    <article>
-                      <img src={test2} alt="test" />
-                    </article>
-                    <article>
-                      <img src={test2} alt="test" />
+                      <img src={ingridsCheckout} alt="checkout" />
                     </article>
                   </div>
                 </div>
@@ -123,26 +116,26 @@ class Ingrids extends Component {
               <section id="responsibilities" className="red">
                 <div className="content">
                   <h1 className="main">Responsibilities</h1>
-                  <h2 className="textOnRed">I worked on this project as a <span className="mainText">lead designer</span> and <span className="mainText">product manager</span>.<br/><br/>
+                  <h2 className="textOnRed">I worked on this project as a <span className="mainText">UI/UX designer</span> and <span className="mainText">Front-end developer</span>.<br/><br/>
                     Main areas of responsibility:<br/>
-                    - <span className="mainText">Management</span> (sprint planning and weekly reviews)<br/>
-                    - <span className="mainText">UX analysis</span> (flows and persona)<br/>
-                    - <span className="mainText">Design</span> (apps and branding)<br/>
+                    - <span className="mainText">Design</span> (webshop)<br/>
                     - <span className="mainText">Lo-fi prototyping</span> (basic flow and interactions)<br/>
+                    - <span className="mainText">Front-end development</span> (webshop)
                   </h2>
                 </div>
               </section>
               <section id="prototype">
                 <div className="content">
-                  <h1 className="darkgray">The final prototype</h1> {/* "The webapp" can be the name instead of "The final prototype" */}
-                  <h2 className="red">A lo-fi prototype was developed. It lacks of custom transitions and animations. By keeping it at this stage, 
-                  we’ve been able to <span className="purpleText">test the idea</span> and <span className="purpleText">assess the risk points</span>, immediately. Would you like to have a look at it?</h2>
+                  <h1 className="darkgray">The webshop</h1> {/* "The webapp" can be the name instead of "The final prototype" */}
+                  <h2 className="red">A webshop was developed. I still <span className="purpleText">managing updates</span> for the company when they are in need of help. 
+                  If you want to take a look at the <span className="purpleText">current state</span> of the webshop, follow the link below!</h2>
                   {/* "Learn more about Ingrids" can be the name instead of "Let's meet together" on the button below */}
                   <div className="margin-top">
                     <Button 
                       color="purple"
-                      buttonText= "Let's meet together" 
-                      buttonHref=""
+                      buttonText= "Welcome to Ingrids" 
+                      buttonHref="https://www.ingrids.nu/"
+                      target="_blank"
                     />
                   </div>
                 </div>

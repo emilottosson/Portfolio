@@ -131,6 +131,8 @@ header {
       color: #eeddce; }
     #projectTemplate h2.margin-bottom {
       margin-bottom: 40px; }
+    #projectTemplate h2.margin-top-none {
+      margin-top: 0px; }
   #projectTemplate .row-content {
     width: 100%;
     margin-left: auto;
@@ -140,6 +142,11 @@ header {
     height: 100%; }
     #projectTemplate .row-content .triple-column, #projectTemplate .row-content .four-column {
       height: 100%; }
+    #projectTemplate .row-content article {
+      width: 100%; }
+      #projectTemplate .row-content article img {
+        width: 100%;
+        max-width: none; }
     #projectTemplate .row-content.double-column article {
       float: left;
       display: block;

@@ -19,7 +19,8 @@ class ProjectTemplate extends Component {
     return (
       <div>
       <header className={`${this.props.mainColor}`} style={this.props.backgroundImage}>
-        <div className={`project-template-overlay ${this.props.mainColor}`} />
+        {/* ADD OVERLAY TO BACKGROUND */}
+        {/* <div className={`project-template-overlay ${this.props.mainColor}`} /> */}
       </header>
       <div id="projectTemplate">
         {this.props.content}

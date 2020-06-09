@@ -200,6 +200,10 @@ header {
       &.margin-bottom {
         margin-bottom: 40px;
       }
+
+      &.margin-top-none {
+        margin-top: 0px;
+      }
     }
 
     .row-content {
@@ -212,6 +216,15 @@ header {
 
       .triple-column, .four-column {
         height: 100%;
+      }
+
+      & article {
+        width: 100%;
+
+        img {
+          width: 100%;
+          max-width: none;
+        }
       }
 
       &.double-column article {
