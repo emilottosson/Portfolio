@@ -4,13 +4,13 @@ import Home from './Home';
 import Ingrids from './components/Projects/Ingrids/Ingrids';
 import Eaty from './components/Projects/Eaty/Eaty';
 import BrawlGaming from './components/Projects/BrawlGaming/BrawlGaming';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
           <div className="App" >
             <Switch>
               <Route exact path="/" component={Home} />
