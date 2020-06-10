@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './BrawlGaming.css';
 import ProjectTemplate from '../ProjectTemplate/ProjectTemplate';
 import ProjectsNavbar from '../ProjectsNavbar/ProjectsNavbar';
-import brawlgaming from '../../../pngs/brawlgaming.png';
-import ingridsHome from '../../../pngs/ingrids/ingrids-home.png';
-import ingridsOrders from '../../../pngs/ingrids/ingrids-orders.png';
-import ingridsShop from '../../../pngs/ingrids/ingrids-shop.png';
-import ingridsProduct from '../../../pngs/ingrids/ingrids-product.png';
-import ingridsCart from '../../../pngs/ingrids/ingrids-cart.png';
-import ingridsCheckout from '../../../pngs/ingrids/ingrids-checkout.png';
+import brawlgaming from '../../../pngs/brawlgaming/bg-banner.png';
+import brawlgamingConfirmation from '../../../pngs/brawlgaming/bg-confirmation.png';
+import brawlgamingDeposit from '../../../pngs/brawlgaming/bg-deposit.png';
+import brawlgamingDownload from '../../../pngs/brawlgaming/bg-download.png';
+import brawlgamingHome from '../../../pngs/brawlgaming/bg-home.png';
+import brawlgamingLobby from '../../../pngs/brawlgaming/bg-lobby.png';
+import brawlgamingMatch from '../../../pngs/brawlgaming/bg-match.png';
+import brawlgamingWebsite from '../../../pngs/brawlgaming/bg-website.png';
 import Button from '../../Button/Button';
 
 class BrawlGaming extends Component {
@@ -82,7 +83,7 @@ class BrawlGaming extends Component {
                   as well as <span className="greenText">latest winners</span> from the latest completed matches.</h2>
                   <div className="row-content">
                     <article>
-                      <img src={ingridsHome} alt="home" />
+                      <img src={brawlgamingHome} alt="home" />
                     </article>
                   </div>
                   <h3 className="darkgray">The lobby</h3>
@@ -91,17 +92,12 @@ class BrawlGaming extends Component {
                   started the search.</h2>
                   <div className="row-content">
                     <article>
-                      <img src={ingridsOrders} alt="lobby" />
+                      <img src={brawlgamingLobby} alt="lobby" />
                     </article>
                   </div>
                   <div className="row-content">
                     <article>
-                      <img src={ingridsOrders} alt="match" />
-                    </article>
-                  </div>
-                  <div className="row-content">
-                    <article>
-                      <img src={ingridsOrders} alt="result" />
+                      <img src={brawlgamingMatch} alt="match" />
                     </article>
                   </div>
                   <h3 className="darkgray">Deposit</h3>
@@ -109,20 +105,20 @@ class BrawlGaming extends Component {
                   If the payment succeeds, a <span className="greenText">confirmation</span> about the deposit will appear.</h2>
                   <div className="row-content double-column-full">
                     <article>
-                      <img src={ingridsHome} alt="deposit" />
+                      <img src={brawlgamingDeposit} alt="deposit" />
                     </article>
                     <article>
-                      <img src={ingridsHome} alt="confirmation" />
+                      <img src={brawlgamingConfirmation} alt="confirmation" />
                     </article>
                   </div>
                   <h3 className="darkgray">Website</h3>
                   <h2 className="purple margin-bottom">From the website you can read about the <span className="greenText">concept</span> and <span className="greenText">FAQ</span> as well as <span className="greenText">downloading</span> the desktop application for both Mac and Windows (Not available yet).</h2>
                   <div className="row-content double-column-full">
                     <article>
-                      <img src={ingridsHome} alt="website home" />
+                      <img src={brawlgamingWebsite} alt="website home" />
                     </article>
                     <article>
-                      <img src={ingridsHome} alt="downloading" />
+                      <img src={brawlgamingDownload} alt="downloading" />
                     </article>
                   </div>
                 </div>

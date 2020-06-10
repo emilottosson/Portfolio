@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import './Eaty.css';
 import ProjectTemplate from '../ProjectTemplate/ProjectTemplate';
 import ProjectsNavbar from '../ProjectsNavbar/ProjectsNavbar';
-import eaty from '../../../pngs/eaty.png';
-import ingridsHome from '../../../pngs/ingrids/ingrids-home.png';
-import ingridsOrders from '../../../pngs/ingrids/ingrids-orders.png';
-import ingridsShop from '../../../pngs/ingrids/ingrids-shop.png';
-import ingridsProduct from '../../../pngs/ingrids/ingrids-product.png';
-import ingridsCart from '../../../pngs/ingrids/ingrids-cart.png';
-import ingridsCheckout from '../../../pngs/ingrids/ingrids-checkout.png';
+import eaty from '../../../pngs/eaty/eaty-banner.png';
+import eatyHome from '../../../pngs/eaty/eaty-home.png';
+import eatyJoin from '../../../pngs/eaty/eaty-join.png';
+import eatyOrders from '../../../pngs/eaty/eaty-orders.png';
+import eatyRestaurant from '../../../pngs/eaty/eaty-restaurant.png';
+import eatyCheckout from '../../../pngs/eaty/eaty-checkout.png';
+import eatyDashboard from '../../../pngs/eaty/eaty-dashboard.png';
 import Button from '../../Button/Button';
 
 class Eaty extends Component {
@@ -78,17 +78,17 @@ class Eaty extends Component {
                   as well as <span className="purpleText">popular/new restaurants</span>. Further down the page you will find categories and a form that restaurants can use if they <span className="purpleText">want to join</span> Eaty.</h2>
                   <div className="row-content double-column-full">
                     <article>
-                      <img src={ingridsHome} alt="welcome" />
+                      <img src={eatyHome} alt="welcome" />
                     </article>
                     <article>
-                      <img src={ingridsHome} alt="join" />
+                      <img src={eatyJoin} alt="join" />
                     </article>
                   </div>
                   <h3 className="darkgray">The account</h3>
                   <h2 className="red margin-bottom"><span className="purpleText">Orders</span> that a customer have made can be reached on their own personal <span className="purpleText">account page</span>.</h2>
                   <div className="row-content">
                     <article>
-                      <img src={ingridsOrders} alt="orders" />
+                      <img src={eatyOrders} alt="orders" />
                     </article>
                   </div>
                   <h3 className="darkgray">The order</h3>
@@ -96,10 +96,10 @@ class Eaty extends Component {
                   Dishes can be <span className="purpleText">filtered</span> by <span className="purpleText">food category</span>.</h2>
                   <div className="row-content double-column-full">
                     <article>
-                      <img src={ingridsHome} alt="products" />
+                      <img src={eatyRestaurant} alt="products" />
                     </article>
                     <article>
-                      <img src={ingridsHome} alt="checkout" />
+                      <img src={eatyCheckout} alt="checkout" />
                     </article>
                   </div>
                   <h3 className="darkgray">The dashboard</h3>
@@ -107,7 +107,7 @@ class Eaty extends Component {
                   orders and other main data that has been provided for the company.</h2>
                   <div className="row-content">
                     <article>
-                      <img src={ingridsOrders} alt="dashboard" />
+                      <img src={eatyDashboard} alt="dashboard" />
                     </article>
                   </div>
                 </div>

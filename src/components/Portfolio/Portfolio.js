@@ -4,8 +4,8 @@ import ProjectBlockBig from '../ProjectBlockBig/ProjectBlockBig';
 import ProjectBlockSmall from '../ProjectBlockSmall/ProjectBlockSmall';
 import ProjectEndBlock from '../ProjectEndBlock/ProjectEndBlock';
 import ingrids from '../../pngs/ingrids/ingrids-banner.png';
-import eaty from '../../pngs/eaty.png';
-import brawlGaming from '../../pngs/brawlgaming.png';
+import eaty from '../../pngs/eaty/eaty-banner.png';
+import brawlGaming from '../../pngs/brawlgaming/bg-banner.png';
 
 class Portfolio extends Component {
 
