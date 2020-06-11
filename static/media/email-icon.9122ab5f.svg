@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-email-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage-desktop" transform="translate(-585.000000, -6250.000000)" fill="#eeddce">
+            <g id="footer" transform="translate(0.000000, 6041.000000)">
+                <g id="btns" transform="translate(575.000000, 196.000000)">
+                    <g id="btn-mail">
+                        <path d="M29.5,13 L10.5,13 C10.225,13 10,13.2333333 10,13.5185185 L10,26.4814815 C10,26.7666667 10.225,27 10.5,27 L29.5,27 C29.775,27 30,26.7666667 30,26.4814815 L30,13.5185185 C30,13.2333333 29.775,13 29.5,13 L29.5,13 Z M28.3,14.037037 L20,22.6444444 L11.7,14.037037 L28.3,14.037037 L28.3,14.037037 Z M11,14.762963 L16.05,20 L11,25.237037 L11,14.762963 L11,14.762963 Z M11.725,25.962963 L16.75,20.7518519 L19.65,23.7592593 C19.85,23.9666667 20.15,23.9666667 20.35,23.7592593 L23.25,20.7518519 L28.275,25.962963 L11.725,25.962963 L11.725,25.962963 Z M29,25.237037 L23.95,20 L29,14.762963 L29,25.237037 L29,25.237037 Z" id="icn-email-white"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
