@@ -60,7 +60,7 @@ class Header extends Component {
           <div className="header-content">
             <div className="header-content-container">
               <div className="title-container" style={ this.state.mountedHeaderTitle ? style1 : style2 }>
-                <h1 className="title-text">I´m Emil Ottosson, an Swedish <span className="no-break">front-end</span> developer currently based in Umeå, Sweden</h1>
+                <h1 className="title-text">I´m Emil Ottosson, a Swedish <span className="no-break">front-end</span> developer currently based in Umeå, Sweden</h1>
               </div>
               <div className="text-container" style={ this.state.mountedHeaderText ? style1 : style2 }>
                 <h2 className="sub-heading-text">I focus on <span className="spanred">creating</span> awesome stuff.<br />
